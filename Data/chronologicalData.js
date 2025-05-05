@@ -8,6 +8,14 @@ module.exports = [
     "id": "marvel_tt0458339"
   },
   {
+    "title": "Marvel's Agent Carter",
+    "type": "series",
+    "imdbId": "tt3475734",
+    "id": "marvel_tt3475734",
+    "releaseYear": "2015",
+    "poster": "https://image.tmdb.org/t/p/original/hZlr8Ynm8HqJB2gpvtAAgccbzSl.jpg"
+  },
+  {
     "title": "Captain Marvel",
     "type": "movie",
     "imdbId": "tt4154664",
@@ -64,6 +72,14 @@ module.exports = [
     "id": "marvel_tt1300854"
   },
   {
+    "title": "Marvel's Agents of S.H.I.E.L.D.",
+    "type": "series",
+    "imdbId": "tt2364582",
+    "id": "marvel_tt2364582",
+    "releaseYear": "2013",
+    "poster": "https://image.tmdb.org/t/p/w500/gHUCCMy1vvj58tzE3dZqeC9SXus.jpg"
+  },
+  {
     "title": "Thor: The Dark World",
     "type": "movie",
     "imdbId": "tt1981115",
@@ -96,6 +112,22 @@ module.exports = [
     "id": "marvel_tt3896198"
   },
   {
+    "title": "Daredevil",
+    "type": "series",
+    "imdbId": "tt3322312",
+    "id": "marvel_tt3322312",
+    "releaseYear": "2015",
+    "poster": "https://image.tmdb.org/t/p/w500/QWbPaDxiB6LW2LjASknzYBvjMj.jpg"
+  },
+  {
+    "title": "Jessica Jones",
+    "type": "series",
+    "imdbId": "tt2357547",
+    "id": "marvel_tt2357547",
+    "releaseYear": "2015",
+    "poster": "https://image.tmdb.org/t/p/original/7QUDTLPdR976ziMgvciqEvZChu7.jpg"
+  },
+  {
     "title": "Avengers: Age of Ultron",
     "type": "movie",
     "imdbId": "tt2395427",
@@ -110,6 +142,38 @@ module.exports = [
     "releaseYear": "2015",
     "poster": "https://image.tmdb.org/t/p/w500/rQRnQfUl3kfp78nCWq8Ks04vnq1.jpg",
     "id": "marvel_tt0478970"
+  },
+  {
+    "title": "Luke Cage",
+    "type": "series",
+    "imdbId": "tt3322314",
+    "id": "marvel_tt3322314",
+    "releaseYear": "2016",
+    "poster": "https://image.tmdb.org/t/p/w500/6R62oGGufhsf6DiMknCi047N0b7.jpg"
+  },
+  {
+    "title": "Cloak & Dagger",
+    "type": "series",
+    "imdbId": "tt5614844",
+    "id": "marvel_tt5614844",
+    "releaseYear": "2018",
+    "poster": "https://image.tmdb.org/t/p/w500/pYnRJuBPEqZO1o4fcxBTgmKNHfy.jpg"
+  },
+  {
+    "title": "Iron Fist",
+    "type": "series",
+    "imdbId": "tt3322310",
+    "id": "marvel_tt3322310",
+    "releaseYear": "2017",
+    "poster": "https://image.tmdb.org/t/p/original/4l6KD9HhtD6nCDEfg10Lp6C6zah.jpg"
+  },
+  {
+    "title": "The Defenders",
+    "type": "series",
+    "imdbId": "tt4230076",
+    "id": "marvel_tt4230076",
+    "releaseYear": "2017",
+    "poster": "https://image.tmdb.org/t/p/original/eOW7GzbWl6sgQEProXqpYPSRHo.jpg"
   },
   {
     "title": "Captain America: Civil War",
@@ -128,6 +192,22 @@ module.exports = [
     "id": "marvel_tt3480822"
   },
   {
+    "title": "Black Panther",
+    "type": "movie",
+    "imdbId": "tt1825683",
+    "releaseYear": "2018",
+    "poster": "https://image.tmdb.org/t/p/w500/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
+    "id": "marvel_tt1825683"
+  },
+  {
+    "title": "Inhumans",
+    "type": "series",
+    "imdbId": "tt4154858",
+    "id": "marvel_tt4154858",
+    "releaseYear": "2017",
+    "poster": "https://image.tmdb.org/t/p/w500/zKfGip55oJ9tdzhyd9ayGyFFhuo.jpg"
+  },
+  {
     "title": "Spider-Man: Homecoming",
     "type": "movie",
     "imdbId": "tt2250912",
@@ -136,12 +216,20 @@ module.exports = [
     "id": "marvel_tt2250912"
   },
   {
-    "title": "Black Panther",
-    "type": "movie",
-    "imdbId": "tt1825683",
-    "releaseYear": "2018",
-    "poster": "https://image.tmdb.org/t/p/w500/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
-    "id": "marvel_tt1825683"
+    "title": "The Punisher",
+    "type": "series",
+    "imdbId": "tt5675620",
+    "id": "marvel_tt5675620",
+    "releaseYear": "2017",
+    "poster": "https://image.tmdb.org/t/p/original/9tepVli4YijTCHyiATRvoR4c64X.jpg"
+  },
+  {
+    "title": "Runaways",
+    "type": "series",
+    "imdbId": "tt1236246",
+    "id": "marvel_tt1236246",
+    "releaseYear": "2017",
+    "poster": "https://image.tmdb.org/t/p/w500/zceMrfO17AQkeWJZNra4O90s1vE.jpg"
   },
   {
     "title": "Doctor Strange",
@@ -160,14 +248,6 @@ module.exports = [
     "id": "marvel_tt3501632"
   },
   {
-    "title": "Avengers: Infinity War",
-    "type": "movie",
-    "imdbId": "tt4154756",
-    "releaseYear": "2018",
-    "poster": "https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
-    "id": "marvel_tt4154756"
-  },
-  {
     "title": "Ant-Man and the Wasp",
     "type": "movie",
     "imdbId": "tt5095030",
@@ -176,12 +256,28 @@ module.exports = [
     "id": "marvel_tt5095030"
   },
   {
+    "title": "Avengers: Infinity War",
+    "type": "movie",
+    "imdbId": "tt4154756",
+    "releaseYear": "2018",
+    "poster": "https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+    "id": "marvel_tt4154756"
+  },
+  {
     "title": "Avengers: Endgame",
     "type": "movie",
     "imdbId": "tt4154796",
     "releaseYear": "2019",
     "poster": "https://image.tmdb.org/t/p/w500/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg",
     "id": "marvel_tt4154796"
+  },
+  {
+    "title": "Eternals",
+    "type": "movie",
+    "imdbId": "tt9032400",
+    "releaseYear": "2021",
+    "poster": "https://image.tmdb.org/t/p/w500/lFByFSLV5WDJEv3KabbdAF959F2.jpg",
+    "id": "marvel_tt9032400"
   },
   {
     "title": "Loki",
@@ -208,14 +304,6 @@ module.exports = [
     "id": "marvel_tt9140560"
   },
   {
-    "title": "The Falcon and the Winter Soldier",
-    "type": "series",
-    "imdbId": "tt9208876",
-    "releaseYear": "2021",
-    "poster": "https://image.tmdb.org/t/p/w500/6kbAMLteGO8yyewYau6bJ683sw7.jpg",
-    "id": "marvel_tt9208876"
-  },
-  {
     "title": "Shang-Chi and the Legend of the Ten Rings",
     "type": "movie",
     "imdbId": "tt9376612",
@@ -224,20 +312,28 @@ module.exports = [
     "id": "marvel_tt9376612"
   },
   {
+    "title": "The Falcon and the Winter Soldier",
+    "type": "series",
+    "imdbId": "tt9208876",
+    "releaseYear": "2021",
+    "poster": "https://image.tmdb.org/t/p/w500/6kbAMLteGO8yyewYau6bJ683sw7.jpg",
+    "id": "marvel_tt9208876"
+  },
+  {
+    "title": "Helstrom",
+    "type": "series",
+    "imdbId": "tt10266874",
+    "id": "marvel_tt10266874",
+    "releaseYear": "2020",
+    "poster": "https://image.tmdb.org/t/p/w500/5QmcKsepYpO9XYsWNLwsiULoaAu.jpg"
+  },
+  {
     "title": "Spider-Man: Far From Home",
     "type": "movie",
     "imdbId": "tt6320628",
     "releaseYear": "2019",
     "poster": "https://image.tmdb.org/t/p/original/2KLkGP0qWZlNGOad2O6P069hlw0.jpg",
     "id": "marvel_tt6320628"
-  },
-  {
-    "title": "Eternals",
-    "type": "movie",
-    "imdbId": "tt9032400",
-    "releaseYear": "2021",
-    "poster": "https://image.tmdb.org/t/p/w500/lFByFSLV5WDJEv3KabbdAF959F2.jpg",
-    "id": "marvel_tt9032400"
   },
   {
     "title": "Spider-Man: No Way Home",
@@ -268,7 +364,7 @@ module.exports = [
     "type": "series",
     "imdbId": "tt10234724",
     "releaseYear": "2022",
-    "poster": "https://image.tmdb.org/t/p/w500/9T4e6kA8tVtIK9GZ1Cy1QMvK9js.jpg",
+    "poster": "https://image.tmdb.org/t/p/original/YksR65as1ppF2N48TJAh2PLamX.jpg",
     "id": "marvel_tt10234724"
   },
   {
@@ -278,6 +374,22 @@ module.exports = [
     "releaseYear": "2022",
     "poster": "https://image.tmdb.org/t/p/w500/sv1xJUazXeYqALzczSZ3O6nkH75.jpg",
     "id": "marvel_tt9114286"
+  },
+  {
+    "title": "Echo",
+    "type": "series",
+    "imdbId": "tt13966962",
+    "releaseYear": "2024",
+    "poster": "https://image.tmdb.org/t/p/w500/vFyJH630cF68LohVYjQW49074Sy.jpg",
+    "id": "marvel_tt13966962"
+  },
+  {
+    "title": "She-Hulk: Attorney at Law",
+    "type": "series",
+    "imdbId": "tt10857160",
+    "releaseYear": "2022",
+    "poster": "https://image.tmdb.org/t/p/w500/5xz2orV8f0usyrfGNshcoXHmiaV.jpg",
+    "id": "marvel_tt10857160"
   },
   {
     "title": "Ms. Marvel",
@@ -294,14 +406,6 @@ module.exports = [
     "releaseYear": "2022",
     "poster": "https://image.tmdb.org/t/p/w500/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg",
     "id": "marvel_tt10648342"
-  },
-  {
-    "title": "She-Hulk: Attorney at Law",
-    "type": "series",
-    "imdbId": "tt10857160",
-    "releaseYear": "2022",
-    "poster": "https://image.tmdb.org/t/p/w500/5xz2orV8f0usyrfGNshcoXHmiaV.jpg",
-    "id": "marvel_tt10857160"
   },
   {
     "title": "Werewolf by Night",
@@ -352,14 +456,6 @@ module.exports = [
     "id": "marvel_tt10676048"
   },
   {
-    "title": "Echo",
-    "type": "series",
-    "imdbId": "tt13966962",
-    "releaseYear": "2024",
-    "poster": "https://image.tmdb.org/t/p/w500/vFyJH630cF68LohVYjQW49074Sy.jpg",
-    "id": "marvel_tt13966962"
-  },
-  {
     "title": "Deadpool & Wolverine",
     "type": "movie",
     "imdbId": "tt6263850",
@@ -376,20 +472,20 @@ module.exports = [
     "id": "marvel_tt15571732"
   },
   {
-    "title": "Captain America: Brave New World",
-    "type": "movie",
-    "imdbId": "tt14513804",
-    "releaseYear": "2025",
-    "poster": "https://image.tmdb.org/t/p/w500/pzIddUEMWhWzfvLI3TwxUG2wGoi.jpg",
-    "id": "marvel_tt14513804"
-  },
-  {
     "title": "Daredevil: Born Again",
     "type": "series",
     "imdbId": "tt18923754",
     "releaseYear": "2025",
     "poster": "https://image.tmdb.org/t/p/w500/9lLuhV703HGCbnz6FxnqCwIwzAZ.jpg",
     "id": "marvel_tt18923754"
+  },
+  {
+    "title": "Captain America: Brave New World",
+    "type": "movie",
+    "imdbId": "tt14513804",
+    "releaseYear": "2025",
+    "poster": "https://image.tmdb.org/t/p/w500/pzIddUEMWhWzfvLI3TwxUG2wGoi.jpg",
+    "id": "marvel_tt14513804"
   },
   {
     "title": "Thunderbolts*",
