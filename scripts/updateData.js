@@ -3,22 +3,35 @@ const fs = require('fs');
 const path = require('path');
 
 const TMDB_API_KEY = process.env.TMDB_API_KEY;
-const OMDB_API_KEY = process.env.OMDB_API_KEY;
 
-// ID da Marvel Studios no TMDb
-const MARVEL_COMPANY_ID = 420;
+if (!TMDB_API_KEY) {
+  console.error('❌ Erro: TMDB_API_KEY não está definida');
+  process.exit(1);
+}
+console.log('✅ Chave da API TMDb carregada com sucesso');
+
+const COMPANY_IDS = {
+  marvelStudios: 420,
+  marvelEntertainment: 7505,
+  abcStudios: 19366,
+  sonyPictures: 34,
+  fox: 127928,
+  columbiaPictures: 5,
+  newLineCinema: 12,
+  disney: 2,
+  marvelTelevision: 38679,
+};
+
+const CURRENT_DATE = new Date().toISOString().split('T')[0];
 
 async function getTmdbDetails(id, type) {
-  const url = `https://api.themoviedb.org/3/${type}/${id}?api_key=${TMDB_API_KEY}&language=en-US&append_to_response=external_ids`;
-  const res = await axios.get(url).catch(() => null);
-  return res?.data || null;
-}
-
-async function getOmdbDetails(imdbId) {
-  if (!imdbId) return null;
-  const url = `https://www.omdbapi.com/?i=${imdbId}&apikey=${OMDB_API_KEY}`;
-  const res = await axios.get(url).catch(() => null);
-  return res?.data || null;
+  const url = `https://api.themoviedb.org/3/${type}/${id}?api_key=${TMDB_API_KEY}&language=en-US&append_to_response=external_ids,production_companies,genres,belongs_to_collection`;
+  try {
+    const res = await axios.get(url);
+    return res.data;
+  } catch {
+    return null;
+  }
 }
 
 async function fetchAllPages(url) {
@@ -27,10 +40,14 @@ async function fetchAllPages(url) {
   const results = [];
 
   do {
-    const response = await axios.get(`${url}&page=${page}`).catch(() => null);
-    if (response && response.data) {
-      results.push(...response.data.results);
-      totalPages = response.data.total_pages; // Total de páginas disponíveis
+    try {
+      const response = await axios.get(`${url}&page=${page}`);
+      if (response?.data?.results) {
+        results.push(...response.data.results);
+        totalPages = response.data.total_pages;
+      }
+    } catch {
+      break;
     }
     page++;
   } while (page <= totalPages);
@@ -38,39 +55,72 @@ async function fetchAllPages(url) {
   return results;
 }
 
-async function fetchNewMcuReleases() {
-  console.log('🔄 Buscando novos lançamentos da Marvel Studios...');
+async function fetchMarvelContent() {
+  const results = [];
 
-  // URLs para buscar filmes e séries da Marvel Studios
-  const movieUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${TMDB_API_KEY}&language=en-US&with_companies=${MARVEL_COMPANY_ID}&sort_by=release_date.asc`;
-  const tvUrl = `https://api.themoviedb.org/3/discover/tv?api_key=${TMDB_API_KEY}&language=en-US&with_companies=${MARVEL_COMPANY_ID}&sort_by=first_air_date.asc`;
+  const fetchByCompany = async (companyId, type) => {
+    const url = `https://api.themoviedb.org/3/discover/${type}?api_key=${TMDB_API_KEY}&language=en-US&with_companies=${companyId}&sort_by=release_date.asc`;
+    return await fetchAllPages(url);
+  };
 
-  // Busca todos os filmes e séries usando paginação
-  const movies = await fetchAllPages(movieUrl);
-  const series = await fetchAllPages(tvUrl);
+  for (const companyId of Object.values(COMPANY_IDS)) {
+    const movies = await fetchByCompany(companyId, 'movie');
+    const series = await fetchByCompany(companyId, 'tv');
+    results.push(...movies.map(i => ({ ...i, type: 'movie' })));
+    results.push(...series.map(i => ({ ...i, type: 'tv' })));
+  }
 
-  // Processa os resultados
-  const filteredMovies = movies
-    .filter(movie => movie.release_date && parseInt(movie.release_date.split('-')[0]) >= 2008) // Ignora filmes antigos
-    .map(i => ({ ...i, type: 'movie' }));
+  const mcuCollectionUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${TMDB_API_KEY}&language=en-US&with_collection=263115&sort_by=release_date.asc`;
+  const mcuMovies = await fetchAllPages(mcuCollectionUrl);
+  results.push(...mcuMovies.map(i => ({ ...i, type: 'movie' })));
 
-  const filteredSeries = series
-    .filter(serie => serie.first_air_date && parseInt(serie.first_air_date.split('-')[0]) >= 2008) // Ignora séries antigas
-    .map(i => ({ ...i, type: 'tv' }));
+  const uniqueResults = Array.from(new Map(results.map(item => [item.id, item])).values());
+  return uniqueResults;
+}
 
-  console.log('Filmes retornados:', filteredMovies.map(m => m.title));
-  console.log('Séries retornadas:', filteredSeries.map(s => s.name));
+function cleanTitle(title) {
+  return title
+    .replace(/:?\s*(season|temporada)\s*\d+/i, '')
+    .replace(/\s+\(\d{4}\)$/, '')
+    .trim();
+}
 
-  return [...filteredMovies, ...filteredSeries];
+function deduplicateByTitle(data) {
+  const map = new Map();
+  for (const item of data) {
+    const clean = cleanTitle(item.title);
+    if (!map.has(clean)) {
+      map.set(clean, item);
+    } else {
+      const existing = map.get(clean);
+      const existingYear = parseInt(existing.releaseYear) || 9999;
+      const currentYear = parseInt(item.releaseYear) || 9999;
+      if (currentYear < existingYear) {
+        map.set(clean, item);
+      }
+    }
+  }
+  return Array.from(map.values());
+}
+
+function readPreviousData() {
+  const filePath = path.join(__dirname, '../Data/Data.js');
+  if (!fs.existsSync(filePath)) return [];
+  try {
+    return require(filePath);
+  } catch {
+    return [];
+  }
 }
 
 async function updateData() {
-  console.log('🔄 Atualizando dados do arquivo na pasta Data...');
+  console.log('🔄 A buscar conteúdos da Marvel...');
+  const marvelContent = await fetchMarvelContent();
+  const previousData = readPreviousData();
 
-  const newReleases = await fetchNewMcuReleases();
   const updatedData = [];
 
-  for (const release of newReleases) {
+  for (const release of marvelContent) {
     const title = (release.title || release.name || '').trim();
     const releaseYear = (release.release_date || release.first_air_date || 'TBD').split('-')[0];
 
@@ -80,27 +130,32 @@ async function updateData() {
     const imdbId = details.external_ids?.imdb_id || `tmdb_${release.id}`;
     const poster = details.poster_path ? `https://image.tmdb.org/t/p/w500${details.poster_path}` : null;
 
-    // Busca informações adicionais no OMDb
-    const omdbDetails = await getOmdbDetails(imdbId);
-    const ratings = omdbDetails?.Ratings || [];
+    const isAnimation = details.genres?.some(g => g.name.toLowerCase() === 'animation');
+    const type = isAnimation ? 'animation' : release.type === 'tv' ? 'series' : 'movie';
 
     updatedData.push({
       title,
-      type: release.type === 'tv' ? 'series' : 'movie',
+      type,
       imdbId,
       id: `marvel_${imdbId}`,
       releaseYear,
       poster,
-      ratings
     });
-
-    console.log(`🆕 Adicionado novo: ${title} (${release.type})`);
   }
 
-  // Salva os dados atualizados no arquivo Data.js
-  const fileContent = `module.exports = ${JSON.stringify(updatedData, null, 2)};\n`;
+  const deduplicated = deduplicateByTitle(updatedData);
+  const previousIds = new Set(previousData.map(i => i.id));
+  const newItems = deduplicated.filter(i => !previousIds.has(i.id));
+
+  if (newItems.length === 0) {
+    console.log('✅ Nenhum novo conteúdo encontrado. Data.js não foi alterado.');
+    return;
+  }
+
+  const finalData = [...previousData, ...newItems];
+  const fileContent = `module.exports = ${JSON.stringify(finalData, null, 2)};\n`;
   fs.writeFileSync(path.join(__dirname, '../Data/Data.js'), fileContent, 'utf8');
-  console.log('✅ Data.js atualizado com sucesso!');
+  console.log(`✅ ${newItems.length} novos conteúdos adicionados ao Data.js`);
 }
 
 updateData().catch(err => {
