@@ -1,10 +1,6 @@
 const { addonBuilder, serveHTTP } = require('stremio-addon-sdk');
 const axios = require('axios');
 const chronologicalData = require('../Data/chronologicalData');
-const moviesData = require('../Data/moviesData');
-const seriesData = require('../Data/seriesData');
-const animationsData = require('../Data/animationsData');
-const xmenData = require('../Data/xmenData');
 const { tmdbKey, omdbKey, port } = require('./config');
 
 const express = require('express');
