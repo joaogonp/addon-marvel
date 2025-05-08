@@ -325,6 +325,6 @@ module.exports = [
     "imdbId": "tt23112594",
     "id": "marvel_tt23112594",
     "releaseYear": "TBD",
-    "poster": null
+    "poster": "https://raw.githubusercontent.com/joaogonp/addon-marvel-test/main/assets/comingsoon.png"
   },
 ];
