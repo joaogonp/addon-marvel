@@ -1,10 +1,10 @@
 const { addonBuilder, serveHTTP } = require('stremio-addon-sdk');
 const axios = require('axios');
-const chronologicalData = require('../Data/chronologicalData'); // Dados em ordem cronológica
-const releaseData = require('../Data/releaseData'); // Dados em ordem de lançamento
-const moviesData = require('../Data/moviesData'); // Dados dos Filmes
-const seriesData = require('../Data/seriesData'); // Dados das Series
-const animationsData = require('../Data/animationsData'); // Dados das animações
+const chronologicalData = require('../Data/chronologicalData');
+const moviesData = require('../Data/moviesData');
+const seriesData = require('../Data/seriesData');
+const animationsData = require('../Data/animationsData');
+const xmenData = require('../Data/xmenData');
 const { tmdbKey, omdbKey, port } = require('./config');
 
 const express = require('express');
@@ -13,18 +13,22 @@ const compression = require('compression');
 const app = express();
 app.use(compression());
 
-// Middleware para definir cache de 3 semanas
+// Health check para o Render
+app.get('/health', (req, res) => {
+  res.status(200).send('OK');
+});
+
+// Middleware para definir cache de 1 mês
 app.use((req, res, next) => {
-  res.setHeader('Cache-Control', 'public, max-age=1814400'); // 3 semanas
+  res.setHeader('Cache-Control', 'public, max-age=2629743'); // 1 mês
   next();
 });
 
-
 // Inicialização do add-on
-console.log('Starting Marvel Addon v1.0.1...');
+console.log('Starting Marvel Addon v1.1.0...');
 const builder = new addonBuilder(require('./manifest.json'));
 
-// Variável para armazenar o cache separado por ID
+// Variável para armazenar o cache separado por ID e genre
 let cachedCatalog = {};
 
 // Função para buscar dados adicionais (OMDb e TMDb)
@@ -48,16 +52,15 @@ async function fetchAdditionalData(item) {
     const omdbData = omdbRes.data || {};
     const tmdbData = tmdbRes.data?.results?.[0] || {};
 
-    // Priorizar pôster do item, depois OMDB, TMDB, e fallback
-    let poster = item.poster || null;
-    if (!poster && omdbData.Poster && omdbData.Poster !== 'N/A') {
-      poster = omdbData.Poster;
-    }
-    if (!poster && tmdbData.poster_path) {
+    let poster = null;
+    if (item.poster) {
+      poster = item.poster;
+    } else if (tmdbData.poster_path) {
       poster = `https://image.tmdb.org/t/p/w500${tmdbData.poster_path}`;
-    }
-    if (!poster) {
-      poster = `https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg`;
+    } else if (omdbData.Poster && omdbData.Poster !== 'N/A') {
+      poster = omdbData.Poster;
+    } else {
+      poster = 'https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg';
       console.warn(`No poster found for ${item.title} (${item.imdbId}), using fallback.`);
     }
 
@@ -67,62 +70,104 @@ async function fetchAdditionalData(item) {
       name: item.type === 'series' ? item.title.replace(/ Season \d+/, '') : item.title,
       poster: poster,
       description: tmdbData.overview || omdbData.Plot || 'No description available',
-      releaseInfo: item.releaseYear,
+      releaseInfo: item.releaseInfo || item.releaseYear,
       imdbRating: omdbData.imdbRating || 'N/A',
       genres: tmdbData.genres ? tmdbData.genres.map(g => g.name) : ['Action', 'Adventure']
     };
   } catch (err) {
     console.error(`Error processing ${item.title} (${item.imdbId}): ${err.message}`);
-    return null; // Retorna null para itens com erro, será filtrado depois
+    return null;
   }
 }
 
-// Definição do catálogo
-builder.defineCatalogHandler(async ({ type, id }) => {
-  console.log(`Catalog requested - Type: ${type}, ID: ${id}`);
+// Função para ordenar dados por data de lançamento, tratando "TBA"
+function sortByReleaseDate(data, order = 'desc') {
+  return [...data].sort((a, b) => {
+    const dateA = a.releaseInfo || a.releaseYear;
+    const dateB = b.releaseInfo || b.releaseYear;
+    const isTBA_A = dateA === 'TBA' || dateA === null || isNaN(new Date(dateA).getTime());
+    const isTBA_B = dateB === 'TBA' || dateB === null || isNaN(new Date(dateB).getTime());
 
-  // Retorna o catálogo em cache, se disponível
-  if (cachedCatalog[id]) {
-    console.log(`✅ Retornando catálogo do cache para ID: ${id}`);
-    return cachedCatalog[id];
+    if (isTBA_A && isTBA_B) return 0; // Mantém a ordem original se ambos forem TBA
+    if (isTBA_A) return order === 'asc' ? 1 : -1; // TBA no final em ascendente, início em descendente
+    if (isTBA_B) return order === 'asc' ? -1 : 1;
+
+    const timeA = new Date(dateA).getTime();
+    const timeB = new Date(dateB).getTime();
+    return order === 'asc' ? timeA - timeB : timeB - timeA;
+  });
+}
+
+// Definição do catálogo
+builder.defineCatalogHandler(async ({ type, id, extra }) => {
+  console.log(`Catalog requested - Type: ${type}, ID: ${id}, Extra: ${JSON.stringify(extra)}`);
+
+  const cacheKey = id + (extra?.genre ? `_${extra.genre}` : '');
+  if (cachedCatalog[cacheKey]) {
+    console.log(`✅ Retornando catálogo do cache para ID: ${cacheKey}`);
+    return cachedCatalog[cacheKey];
   }
 
   let dataSource;
-  if (id === 'marvel-mcu') {
-    dataSource = chronologicalData; // Usar dados em ordem cronológica
-  } else if (id === 'release-order') {
-    dataSource = releaseData; // Usar dados na ordem de lançamento
-  } else if (id === 'movies') {
-    dataSource = moviesData; // Usar dados de filmes
-  } else if (id === 'series') {
-    dataSource = seriesData; // Usar dados de séries
-  } else if (id === 'animations') {
-    dataSource = animationsData; // Usar dados de animações
-  }  else {
-    return Promise.resolve({ metas: [] }); // Retorna vazio se o ID não for reconhecido
+  if (type === 'Marvel' && id === 'marvel-mcu') {
+    dataSource = chronologicalData; // Usa a ordem original para o "Top"
+    if (extra?.genre === 'old') {
+      dataSource = sortByReleaseDate([...dataSource], 'asc');
+      console.log('Chronologically Order - Applying sort: asc (old to new)');
+    } else if (extra?.genre === 'new') {
+      dataSource = sortByReleaseDate([...dataSource], 'desc');
+      console.log('Chronologically Order - Applying sort: desc (new to old)');
+    } else {
+      console.log('Chronologically Order - Using default chronological order from data for Top');
+    }
+  } else if (type === 'Marvel' && id === 'xmen') {
+    dataSource = xmenData; // Usa a ordem original de xmenData
+    console.log('X-Men - Using default order from xmenData');
+  } else if (type === 'Marvel' && id === 'movies') {
+    dataSource = moviesData;
+    if (extra?.genre === 'new') {
+      dataSource = sortByReleaseDate([...dataSource], 'desc');
+      console.log('Movies - Applying sort: desc (new to old)');
+    } else {
+      console.log('Movies - Using default order from data for Top');
+    }
+  } else if (type === 'Marvel' && id === 'series') {
+    dataSource = seriesData; // Usa a ordem original (já Old to New)
+    if (extra?.genre === 'new') {
+      dataSource = sortByReleaseDate([...dataSource], 'desc');
+      console.log('Series - Applying sort: desc (new to old)');
+    } else {
+      console.log('Series - Using default order from seriesData for Top (already Old to New)');
+    }
+  } else if (type === 'Marvel' && id === 'animations') {
+    dataSource = animationsData; // Usa a ordem padrão para o "Top"
+    if (extra?.genre === 'old') {
+      dataSource = sortByReleaseDate([...dataSource], 'asc');
+      console.log('Animations - Applying sort: asc (old to new)');
+    } else if (extra?.genre === 'new') {
+      dataSource = sortByReleaseDate([...dataSource], 'desc');
+      console.log('Animations - Applying sort: desc (new to old)');
+    } else {
+      console.log('Animations - Using default order from animationsData for Top');
+    }
+  } else {
+    return Promise.resolve({ metas: [] });
   }
 
-  // Processa os dados para gerar o catálogo
-  const metas = await Promise.all(
-    dataSource.map(fetchAdditionalData)
-  );
-
-  // Filtrar itens nulos (que falharam)
+  const metas = await Promise.all(dataSource.map(fetchAdditionalData));
   const validMetas = metas.filter(item => item !== null);
-  console.log(`✅ Catálogo gerado com ${validMetas.length} itens para ID: ${id}`);
+  console.log(`✅ Catálogo gerado com ${validMetas.length} itens for ID: ${id}, Genre: ${extra?.genre || 'default'}`);
 
-  // Armazena o catálogo em cache por ID
-  cachedCatalog[id] = { metas: validMetas };
-
-  return cachedCatalog[id];
+  cachedCatalog[cacheKey] = { metas: validMetas };
+  return cachedCatalog[cacheKey];
 });
 
 // Configuração do servidor
 console.log('Initializing addon interface...');
 const addonInterface = builder.getInterface();
 
-console.log('Starting server...');
+console.log(`Starting server on port ${port}...`);
 serveHTTP(addonInterface, {
   port,
-  beforeMiddleware: app // aplica compression e cache
+  beforeMiddleware: app
 });
