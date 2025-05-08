@@ -1,35 +1,96 @@
 {
   "id": "com.joaogonp.marveladdon",
-  "name": "Marvel Cinematic Universe",
-  "description": "Watch the entire Marvel Cinematic Universe (MCU) in chronological order, release date, or explore by movies, series, and animations!",
-  "version": "1.0.2",
+  "name": "Marvel Teste",
+  "description": "Watch the entire Marvel catalog! MCU and X-Men (chronologically organized), Movies, Series, and Animations!",
+  "version": "1.1.0",
   "logo": "https://raw.githubusercontent.com/joaogonp/addon-marvel/main/assets/icon.png",
   "background": "https://raw.githubusercontent.com/joaogonp/addon-marvel/main/assets/background.jpg",
   "catalogs": [
     {
       "type": "Marvel",
       "id": "marvel-mcu",
-      "name": "Chronologically Order"
+      "name": "MCU Chronologically Order",
+      "extra": [
+        {
+          "name": "genre",
+          "options": ["new", "old"],
+          "isRequired": false,
+          "default": null,
+          "optionLabels": {
+            "new": "New to Old",
+            "old": "Old to New"
+          }
+        }
+      ],
+      "behaviorHints": {
+        "orderHint": 1
+      }
     },
     {
       "type": "Marvel",
-      "id": "release-order",
-      "name": "Release Order"
+      "id": "xmen",
+      "name": "X-Men",
+      "behaviorHints": {
+        "orderHint": 2
+      }
     },
     {
       "type": "Marvel",
       "id": "movies",
-      "name": "Movies"
+      "name": "Movies",
+      "extra": [
+        {
+          "name": "genre",
+          "options": ["new"],
+          "isRequired": false,
+          "default": null,
+          "optionLabels": {
+            "new": "New to Old"
+          }
+        }
+      ],
+      "behaviorHints": {
+        "orderHint": 3
+      }
     },
     {
       "type": "Marvel",
       "id": "series",
-      "name": "Series"
+      "name": "Series",
+      "extra": [
+        {
+          "name": "genre",
+          "options": ["new"],
+          "isRequired": false,
+          "default": null,
+          "optionLabels": {
+            "new": "New to Old"
+          }
+        }
+      ],
+      "behaviorHints": {
+        "orderHint": 4
+      }
     },
     {
       "type": "Marvel",
       "id": "animations",
-      "name": "Animations"
+      "name": "Animations",
+      "extra": [
+        {
+          "name": "genre",
+          "options": ["new", "old"],
+          "isRequired": false,
+          "default": "old",
+          "optionLabels": {
+            "new": "New to Old",
+            "old": "Old to New"
+          }
+        }
+      ],
+      "behaviorHints": {
+        "orderHint": 5
+      }
     }
   ],
   "resources": ["catalog"],
@@ -39,7 +100,6 @@
     "configurable": false
   },
   "contactEmail": "jpnapsp@gmail.com",
-
   "stremioAddonsConfig": {
     "issuer": "https://stremio-addons.net",
     "signature": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..zTaTTCcviqQPiIvU4QDfCQ.wSlk8AoM4p2nvlvoQJEoLRRx5_Msnu37O9bAsgwhJTZYu4uXd7Cve9GaVXdnwZ4nAeNSsRSgp51mofhf0EVQYwx7jGxh4FEvs8MMuWeHQ9alNsqVuy3-Mc459B9myIT-.R_1iaQbNExj4loQJlyWYtA"
