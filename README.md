@@ -1,6 +1,6 @@
-# 📺 Marvel Cinematic Universe Add-on for Stremio
+# 📺 Marvel  Addon for Stremio
 
-Watch the entire Marvel Cinematic Universe (MCU) in **chronological order**, **release date**, or explore by **movies**, **series**, and **animations**. This add-on includes all canon MCU content — even announced titles — and stays up-to-date automatically!
+Watch the entire Marvel Catalog **chronological order**, **release date**, or explore by **movies**, **series**, and **animations**. This add-on includes all canon MCU content — even announced titles — and stays up-to-date automatically!
 
 > From *Captain America: The First Avenger* to *The Fantastic Four: First Steps* — and beyond.
 
