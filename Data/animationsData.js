@@ -506,8 +506,8 @@ module.exports = [
   {
     "title": "Spider-Man: Across the Spider-Verse",
     "type": "movie",
-    "imdbId": "tt8469492",
-    "id": "marvel_tt8469492",
+    "imdbId": "tt9362722", 
+    "id": "marvel_tt9362722",
     "releaseYear": "2023",
     "poster": "https://image.tmdb.org/t/p/original/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg"
   },
