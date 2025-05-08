@@ -18,7 +18,7 @@ app.get('/health', (req, res) => {
   res.status(200).send('OK');
 });
 
-// Middleware para definir cache de 1 mês
+// Middleware para definir cache
 app.use((req, res, next) => {
   res.setHeader('Cache-Control', 'public, max-age=2629743'); // 1 mês
   next();
