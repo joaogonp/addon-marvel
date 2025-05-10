@@ -64,6 +64,14 @@ module.exports = [
     "id": "marvel_tt0848228"
   },
   {
+    "title": "Thor: The Dark World",
+    "type": "movie",
+    "imdbId": "tt1981115",
+    "releaseYear": "2013",
+    "poster": "https://image.tmdb.org/t/p/w500/wD6g4EcmR6R3VNbuBmNOVq2qWrM.jpg",
+    "id": "marvel_tt1981115"
+  },
+  {
     "title": "Iron Man 3",
     "type": "movie",
     "imdbId": "tt1300854",
@@ -78,14 +86,6 @@ module.exports = [
     "id": "marvel_tt2364582",
     "releaseYear": "2013",
     "poster": "https://image.tmdb.org/t/p/w500/gHUCCMy1vvj58tzE3dZqeC9SXus.jpg"
-  },
-  {
-    "title": "Thor: The Dark World",
-    "type": "movie",
-    "imdbId": "tt1981115",
-    "releaseYear": "2013",
-    "poster": "https://image.tmdb.org/t/p/w500/wD6g4EcmR6R3VNbuBmNOVq2qWrM.jpg",
-    "id": "marvel_tt1981115"
   },
   {
     "title": "Captain America: The Winter Soldier",
