@@ -501,7 +501,7 @@ module.exports = [
       "imdbId": "tt13623126",
       "id": "marvel_tt13623126",
       "releaseYear": "2025",
-      "poster": "https://image.tmdb.org/t/p/w500/ha1kackPwP1BLtyibzuv5hABiDk.jpg",
+      "poster": "https://image.tmdb.org/t/p/original/UbbIyltRQbbnVSnbVqTBjmkSRC.jpg",
       "ratings": []
     },
   {
