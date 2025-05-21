@@ -516,7 +516,9 @@ module.exports = [
     "title": "Wonder Man",
     "type": "series",
     "imdbId": "tt21066182",
-    "releaseYear": "2025"
+    "releaseYear": "2025",
+    "poster": "https://image.tmdb.org/t/p/original/8uQZNewJkIsa5Yx1cWFgqBOTkQD.jpg",
+    "id": "marvel_tt21066182"
   },
   {
     "title": "Spider-Man: Brand New Day",
