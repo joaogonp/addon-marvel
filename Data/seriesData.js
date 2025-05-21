@@ -317,7 +317,7 @@ module.exports = [
     "imdbId": "tt21066182",
     "id": "marvel_tt21066182",
     "releaseYear": "2025",
-    "poster": "https://image.tmdb.org/t/p/w500/8uQZNewJkIsa5Yx1cWFgqBOTkQD.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/8uQZNewJkIsa5Yx1cWFgqBOTkQD.jpg"
   },
   {
     "title": "Untitled Vision Series",
