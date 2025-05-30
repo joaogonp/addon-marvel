@@ -4,12 +4,12 @@ const cors = require('cors');
 const compression = require('compression');
 const axios = require('axios');
 const pLimit = require('p-limit');
-const LRU = require('lru-cache');
-const chronologicalData = require('../Data/chronologicalData');
-const xmenData = require('../Data/xmenData');
-const moviesData = require('../Data/moviesData');
-const seriesData = require('../Data/seriesData');
-const animationsData = require('../Data/animationsData');
+const { LRUCache } = require('lru-cache');
+const chronologicalData = require('./Data/chronologicalData');
+const xmenData = require('./Data/xmenData');
+const moviesData = require('./Data/moviesData');
+const seriesData = require('./Data/seriesData');
+const animationsData = require('./Data/animationsData');
 
 require('dotenv').config();
 
@@ -64,7 +64,7 @@ const cacheOptions = {
     maxSize: 10000000, // ~10 MB max size
     sizeCalculation: (value) => JSON.stringify(value).length
 };
-const cachedCatalog = new LRU(cacheOptions);
+const cachedCatalog = new LRUCache(cacheOptions);
 
 // Monitor memory usage every minute
 setInterval(() => {
