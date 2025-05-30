@@ -3,6 +3,8 @@ const path = require('path');
 const cors = require('cors');
 const compression = require('compression');
 const axios = require('axios');
+const pLimit = require('p-limit');
+const LRU = require('lru-cache');
 const chronologicalData = require('../Data/chronologicalData');
 const xmenData = require('../Data/xmenData');
 const moviesData = require('../Data/moviesData');
@@ -11,18 +13,17 @@ const animationsData = require('../Data/animationsData');
 
 require('dotenv').config();
 
-// Get API keys and port
-let tmdbKey, omdbKey, port;
+// Get API key and port
+let tmdbKey, port;
 try {
-    ({ tmdbKey, omdbKey, port } = require('./config'));
+    ({ tmdbKey, port } = require('./config'));
 } catch (error) {
     console.error('Error loading config.js. Falling back to environment variables.', error);
     port = process.env.PORT || 7000;
     tmdbKey = process.env.TMDB_API_KEY;
-    omdbKey = process.env.OMDB_API_KEY;
     
-    if (!tmdbKey || !omdbKey) {
-        console.error('CRITICAL: API keys (TMDB_API_KEY, OMDB_API_KEY) are missing. Addon cannot fetch metadata.');
+    if (!tmdbKey) {
+        console.error('CRITICAL: TMDB_API_KEY is missing. Addon cannot fetch metadata.');
     }
 }
 
@@ -35,7 +36,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Cache for 3 weeks
+// Cache for 3 weeks (client-side)
 app.use((req, res, next) => {
     res.setHeader('Cache-Control', 'public, max-age=1814400');
     next();
@@ -56,10 +57,20 @@ app.get('/configure', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'configure.html'));
 });
 
-// Cache storage per ID
-let cachedCatalog = {};
-// Clear cache on startup to ensure fresh data (remove after testing)
-cachedCatalog = {};
+// Cache storage with LRU for 2 months
+const cacheOptions = {
+    max: 10, // Store up to 10 catalogs
+    ttl: 1000 * 60 * 60 * 24 * 60, // 2 months TTL (5,184,000,000 ms)
+    maxSize: 10000000, // ~10 MB max size
+    sizeCalculation: (value) => JSON.stringify(value).length
+};
+const cachedCatalog = new LRU(cacheOptions);
+
+// Monitor memory usage every minute
+setInterval(() => {
+    const used = process.memoryUsage();
+    console.log(`Memory usage: RSS=${(used.rss / 1024 / 1024).toFixed(2)} MB, HeapTotal=${(used.heapTotal / 1024 / 1024).toFixed(2)} MB, HeapUsed=${(used.heapUsed / 1024 / 1024).toFixed(2)} MB`);
+}, 1000 * 60);
 
 // Helper function to fetch TMDb details
 async function getTmdbDetails(id, type) {
@@ -110,15 +121,18 @@ async function replaceRpdbPosters(rpdbKey, metas) {
     }
 
     console.log(`Replacing posters with RPDB for ${metas.length} items`);
+    const limit = pLimit(5); // Limit to 5 concurrent RPDB checks
     const updatedMetas = await Promise.all(metas.map(async meta => {
-        const imdbId = meta.id.startsWith('tt') ? meta.id : null;
-        if (imdbId && await isValidRpdbPoster(rpdbKey, imdbId)) {
-            const rpdbPoster = `https://api.ratingposterdb.com/${rpdbKey}/imdb/poster-default/${imdbId}.jpg`;
-            console.log(`Using RPDB poster for ${meta.name} (${imdbId}): ${rpdbPoster}`);
-            return { ...meta, poster: rpdbPoster };
-        }
-        console.log(`Keeping original poster for ${meta.name} (${meta.id}): ${meta.poster}`);
-        return meta;
+        return limit(async () => {
+            const imdbId = meta.id.startsWith('tt') ? meta.id : null;
+            if (imdbId && await isValidRpdbPoster(rpdbKey, imdbId)) {
+                const rpdbPoster = `https://api.ratingposterdb.com/${rpdbKey}/imdb/poster-default/${imdbId}.jpg`;
+                console.log(`Using RPDB poster for ${meta.name} (${imdbId}): ${rpdbPoster}`);
+                return { ...meta, poster: rpdbPoster };
+            }
+            console.log(`Keeping original poster for ${meta.name} (${meta.id}): ${meta.poster}`);
+            return meta;
+        });
     }));
 
     return updatedMetas;
@@ -154,26 +168,17 @@ async function fetchAdditionalData(item) {
         genres: item.genres ? item.genres.map(g => g.name) : ['Action', 'Adventure']
     };
 
-    // Check if API keys are available
-    if (!tmdbKey || (!omdbKey && isImdb)) {
-        console.warn(`Skipping metadata fetch for ${item.title} (${lookupId}) due to missing API keys.`);
+    // Check if TMDb API key is available
+    if (!tmdbKey) {
+        console.warn(`Skipping metadata fetch for ${item.title} (${lookupId}) due to missing TMDb API key.`);
         console.log('   > Returning fallback metadata:', { ...fallbackMeta, description: fallbackMeta.description.substring(0, 50) + '...' });
         return fallbackMeta;
     }
 
-    let omdbData = {};
     let tmdbData = {};
     let tmdbImagesData = {};
 
     try {
-        // OMDb call only if we have a real IMDb ID
-        const omdbPromise = isImdb
-            ? axios.get(`http://www.omdbapi.com/?i=${lookupId}&apikey=${omdbKey}`).catch((err) => {
-                  console.error(`OMDb error for ${lookupId}: ${err.message}`);
-                  return {};
-              })
-            : Promise.resolve({});
-
         // TMDb search/details call
         let effectiveTmdbId = item.tmdbId || (lookupId.startsWith('tmdb_') ? lookupId.split('_')[1] : null);
         let tmdbDetailsPromise;
@@ -210,17 +215,15 @@ async function fetchAdditionalData(item) {
         });
 
         console.log(`Fetching data for ${item.title} (${lookupId})...`);
-        const [omdbRes, tmdbDetailsResult, tmdbImagesRes] = await Promise.all([
-            omdbPromise,
+        const [tmdbDetailsResult, tmdbImagesRes] = await Promise.all([
             tmdbDetailsPromise,
             tmdbImagesPromise
         ]);
 
-        omdbData = omdbRes.data || {};
         tmdbData = tmdbDetailsResult.data || {};
         tmdbImagesData = tmdbImagesRes.data || {};
 
-        // Poster priority: local -> TMDb -> OMDb -> fallback
+        // Poster priority: local -> TMDb -> fallback
         let poster = null;
         if (item.poster && isValidUrl(item.poster)) {
             poster = item.poster;
@@ -228,9 +231,6 @@ async function fetchAdditionalData(item) {
         } else if (tmdbData.poster_path && isValidUrl(`https://image.tmdb.org/t/p/w500${tmdbData.poster_path}`)) {
             poster = `https://image.tmdb.org/t/p/w500${tmdbData.poster_path}`;
             console.log(`Using TMDb poster for ${item.title}: ${poster}`);
-        } else if (omdbData.Poster && isValidUrl(omdbData.Poster)) {
-            poster = omdbData.Poster;
-            console.log(`Using OMDb poster for ${item.title}: ${poster}`);
         } else {
             poster = 'https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg';
             console.warn(`No valid poster found for ${item.title} (${lookupId}), using fallback: ${poster}`);
@@ -245,7 +245,7 @@ async function fetchAdditionalData(item) {
             }
         }
 
-        const description = item.overview || tmdbData.overview || omdbData.Plot || 'No description available.';
+        const description = item.overview || tmdbData.overview || 'No description available.';
 
         const meta = {
             id: lookupId,
@@ -255,7 +255,7 @@ async function fetchAdditionalData(item) {
             poster: poster,
             description: description,
             releaseInfo: item.releaseYear || (tmdbData.release_date ? tmdbData.release_date.split('-')[0] : (tmdbData.first_air_date ? tmdbData.first_air_date.split('-')[0] : 'N/A')),
-            imdbRating: omdbData.imdbRating || 'N/A',
+            imdbRating: tmdbData.vote_average ? tmdbData.vote_average.toFixed(1) : 'N/A',
             genres: tmdbData.genres ? tmdbData.genres.map(g => g.name) : (item.genres ? item.genres.map(g => g.name) : ['Action', 'Adventure'])
         };
 
@@ -265,69 +265,6 @@ async function fetchAdditionalData(item) {
         console.error(`Error processing ${item.title} (${lookupId}): ${err.message}`);
         console.log('   > Returning fallback metadata:', { ...fallbackMeta, description: fallbackMeta.description.substring(0, 50) + '...' });
         return fallbackMeta;
-    }
-}
-
-// Function to validate and extract year from date string
-function extractYear(dateStr) {
-    if (!dateStr || dateStr === 'TBD' || dateStr === 'N/A' || dateStr === '') {
-        console.log(`Treating as TBD: ${JSON.stringify(dateStr)}`);
-        return NaN;
-    }
-    const year = parseInt(dateStr, 10);
-    if (!isNaN(year) && String(year).length === 4) {
-        return year;
-    }
-    console.warn(`Invalid date format, treating as TBD: ${JSON.stringify(dateStr)}`);
-    return NaN;
-}
-
-// Function to sort data by release date
-function sortByReleaseDate(data, order = 'desc') {
-    console.log(`\n--- Sorting data (${data.length} items) with order: ${order} ---`);
-    try {
-        if (!Array.isArray(data)) {
-            console.error('Data is not an array:', JSON.stringify(data));
-            return data;
-        }
-
-        // Log all items
-        console.log('Items before processing:');
-        data.forEach(item => {
-            console.log(`  ${item?.title || 'Unknown'} (releaseYear: ${JSON.stringify(item?.releaseYear)}, id: ${item?.imdbId || item?.id || 'N/A'})`);
-        });
-
-        // No filtering, process all items
-        console.log(`Proceeding with ${data.length} items (no filtering)`);
-
-        console.log('Items before sorting:');
-        data.forEach(item => {
-            console.log(`  ${item?.title || 'Unknown'} (releaseYear: ${JSON.stringify(item?.releaseYear)})`);
-        });
-
-        const sortedData = [...data].sort((a, b) => {
-            const yearA = extractYear(a?.releaseYear);
-            const yearB = extractYear(b?.releaseYear);
-
-            console.log(`Comparing ${a?.title || 'Unknown'} (${isNaN(yearA) ? 'TBD/Invalid' : yearA}) vs ${b?.title || 'Unknown'} (${isNaN(yearB) ? 'TBD/Invalid' : yearB})`);
-
-            if (isNaN(yearA) && isNaN(yearB)) return 0;
-            if (isNaN(yearA)) return order === 'desc' ? 1 : -1;
-            if (isNaN(yearB)) return order === 'desc' ? -1 : 1;
-            return order === 'desc' ? yearB - yearA : yearA - yearB;
-        });
-
-        console.log('Items after sorting:');
-        sortedData.forEach(item => {
-            const year = extractYear(item?.releaseYear);
-            console.log(`  ${item?.title || 'Unknown'} (${isNaN(year) ? 'TBD/Invalid' : year})`);
-        });
-
-        return sortedData;
-    } catch (error) {
-        console.error(`Error sorting data: ${error.message}\nStack: ${error.stack}`);
-        console.log('Returning original data as fallback');
-        return data;
     }
 }
 
@@ -545,15 +482,14 @@ app.get('/api/catalogs', (req, res) => {
 // RPDB-based catalog endpoint
 app.get('/rpdb/:rpdbKey/catalog/:type/:id.json', async (req, res) => {
     const { rpdbKey, type, id } = req.params;
-    const genre = req.query.genre;
-    console.log(`\n--- RPDB-based catalog requested - Type: ${type}, ID: ${id}, RPDB Key: ${rpdbKey.substring(0, 4)}..., Genre: ${genre || 'default'} ---`);
+    console.log(`\n--- RPDB-based catalog requested - Type: ${type}, ID: ${id}, RPDB Key: ${rpdbKey.substring(0, 4)}... ---`);
 
     try {
         console.log('Checking cache...');
-        const cacheKey = `rpdb-${id}${genre ? `_${genre}` : ''}`;
-        if (cachedCatalog[cacheKey]) {
+        const cacheKey = `rpdb-${id}`;
+        if (cachedCatalog.has(cacheKey)) {
             console.log(`Returning cached catalog for ID: ${cacheKey} with RPDB posters`);
-            const metasWithRpdbPosters = await replaceRpdbPosters(rpdbKey, cachedCatalog[cacheKey].metas);
+            const metasWithRpdbPosters = await replaceRpdbPosters(rpdbKey, cachedCatalog.get(cacheKey).metas);
             console.log(`Final order for ${id}:`, metasWithRpdbPosters.map(m => `${m.name} (${m.releaseInfo})`).join(', '));
             console.log(`Returning response: { metas: ${metasWithRpdbPosters.length} items }`);
             return res.json({ metas: metasWithRpdbPosters });
@@ -598,28 +534,11 @@ app.get('/rpdb/:rpdbKey/catalog/:type/:id.json', async (req, res) => {
 
         console.log(`Loaded ${dataSource.length} items for catalog: ${dataSourceName}`);
 
-        console.log('Sorting data...');
-        let sortedData = [...dataSource];
-        if (genre === 'old') {
-            console.log(`${dataSourceName} - Applying sort: asc (old to new)`);
-            sortedData = sortByReleaseDate(sortedData, 'asc');
-        } else if (genre === 'new') {
-            console.log(`${dataSourceName} - Applying sort: desc (new to old)`);
-            sortedData = sortByReleaseDate(sortedData, 'desc');
-        } else {
-            console.log(`${dataSourceName} - Using default data order`);
-        }
-
-        if (!sortedData.length) {
-            console.warn(`No data after sorting for ${dataSourceName}, using fallback meta`);
-            console.log(`Returning response: { metas: [Iron Man] }`);
-            return res.json({ metas: [fallbackMeta] });
-        }
-
-        console.log(`Generating catalog for ${dataSourceName} with ${sortedData.length} items...`);
+        console.log(`Generating catalog for ${dataSourceName} with ${dataSource.length} items...`);
+        const limit = pLimit(5); // Limit to 5 concurrent TMDb calls
         const metas = await Promise.all(
-            sortedData.map(async (item, index) => {
-                console.log(`Processing item ${index + 1}/${sortedData.length}: ${item.title || 'Unknown'}`);
+            dataSource.map((item, index) => limit(async () => {
+                console.log(`Processing item ${index + 1}/${dataSource.length}: ${item.title || 'Unknown'}`);
                 try {
                     const meta = await fetchAdditionalData(item);
                     if (!meta) {
@@ -630,11 +549,11 @@ app.get('/rpdb/:rpdbKey/catalog/:type/:id.json', async (req, res) => {
                     console.error(`Error fetching data for item ${item.title || 'Unknown'}: ${error.message}`);
                     return null;
                 }
-            })
+            }))
         );
 
         const validMetas = metas.filter(item => item !== null);
-        console.log(`Catalog generated with ${validMetas.length} valid items for ID: ${id}, Genre: ${genre || 'default'}`);
+        console.log(`Catalog generated with ${validMetas.length} valid items for ID: ${id}`);
 
         if (!validMetas.length) {
             console.warn(`No valid metadata generated for ${dataSourceName}, using fallback meta`);
@@ -642,7 +561,8 @@ app.get('/rpdb/:rpdbKey/catalog/:type/:id.json', async (req, res) => {
             return res.json({ metas: [fallbackMeta] });
         }
 
-        cachedCatalog[cacheKey] = { metas: validMetas };
+        cachedCatalog.set(cacheKey, { metas: validMetas });
+        console.log(`Cached catalog ${cacheKey} with ${validMetas.length} items for 2 months`);
 
         console.log('Applying RPDB posters...');
         const metasWithRpdbPosters = await replaceRpdbPosters(rpdbKey, validMetas);
@@ -650,7 +570,7 @@ app.get('/rpdb/:rpdbKey/catalog/:type/:id.json', async (req, res) => {
         console.log(`Returning response: { metas: ${metasWithRpdbPosters.length} items }`);
         return res.json({ metas: metasWithRpdbPosters });
     } catch (error) {
-        console.error(`Error generating RPDB-based catalog for ID ${id}, Genre: ${genre || 'default'}: ${error.message}\nStack: ${error.stack}`);
+        console.error(`Error generating RPDB-based catalog for ID ${id}: ${error.message}\nStack: ${error.stack}`);
         console.log(`Returning response: { metas: [Iron Man] }`);
         return res.json({ metas: [fallbackMeta] });
     }
@@ -659,8 +579,7 @@ app.get('/rpdb/:rpdbKey/catalog/:type/:id.json', async (req, res) => {
 // Custom catalog endpoint
 app.get('/catalog/:catalogsParam/catalog/:type/:id.json', async (req, res) => {
     const { catalogsParam, type, id } = req.params;
-    const genre = req.query.genre;
-    console.log(`\n--- Custom catalog requested - Catalogs: ${catalogsParam}, Type: ${type}, ID: ${id}, Genre: ${genre || 'default'} ---`);
+    console.log(`\n--- Custom catalog requested - Catalogs: ${catalogsParam}, Type: ${type}, ID: ${id} ---`);
 
     try {
         console.log('Parsing catalogsParam...');
@@ -675,10 +594,10 @@ app.get('/catalog/:catalogsParam/catalog/:type/:id.json', async (req, res) => {
         }
 
         console.log('Checking cache...');
-        const cacheKey = `custom-${id}-${catalogsParam}${genre ? `_${genre}` : ''}`;
-        if (cachedCatalog[cacheKey]) {
+        const cacheKey = `custom-${id}-${catalogsParam}`;
+        if (cachedCatalog.has(cacheKey)) {
             console.log(`Returning cached catalog for ID: ${cacheKey}`);
-            const metas = rpdbKey ? await replaceRpdbPosters(rpdbKey, cachedCatalog[cacheKey].metas) : cachedCatalog[cacheKey].metas;
+            const metas = rpdbKey ? await replaceRpdbPosters(rpdbKey, cachedCatalog.get(cacheKey).metas) : cachedCatalog.get(cacheKey).metas;
             console.log(`Final order for ${id}:`, metas.map(m => `${m.name} (${m.releaseInfo})`).join(', '));
             console.log(`Returning response: { metas: ${metas.length} items }`);
             return res.json({ metas });
@@ -723,28 +642,11 @@ app.get('/catalog/:catalogsParam/catalog/:type/:id.json', async (req, res) => {
 
         console.log(`Loaded ${dataSource.length} items for catalog: ${dataSourceName}`);
 
-        console.log('Sorting data...');
-        let sortedData = [...dataSource];
-        if (genre === 'old') {
-            console.log(`${dataSourceName} - Applying sort: asc (old to new)`);
-            sortedData = sortByReleaseDate(sortedData, 'asc');
-        } else if (genre === 'new') {
-            console.log(`${dataSourceName} - Applying sort: desc (new to old)`);
-            sortedData = sortByReleaseDate(sortedData, 'desc');
-        } else {
-            console.log(`${dataSourceName} - Using default data order`);
-        }
-
-        if (!sortedData.length) {
-            console.warn(`No data after sorting for ${dataSourceName}, using fallback meta`);
-            console.log(`Returning response: { metas: [Iron Man] }`);
-            return res.json({ metas: [fallbackMeta] });
-        }
-
-        console.log(`Generating catalog for ${dataSourceName} with ${sortedData.length} items...`);
+        console.log(`Generating catalog for ${dataSourceName} with ${dataSource.length} items...`);
+        const limit = pLimit(5); // Limit to 5 concurrent TMDb calls
         const metas = await Promise.all(
-            sortedData.map(async (item, index) => {
-                console.log(`Processing item ${index + 1}/${sortedData.length}: ${item.title || 'Unknown'}`);
+            dataSource.map((item, index) => limit(async () => {
+                console.log(`Processing item ${index + 1}/${dataSource.length}: ${item.title || 'Unknown'}`);
                 try {
                     const meta = await fetchAdditionalData(item);
                     if (!meta) {
@@ -755,11 +657,11 @@ app.get('/catalog/:catalogsParam/catalog/:type/:id.json', async (req, res) => {
                     console.error(`Error fetching data for item ${item.title || 'Unknown'}: ${error.message}`);
                     return null;
                 }
-            })
+            }))
         );
 
         const validMetas = metas.filter(item => item !== null);
-        console.log(`Catalog generated with ${validMetas.length} valid items for ID: ${id}, Genre: ${genre || 'default'}`);
+        console.log(`Catalog generated with ${validMetas.length} valid items for ID: ${id}`);
 
         if (!validMetas.length) {
             console.warn(`No valid metadata generated for ${dataSourceName}, using fallback meta`);
@@ -767,7 +669,8 @@ app.get('/catalog/:catalogsParam/catalog/:type/:id.json', async (req, res) => {
             return res.json({ metas: [fallbackMeta] });
         }
 
-        cachedCatalog[cacheKey] = { metas: validMetas };
+        cachedCatalog.set(cacheKey, { metas: validMetas });
+        console.log(`Cached catalog ${cacheKey} with ${validMetas.length} items for 2 months`);
 
         console.log('Applying RPDB posters...');
         const finalMetas = rpdbKey ? await replaceRpdbPosters(rpdbKey, validMetas) : validMetas;
@@ -775,7 +678,7 @@ app.get('/catalog/:catalogsParam/catalog/:type/:id.json', async (req, res) => {
         console.log(`Returning response: { metas: ${finalMetas.length} items }`);
         return res.json({ metas: finalMetas });
     } catch (error) {
-        console.error(`Error generating custom catalog for ID ${id}, Genre: ${genre || 'default'}: ${error.message}\nStack: ${error.stack}`);
+        console.error(`Error generating custom catalog for ID ${id}: ${error.message}\nStack: ${error.stack}`);
         console.log(`Returning response: { metas: [Iron Man] }`);
         return res.json({ metas: [fallbackMeta] });
     }
@@ -784,8 +687,7 @@ app.get('/catalog/:catalogsParam/catalog/:type/:id.json', async (req, res) => {
 // Default catalog endpoint
 app.get('/catalog/:type/:id.json', async (req, res) => {
     const { type, id } = req.params;
-    const genre = req.query.genre;
-    console.log(`\n--- Default catalog requested - Type: ${type}, ID: ${id}, Genre: ${genre || 'default'} ---`);
+    console.log(`\n--- Default catalog requested - Type: ${type}, ID: ${id} ---`);
 
     try {
         console.log('Checking RPDB key...');
@@ -800,10 +702,10 @@ app.get('/catalog/:type/:id.json', async (req, res) => {
         }
 
         console.log('Checking cache...');
-        const cacheKey = `default-${id}${genre ? `_${genre}` : ''}`;
-        if (cachedCatalog[cacheKey]) {
+        const cacheKey = `default-${id}`;
+        if (cachedCatalog.has(cacheKey)) {
             console.log(`Returning cached catalog for ID: ${cacheKey}`);
-            const metas = rpdbKey ? await replaceRpdbPosters(rpdbKey, cachedCatalog[cacheKey].metas) : cachedCatalog[cacheKey].metas;
+            const metas = rpdbKey ? await replaceRpdbPosters(rpdbKey, cachedCatalog.get(cacheKey).metas) : cachedCatalog.get(cacheKey).metas;
             console.log(`Final order for ${id}:`, metas.map(m => `${m.name} (${m.releaseInfo})`).join(', '));
             console.log(`Returning response: { metas: ${metas.length} items }`);
             return res.json({ metas });
@@ -848,28 +750,11 @@ app.get('/catalog/:type/:id.json', async (req, res) => {
 
         console.log(`Loaded ${dataSource.length} items for catalog: ${dataSourceName}`);
 
-        console.log('Sorting data...');
-        let sortedData = [...dataSource];
-        if (genre === 'old') {
-            console.log(`${dataSourceName} - Applying sort: asc (old to new)`);
-            sortedData = sortByReleaseDate(sortedData, 'asc');
-        } else if (genre === 'new') {
-            console.log(`${dataSourceName} - Applying sort: desc (new to old)`);
-            sortedData = sortByReleaseDate(sortedData, 'desc');
-        } else {
-            console.log(`${dataSourceName} - Using default data order`);
-        }
-
-        if (!sortedData.length) {
-            console.warn(`No data after sorting for ${dataSourceName}, using fallback meta`);
-            console.log(`Returning response: { metas: [Iron Man] }`);
-            return res.json({ metas: [fallbackMeta] });
-        }
-
-        console.log(`Generating catalog for ${dataSourceName} with ${sortedData.length} items...`);
+        console.log(`Generating catalog for ${dataSourceName} with ${dataSource.length} items...`);
+        const limit = pLimit(5); // Limit to 5 concurrent TMDb calls
         const metas = await Promise.all(
-            sortedData.map(async (item, index) => {
-                console.log(`Processing item ${index + 1}/${sortedData.length}: ${item.title || 'Unknown'}`);
+            dataSource.map((item, index) => limit(async () => {
+                console.log(`Processing item ${index + 1}/${dataSource.length}: ${item.title || 'Unknown'}`);
                 try {
                     const meta = await fetchAdditionalData(item);
                     if (!meta) {
@@ -880,11 +765,11 @@ app.get('/catalog/:type/:id.json', async (req, res) => {
                     console.error(`Error fetching data for item ${item.title || 'Unknown'}: ${error.message}`);
                     return null;
                 }
-            })
+            }))
         );
 
         const validMetas = metas.filter(item => item !== null);
-        console.log(`Catalog generated with ${validMetas.length} valid items for ID: ${id}, Genre: ${genre || 'default'}`);
+        console.log(`Catalog generated with ${validMetas.length} valid items for ID: ${id}`);
 
         if (!validMetas.length) {
             console.warn(`No valid metadata generated for ${dataSourceName}, using fallback meta`);
@@ -892,7 +777,8 @@ app.get('/catalog/:type/:id.json', async (req, res) => {
             return res.json({ metas: [fallbackMeta] });
         }
 
-        cachedCatalog[cacheKey] = { metas: validMetas };
+        cachedCatalog.set(cacheKey, { metas: validMetas });
+        console.log(`Cached catalog ${cacheKey} with ${validMetas.length} items for 2 months`);
 
         console.log('Applying RPDB posters...');
         const finalMetas = rpdbKey ? await replaceRpdbPosters(rpdbKey, validMetas) : validMetas;
@@ -900,7 +786,7 @@ app.get('/catalog/:type/:id.json', async (req, res) => {
         console.log(`Returning response: { metas: ${finalMetas.length} items }`);
         return res.json({ metas: finalMetas });
     } catch (error) {
-        console.error(`Error generating default catalog for ID ${id}, Genre: ${genre || 'default'}: ${error.message}\nStack: ${error.stack}`);
+        console.error(`Error generating default catalog for ID ${id}: ${error.message}\nStack: ${error.stack}`);
         console.log(`Returning response: { metas: [Iron Man] }`);
         return res.json({ metas: [fallbackMeta] });
     }
