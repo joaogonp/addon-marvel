@@ -5,11 +5,11 @@ const compression = require('compression');
 const axios = require('axios');
 const pLimit = require('p-limit');
 const { LRUCache } = require('lru-cache');
-const chronologicalData = require('./Data/chronologicalData');
-const xmenData = require('./Data/xmenData');
-const moviesData = require('./Data/moviesData');
-const seriesData = require('./Data/seriesData');
-const animationsData = require('./Data/animationsData');
+const chronologicalData = require('../Data/chronologicalData');
+const xmenData = require('../Data/xmenData');
+const moviesData = require('../Data/moviesData');
+const seriesData = require('../Data/seriesData');
+const animationsData = require('../Data/animationsData');
 
 require('dotenv').config();
 
@@ -328,7 +328,7 @@ app.get('/manifest.json', (req, res) => {
         id: manifestId,
         name: "Marvel",
         description: "Watch the entire Marvel catalog! MCU and X-Men (chronologically organized), Movies, Series, and Animations!",
-        version: "1.1.0",
+        version: "1.2.0",
         logo: "https://raw.githubusercontent.com/joaogonp/addon-marvel/main/assets/icon.png",
         background: "https://raw.githubusercontent.com/joaogonp/addon-marvel/main/assets/background.jpg",
         catalogs: getAllCatalogs(),
