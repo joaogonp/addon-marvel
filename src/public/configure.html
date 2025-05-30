@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Marvel - Configure Addon</title>
+    <!-- Import Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!-- Import Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        marvel: {
+                            red: '#e62429', // Red for catalog items
+                            dark: '#1f2937', // Darker gray for main background
+                            card: 'rgba(31, 41, 55, 0.7)', // Dark gray translucent card
+                            button: '#991b1b', // Darker red for buttons
+                            text: '#d1d5db', // Light gray for text
+                            accent: '#7f1d1d' // Darker red accent
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        [v-cloak] { display: none; }
+        
+        body {
+            background-color: #1f2937;
+            background-image: linear-gradient(to bottom, #111827 0%, #1f2937 100%); /* Darker gradient */
+            min-height: 100vh;
+        }
+        
+        .glassmorphic {
+            background: rgba(31, 41, 55, 0.7); /* Dark gray translucent card */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            border-radius: 36px;
+            overflow: hidden;
+        }
+        
+        .container-padding {
+            padding: 28px 24px;
+        }
+        
+        .catalog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Larger rectangles */
+            gap: 1rem;
+        }
+        
+        .catalog-item {
+            position: relative;
+            aspect-ratio: 1/1;
+            border-radius: 16px;
+            overflow: visible;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            background-color: #e62429; /* Red background */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            border: 2px solid transparent;
+            padding: 16px 12px; /* Increased padding for more space */
+            text-align: center;
+            height: 100%;
+            transform-origin: center center;
+        }
+        
+        .catalog-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+            background-color: #c53030; /* Darker red on hover */
+        }
+        
+        .catalog-item.selected {
+            background-color: rgba(230, 36, 41, 0.3); /* Translucent red when selected */
+            border: 2px solid #991b1b; /* Darker red border */
+            box-shadow: 0 0 15px rgba(153, 27, 27, 0.5); /* Darker red glow */
+            transform: translateY(-5px);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .catalog-item.selected::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            border-radius: 18px;
+            background: linear-gradient(45deg, #991b1b, #7f1d1d, #991b1b); /* Darker red gradient border */
+            background-size: 200% 200%;
+            animation: gradient-border 2s ease infinite;
+            z-index: 0;
+            pointer-events: none;
+        }
+        
+        @keyframes gradient-border {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .catalog-item .custom-icon,
+        .catalog-item .item-icon {
+            width: 48px; /* Increased icon size */
+            height: 48px;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+            transition: all 0.2s ease;
+        }
+        
+        .catalog-item .item-icon {
+            font-size: 2rem; /* Adjusted icon font size */
+        }
+        
+        .xmen-icon {
+            filter: brightness(0) invert(1);
+            object-fit: contain;
+        }
+        
+        .catalog-item.selected .custom-icon {
+            filter: brightness(0) invert(1) drop-shadow(0 0 3px rgba(153, 27, 27, 0.7)); /* Darker red glow */
+        }
+        
+        .catalog-item .item-name {
+            font-size: 0.85rem; /* Increased font size */
+            line-height: 1.2;
+            text-align: center;
+            display: block;
+            width: 100%;
+            position: relative;
+            z-index: 2;
+            color: #000000; /* Black text */
+        }
+        
+        .catalog-item .item-description {
+            font-size: 0.7rem; /* Increased font size */
+            line-height: 1.3;
+            text-align: center;
+            color: #000000; /* Black text */
+            width: 100%;
+            position: relative;
+            z-index: 2;
+            overflow-wrap: break-word;
+            padding: 0 6px;
+        }
+        
+        .pulse-effect {
+            animation: pulse-animation 2s infinite;
+        }
+        
+        @keyframes pulse-animation {
+            0% { box-shadow: 0 0 0 0 rgba(153, 27, 27, 0.7); } /* Darker red pulse */
+            70% { box-shadow: 0 0 0 10px rgba(153, 27, 27, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(153, 27, 27, 0); }
+        }
+        
+        .custom-input {
+            background-color: rgba(10, 10, 15, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: #d1d5db; /* Light gray text */
+            padding: 10px 15px;
+            border-radius: 16px;
+            transition: all 0.2s ease;
+            width: 100%;
+        }
+        
+        .custom-input:focus {
+            border-color: #991b1b; /* Darker red focus border */
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(153, 27, 27, 0.3); /* Darker red focus shadow */
+        }
+        
+        .install-button {
+            background-color: #991b1b; /* Darker red button */
+            color: #d1d5db; /* Light gray text */
+            padding: 12px 24px;
+            border-radius: 16px;
+            transition: all 0.2s ease;
+            width: 100%;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        
+        .install-button:hover {
+            background-color: #7f1d1d; /* Even darker red on hover */
+        }
+        
+        .install-button:disabled {
+            background-color: #4a4a4a;
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+        
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 50;
+        }
+        
+        .modal-content {
+            background-color: #1f2937; /* Darker gray modal */
+            border-radius: 36px;
+            width: 90%;
+            max-width: 500px;
+            padding: 28px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .fade-enter-active, .fade-leave-active {
+            transition: opacity 0.3s;
+        }
+        
+        .fade-enter, .fade-leave-to {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="app" v-cloak class="text-marvel-text py-8 px-4 md:py-16">
+        <div class="max-w-xl mx-auto">
+            <!-- Header -->
+            <div class="flex items-center justify-center mb-8">
+                <div class="text-center">
+                    <img src="https://raw.githubusercontent.com/joaogonp/addon-marvel/main/assets/icon.png" alt="Marvel Logo" class="w-16 h-16 mx-auto mb-4">
+                    <h1 class="text-2xl font-bold mb-1">Configure Addon</h1>
+                    <p class="text-sm text-gray-400">Select catalogs to include in your Marvel Addon</p>
+                </div>
+            </div>
+            
+            <!-- Main content -->
+            <div class="glassmorphic shadow-lg">
+                <div class="container-padding">
+                    <!-- Select all / Deselect all buttons -->
+                    <div class="flex justify-between items-center mb-6">
+                        <button 
+                            @click="selectAll" 
+                            class="text-sm text-marvel-text bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-full transition"
+                        >
+                            Select All
+                        </button>
+                        <button 
+                            @click="deselectAll" 
+                            class="text-sm text-marvel-text bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-full transition"
+                        >
+                            Deselect All
+                        </button>
+                    </div>
+                    
+                    <!-- Catalogs grid -->
+                    <div v-if="loading" class="text-center py-10">
+                        <i class="fas fa-spinner fa-spin text-3xl mb-3"></i>
+                        <p>Loading catalogs...</p>
+                    </div>
+                    
+                    <div v-else-if="error" class="text-center bg-red-900/50 p-4 rounded-lg">
+                        <i class="fas fa-exclamation-triangle text-2xl mb-2"></i>
+                        <p class="font-semibold">Failed to load catalogs</p>
+                    </div>
+                    
+                    <div v-else class="catalog-grid mb-8">
+                        <div 
+                            v-for="catalog in catalogs" 
+                            :key="catalog.id" 
+                            @click="toggleCatalog(catalog)"
+                            :class="['catalog-item', {'selected pulse-effect': selectedCatalogs.includes(catalog.id)}]"
+                        >
+                            <!-- Ícones personalizados -->
+                            <template v-if="catalog.icon === 'xmen-logo'">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/X-Men_logo.svg/320px-X-Men_logo.svg.png" 
+                                    alt="X-Men Logo" 
+                                    class="custom-icon xmen-icon"
+                                    @error="catalog.icon = 'mask'">
+                            </template>
+                            <template v-else>
+                                <i :class="['fas fa-' + catalog.icon, 'item-icon']" @error="catalog.icon = 'shield-alt'"></i>
+                            </template>
+                            
+                            <span class="item-name">{{ catalog.name }}</span>
+                            <p v-if="catalog.description" class="item-description">{{ catalog.description }}</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Selected count -->
+                    <div v-if="!loading && !error" class="mb-6 bg-black/30 rounded-lg p-3 text-center text-sm">
+                        <span>{{ selectedCatalogs.length }} {{ selectedCatalogs.length === 1 ? 'catalog' : 'catalogs' }} selected</span>
+                    </div>
+                    
+                    <!-- RPDB Key Input -->
+                    <div class="mb-6">
+                        <label for="rpdb-key" class="block text-sm font-medium text-gray-400 mb-2">RatingPosterDB Key (optional)</label>
+                        <input 
+                            type="text" 
+                            id="rpdb-key"
+                            v-model="rpdbKey" 
+                            class="custom-input" 
+                            placeholder="Enter RPDB key (format: t0-xxxxxxxx)"
+                        >
+                        <div class="text-xs text-gray-500 mt-2">
+                            <a href="https://ratingposterdb.com" target="_blank" class="text-blue-400 hover:underline">
+                                <i class="fas fa-info-circle mr-1"></i>About RPDB
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Install button -->
+                    <button 
+                        @click="generateLink" 
+                        class="install-button"
+                        :disabled="selectedCatalogs.length === 0"
+                    >
+                        Install Addon
+                    </button>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="text-center mt-8 pt-6 border-t border-gray-800 text-sm text-gray-400">
+                <p class="mb-4">Marvel Addon for Stremio © 2025</p>
+                <div class="flex justify-center items-center space-x-6">
+                    <a href="https://github.com/joaogonp/addon-marvel" target="_blank" class="hover:text-marvel-text transition" aria-label="GitHub Repository">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="https://www.buymeacoffee.com/joaogonp" target="_blank" class="hover:text-marvel-text transition" aria-label="Buy Me a Coffee">
+                        <i class="fas fa-mug-hot text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Installation modal -->
+        <transition name="fade">
+            <div v-if="showInstallPanel" class="modal" @click.self="showInstallPanel = false">
+                <div class="modal-content">
+                    <div class="flex justify-between items-center mb-5 pb-4 border-b border-gray-700">
+                        <h3 class="text-lg font-bold">Installation Link Ready</h3>
+                        <button @click="showInstallPanel = false" class="text-gray-400 hover:text-marvel-text rounded-full h-8 w-8 flex items-center justify-center bg-gray-800 hover:bg-gray-700 transition">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    
+                    <p class="mb-5 text-sm text-gray-400">Your personalized Marvel Teste addon is ready to install!</p>
+                        
+                    <div class="flex flex-col gap-4 mb-6">
+                        <a 
+                            :href="stremioUrl" 
+                            class="install-button text-center"
+                        >
+                            <i class="fas fa-plus-circle mr-2"></i>Install in Stremio
+                        </a>
+                            
+                        <button 
+                            @click="copyToClipboard" 
+                            class="bg-gray-700 hover:bg-gray-600 text-marvel-text py-3 px-4 rounded-xl transition text-center"
+                        >
+                            <i class="fas" :class="copied ? 'fa-check' : 'fa-copy'"></i>
+                            <span class="ml-2">{{ copied ? 'Copied!' : 'Copy URL' }}</span>
+                        </button>
+                    </div>
+                        
+                    <div class="bg-black/30 p-4 rounded-2xl text-xs break-all font-mono text-gray-400">
+                        {{ installUrl }}
+                    </div>
+                </div>
+            </div>
+        </transition>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                catalogs: [],
+                selectedCatalogs: [],
+                showInstallPanel: false,
+                installUrl: '',
+                stremioUrl: '',
+                copied: false,
+                loading: true,
+                error: false,
+                rpdbKey: ''
+            },
+            mounted() {
+                this.fetchCatalogs();
+            },
+            methods: {
+                fetchCatalogs() {
+                    this.loading = true;
+                    this.error = false;
+                    fetch('/api/catalogs')
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error(`HTTP error! status: ${response.status}`);
+                            }
+                            return response.json();
+                        })
+                        .then(data => {
+                            this.catalogs = data;
+                            this.applyPredefinedSelectionsOrSelectAll();
+                            this.loading = false;
+                        })
+                        .catch(error => {
+                            console.error("Error fetching catalogs:", error);
+                            this.error = true;
+                            this.loading = false;
+                        });
+                },
+                applyPredefinedSelectionsOrSelectAll() {
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const predefinedIdsParam = urlParams.get('predefined');
+
+                    if (predefinedIdsParam) {
+                        const predefinedIds = predefinedIdsParam.split(',');
+                        this.selectedCatalogs = predefinedIds.filter(id => this.catalogs.some(catalog => catalog.id === id));
+                        if (this.selectedCatalogs.length === 0) {
+                            this.selectAll();
+                        }
+                    } else {
+                        this.selectAll();
+                    }
+                },
+                selectAll() {
+                    if (this.catalogs && this.catalogs.length > 0) {
+                        this.selectedCatalogs = this.catalogs.map(c => c.id);
+                    }
+                },
+                deselectAll() {
+                    this.selectedCatalogs = [];
+                    this.showInstallPanel = false;
+                },
+                toggleCatalog(catalog) {
+                    const index = this.selectedCatalogs.indexOf(catalog.id);
+                    if (index === -1) {
+                        this.selectedCatalogs.push(catalog.id);
+                    } else {
+                        this.selectedCatalogs.splice(index, 1);
+                    }
+                    this.showInstallPanel = false;
+                },
+                generateLink() {
+                    if (this.selectedCatalogs.length === 0) {
+                        alert('Please select at least one catalog');
+                        return;
+                    }
+                    
+                    const host = window.location.host;
+                    const protocol = window.location.protocol;
+
+                    const allCatalogIds = this.catalogs.map(c => c.id);
+                    const sortedSelected = [...this.selectedCatalogs].sort();
+                    const sortedAll = [...allCatalogIds].sort();
+                    const allSelected = sortedSelected.length === sortedAll.length && sortedSelected.every((val, index) => val === sortedAll[index]);
+
+                    if (allSelected) {
+                        if (this.rpdbKey) {
+                            this.installUrl = `${protocol}//${host}/rpdb/${encodeURIComponent(this.rpdbKey)}/manifest.json`;
+                            this.stremioUrl = `stremio://${host}/rpdb/${encodeURIComponent(this.rpdbKey)}/manifest.json`;
+                        } else {
+                            this.installUrl = `${protocol}//${host}/manifest.json`;
+                            this.stremioUrl = `stremio://${host}/manifest.json`;
+                        }
+                    } else {
+                        const catalogParam = this.selectedCatalogs.join(',');
+                        if (this.rpdbKey) {
+                            const configParts = [catalogParam, this.rpdbKey].join(':');
+                            this.installUrl = `${protocol}//${host}/catalog/${encodeURIComponent(configParts)}/manifest.json`;
+                            this.stremioUrl = `stremio://${host}/catalog/${encodeURIComponent(configParts)}/manifest.json`;
+                        } else {
+                            this.installUrl = `${protocol}//${host}/catalog/${encodeURIComponent(catalogParam)}/manifest.json`;
+                            this.stremioUrl = `stremio://${host}/catalog/${encodeURIComponent(catalogParam)}/manifest.json`;
+                        }
+                    }
+                    
+                    this.showInstallPanel = true;
+                },
+                copyToClipboard() {
+                    navigator.clipboard.writeText(this.installUrl).then(() => {
+                        this.copied = true;
+                        setTimeout(() => {
+                            this.copied = false;
+                        }, 2000);
+                    }).catch(err => {
+                        console.error('Failed to copy URL: ', err);
+                        alert('Failed to copy URL. Please copy it manually.');
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+</html>
