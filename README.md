@@ -1,23 +1,12 @@
 # 📺 Marvel  Addon for Stremio
 
-Watch the entire Marvel Catalog **chronological order**, **release date**, or explore by **movies**, **series**, and **animations**. This add-on includes all canon MCU content — even announced titles — and stays up-to-date automatically!
-
-> From *Captain America: The First Avenger* to *The Fantastic Four: First Steps* — and beyond.
-
----
-
-## ✨ Features
-
-🧬 **Chronological Order**: Based on Disney+ timeline, but expanded to include all MCU canon.  
-📅 **Release Date**: Browse titles by original release order.  
-🎬 **Movies, Series & Animations**: Filter by content type.  
-🚀 **Fast & Lightweight**: Optimized for performance with Redis caching.  
-📡 **Automatic Monthly Updates**: Always current with TMDB/OMDB & Cinemeta.  
-📺 **Here’s how it looks in Stremio**: https://imgur.com/a/wtCrXUH
+Watch the entire Marvel Catalog **chronological order**, **X-Men**, or explore by **movies**, **series**, and **animations**. 
 
 ---
 
 ## 📦 Installation
+
+Here you can configure and chosse the catalog you want and use your RPDB KEY: `https://addon-marvel.onrender.com` (**FOR CHOOCE CATALOGS AND RPDB NEEDS TO BE THIS LINK**)
 
 In **Stremio**:
 
@@ -36,15 +25,6 @@ Hey! I'm **joaogonp**, a newbie dev and Marvel fan. This is my first serious pro
 
 If you liked it and want to support me:  
 🍺 [buymeacoffee.com/joaogonp](https://buymeacoffee.com/joaogonp) — feel free to buy me a beer!
-
----
-
-## 🧠 Tech Stuff
-
-- Uses **TMDB/OMDB API** for movie/series data  
-- Uses **Cinemeta/OMDB/TMDB** for posters and Stremio metadata  
-- Powered by **GitHub Actions** for auto-updates  
-- Hosted on **Render.com**
 
 ---
 
