@@ -10,9 +10,7 @@ Here you can configure and chosse the catalog you want and use your RPDB KEY: `h
 
 In **Stremio**:
 
-1. Go to *Addons* → *+ add Addon*
-2. Paste this URL and click "Install":  
-   👉 `https://addon-marvel.onrender.com/manifest.json`
+1. Go to *Addons* → *+ Community Addon* → Search for Marvel
 
 Or install directly via:  
 🔗 [beta.stremio-addons.net/addons/marvel-cinematic-universe](https://beta.stremio-addons.net/addons/marvel-cinematic-universe)  
