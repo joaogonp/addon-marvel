@@ -6,7 +6,7 @@ Watch the entire Marvel Catalog **chronological order**, **X-Men**, or explore b
 
 ## 📦 Installation
 
-Here you can configure and chosse the catalog you want and use your RPDB KEY: `https://addon-marvel.onrender.com` (**FOR CHOOCE CATALOGS AND RPDB NEEDS TO BE THIS LINK**)
+Here you can configure and chosse the catalog you want and use your RPDB KEY: `https://addon-marvel.onrender.com` (**TO CHOOSE CATALOGS AND USE YOUR RPDB KEY NEEDS TO BE THIS LINK**)
 
 In **Stremio**:
 
