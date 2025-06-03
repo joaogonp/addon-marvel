@@ -464,6 +464,14 @@ module.exports = [
     "poster": "https://image.tmdb.org/t/p/original/lztz5XBMG1x6Y5ubz7CxfPFsAcW.jpg"
   },
   {
+    "title": "Hit-Monkey",
+    "type": "series",
+    "imdbId": "tt9811316",
+    "id": "marlve_tt9811316",
+    "releaseYear": "2021",
+    "poster": "https://image.tmdb.org/t/p/original/1aK7hApRSDUv8xxDQXyQil7qBjN.jpg"
+  },
+  {
     "title": "LEGO Avengers: Loki in Training",
     "type": "movie",
     "imdbId": "tt21072140",
@@ -534,14 +542,6 @@ module.exports = [
     "id": "marvel_tt10862280",
     "releaseYear": "2021",
     "poster": "https://image.tmdb.org/t/p/original/dA4S18rnLx4sWW8agmLLKUvRM7n.jpg"
-  },
-  {
-    "title": "Hit-Monkey",
-    "type": "series",
-    "imdbId": "tt9811316",
-    "id": "marlve_tt9811316",
-    "releaseYear": "2021",
-    "poster": "https://image.tmdb.org/t/p/original/1aK7hApRSDUv8xxDQXyQil7qBjN.jpg"
   },
   {
     "title": "X-Men '97",
