@@ -519,7 +519,7 @@ app.get('/rpdb/:rpdbKey/catalog/:type/:id.json', async (req, res) => {
                 break;
             case 'release-order':
                 dataSource = releaseData;
-                dataSourceName = 'MCU Chronologically Ordered';
+                dataSourceName = 'MCU Release Ordered';
                 break;
             case 'xmen':
                 dataSource = xmenData;
