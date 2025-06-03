@@ -5,12 +5,12 @@ const compression = require('compression');
 const axios = require('axios');
 const pLimit = require('p-limit');
 const { LRUCache } = require('lru-cache');
-const chronologicalData = require('./Data/chronologicalData');
-const xmenData = require('./Data/xmenData');
-const moviesData = require('./Data/moviesData');
-const seriesData = require('./Data/seriesData');
-const animationsData = require('./Data/animationsData');
-const releaseData = require('./Data/releaseData');
+const chronologicalData = require('../Data/chronologicalData');
+const xmenData = require('../Data/xmenData');
+const moviesData = require('../Data/moviesData');
+const seriesData = require('../Data/seriesData');
+const animationsData = require('../Data/animationsData');
+const releaseData = require('../Data/releaseData');
 
 require('dotenv').config();
 
