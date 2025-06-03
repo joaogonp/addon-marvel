@@ -9,38 +9,39 @@
     {
       "type": "Marvel",
       "id": "marvel-mcu",
-      "name": "MCU Chronologically Order",
+      "name": "MCU Chronologically Order"
     },
     {
-      "typ": "Marvel",
+      "type": "Marvel",
       "id": "release-order",
-      "name": "MCU Release Order",
+      "name": "MCU Release Order"
+    },
     {
       "type": "Marvel",
       "id": "xmen",
-      "name": "X-Men",
+      "name": "X-Men"
     },
     {
       "type": "Marvel",
       "id": "movies",
-      "name": "Movies",
+      "name": "Movies"
     },
     {
       "type": "Marvel",
       "id": "series",
-      "name": "Series",
+      "name": "Series"
     },
     {
       "type": "Marvel",
       "id": "animations",
-      "name": "Animations",
+      "name": "Animations"
     }
   ],
   "resources": ["catalog"],
   "types": ["movie", "series"],
   "idPrefixes": ["marvel_"],
   "behaviorHints": {
-    "configurable": false
+    "configurable": true
   },
   "contactEmail": "jpnapsp@gmail.com",
   "stremioAddonsConfig": {
