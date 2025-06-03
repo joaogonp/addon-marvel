@@ -12,6 +12,10 @@
       "name": "MCU Chronologically Order",
     },
     {
+      "typ": "Marvel",
+      "id": "release-order",
+      "name": "MCU Release Order",
+    {
       "type": "Marvel",
       "id": "xmen",
       "name": "X-Men",
