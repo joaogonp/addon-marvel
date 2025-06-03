@@ -5,12 +5,12 @@ const compression = require('compression');
 const axios = require('axios');
 const pLimit = require('p-limit');
 const { LRUCache } = require('lru-cache');
-const chronologicalData = require('../Data/chronologicalData');
-const xmenData = require('../Data/xmenData');
-const moviesData = require('../Data/moviesData');
-const seriesData = require('../Data/seriesData');
-const animationsData = require('../Data/animationsData');
-const releaseData = require('../Data/releaseData');
+const chronologicalData = require('./Data/chronologicalData');
+const xmenData = require('./Data/xmenData');
+const moviesData = require('./Data/moviesData');
+const seriesData = require('./Data/seriesData');
+const animationsData = require('./Data/animationsData');
+const releaseData = require('./Data/releaseData');
 
 require('dotenv').config();
 
@@ -145,7 +145,7 @@ async function fetchAdditionalData(item) {
 
     // Minimal validation: only require title
     if (!item || !item.title) {
-        console.warn('Skipping item due to missing title:', JSON.stringify(item));
+        console.warn('Skipping item due to missing title:');
         return null;
     }
 
@@ -163,7 +163,7 @@ async function fetchAdditionalData(item) {
         type: type,
         name: type === 'series' ? item.title.replace(/ Season \d+/, '') : item.title,
         poster: item.poster || 'https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg',
-        description: item.overview || 'No description available.',
+        description: item.description || 'No description available.',
         releaseInfo: item.releaseYear || 'N/A',
         imdbRating: 'N/A',
         genres: item.genres ? item.genres.map(g => g.name) : ['Action', 'Adventure']
@@ -246,7 +246,7 @@ async function fetchAdditionalData(item) {
             }
         }
 
-        const description = item.overview || tmdbData.overview || 'No description available.';
+        const description = item.description || tmdbData.overview || 'No description available.';
 
         const meta = {
             id: lookupId,
@@ -290,9 +290,9 @@ function getAllCatalogs() {
             name: "MCU",
         },
         {
-            type:"Marvel",
+            type: "Marvel",
             id: "release-order",
-            name: "MCU Release order",
+            name: "MCU Release Order",
         },
         {
             type: "Marvel",
@@ -342,7 +342,7 @@ app.get('/manifest.json', (req, res) => {
         types: ["movie", "series"],
         idPrefixes: ["marvel_"],
         behaviorHints: {
-            configurable: false
+            configurable: true
         },
         contactEmail: "jpnapsp@gmail.com",
         stremioAddonsConfig: {
@@ -373,7 +373,7 @@ app.get('/rpdb/:rpdbKey/manifest.json', (req, res) => {
         types: ["movie", "series"],
         idPrefixes: ["marvel_"],
         behaviorHints: {
-            configurable: false
+            configurable: true
         },
         contactEmail: "jpnapsp@gmail.com",
         stremioAddonsConfig: {
@@ -428,7 +428,7 @@ app.get('/catalog/:catalogsParam/manifest.json', (req, res) => {
         types: ["movie", "series"],
         idPrefixes: ["marvel_"],
         behaviorHints: {
-            configurable: false
+            configurable: true
         },
         contactEmail: "jpnapsp@gmail.com",
         stremioAddonsConfig: {
