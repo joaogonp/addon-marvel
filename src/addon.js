@@ -10,6 +10,7 @@ const xmenData = require('../Data/xmenData');
 const moviesData = require('../Data/moviesData');
 const seriesData = require('../Data/seriesData');
 const animationsData = require('../Data/animationsData');
+const releaseData = require('../Data/releaseData');
 
 require('dotenv').config();
 
@@ -289,6 +290,11 @@ function getAllCatalogs() {
             name: "MCU",
         },
         {
+            type:"Marvel",
+            id: "release-order",
+            name: "MCU Release order",
+        },
+        {
             type: "Marvel",
             id: "xmen",
             name: "X-Men",
@@ -446,6 +452,13 @@ app.get('/api/catalogs', (req, res) => {
             description: 'Marvel Cinematic Universe in chronological Order!',
             icon: 'calendar-alt'
         },
+        {
+            id: 'release-order',
+            name: 'MCU Release order',
+            category: 'Timeline',
+            description: 'Marvel Cinematic Universe in Release Order!',
+            icon: 'clock'
+        },
         { 
             id: 'xmen', 
             name: 'X-Men', 
@@ -502,6 +515,10 @@ app.get('/rpdb/:rpdbKey/catalog/:type/:id.json', async (req, res) => {
         switch (id) {
             case 'marvel-mcu':
                 dataSource = chronologicalData;
+                dataSourceName = 'MCU Chronologically Ordered';
+                break;
+            case 'release-order':
+                dataSource = releaseData;
                 dataSourceName = 'MCU Chronologically Ordered';
                 break;
             case 'xmen':
@@ -612,6 +629,10 @@ app.get('/catalog/:catalogsParam/catalog/:type/:id.json', async (req, res) => {
                 dataSource = chronologicalData;
                 dataSourceName = 'MCU Chronologically Ordered';
                 break;
+            case 'release-order':
+                dataSource = releaseData;
+                dataSourceName = 'MCU Chronologically Ordered';
+                break;
             case 'xmen':
                 dataSource = xmenData;
                 dataSourceName = 'X-Men';
@@ -718,6 +739,10 @@ app.get('/catalog/:type/:id.json', async (req, res) => {
         switch (id) {
             case 'marvel-mcu':
                 dataSource = chronologicalData;
+                dataSourceName = 'MCU Chronologically Ordered';
+                break;
+            case 'release-order':
+                dataSource = releaseData;
                 dataSourceName = 'MCU Chronologically Ordered';
                 break;
             case 'xmen':
