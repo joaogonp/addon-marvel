@@ -559,7 +559,7 @@ module.exports = [
     "imdbId": "tmdb_1439930",
     "id": "marvel_tmdb_1439930",
     "releaseYear": "TBD",
-    "poster": "https://raw.githubusercontent.com/joaogonp/addon-marvel-test/main/assets/comingsoon.png"
+    "poster": "https://raw.githubusercontent.com/joaogonp/addon-marvel/refs/heads/main/assets/comingsoon.png"
   },
   {
     "title": "Black Panther 3",
@@ -567,7 +567,7 @@ module.exports = [
     "imdbId": "tmdb_1386618",
     "id": "marvel_tmdb_1386618",
     "releaseYear": "TBD",
-    "poster": "https://raw.githubusercontent.com/joaogonp/addon-marvel-test/main/assets/comingsoon.png"
+    "poster": "https://raw.githubusercontent.com/joaogonp/addon-marvel/refs/heads/main/assets/comingsoon.png"
   },
   {
     "title": "Untitled X-Men Movie",
@@ -575,7 +575,7 @@ module.exports = [
     "imdbId": "tt29347085",
     "id": "marvel_tt29347085",
     "releaseYear": "TBD",
-    "poster": "https://raw.githubusercontent.com/joaogonp/addon-marvel-test/main/assets/comingsoon.png"
+    "poster": "https://raw.githubusercontent.com/joaogonp/addon-marvel/refs/heads/main/assets/comingsoon.png"
   },
   {
     "title": "Thor 5",
@@ -583,7 +583,7 @@ module.exports = [
     "imdbId": "tmdb_1196551",
     "id": "marvel_tmdb_1196551",
     "releaseYear": "TBD",
-    "poster": "https://raw.githubusercontent.com/joaogonp/addon-marvel-test/main/assets/comingsoon.png"
+    "poster": "https://raw.githubusercontent.com/joaogonp/addon-marvel/refs/heads/main/assets/comingsoon.png"
   },
   {
     "title": "Doctor Strange 3",
@@ -591,7 +591,7 @@ module.exports = [
     "imdbId": "tmdb_1072946",
     "id": "marvel_tmdb_1072946",
     "releaseYear": "TBD",
-    "poster": "https://raw.githubusercontent.com/joaogonp/addon-marvel-test/main/assets/comingsoon.png"
+    "poster": "https://raw.githubusercontent.com/joaogonp/addon-marvel/refs/heads/main/assets/comingsoon.png"
   },
   {
     "title": "Armor Wars",
