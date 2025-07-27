@@ -560,14 +560,6 @@ module.exports = [
     "poster": "https://image.tmdb.org/t/p/original/kjcsNeqF52YUQ2rUBGLMHwLkxvR.jpg"
   },
   {
-    "title": "Spider-Man: Beyond the Spider-Verse",
-    "type": "movie",
-    "imdbId": "tt16360004",
-    "id": "marvel_tt16360004",
-    "releaseYear": "2027",
-    "poster": "https://image.tmdb.org/t/p/w500/rZ4arzyaDyI8l9Y7VIPPsDGARwh.jpg"
-  },
-  {
     "title": "Eyes of Wakanda",
     "type": "series",
     "imdbId": "tt13968252",
@@ -582,5 +574,13 @@ module.exports = [
     "id": "marvel_tt16027014",
     "releaseYear": "2025",
     "poster": "https://image.tmdb.org/t/p/original/jmGjVKBNxaQD2l0e4Jz5RbguRre.jpg"
+  },
+  {
+    "title": "Spider-Man: Beyond the Spider-Verse",
+    "type": "movie",
+    "imdbId": "tt16360004",
+    "id": "marvel_tt16360004",
+    "releaseYear": "2027",
+    "poster": "https://image.tmdb.org/t/p/w500/rZ4arzyaDyI8l9Y7VIPPsDGARwh.jpg"
   }
 ];
