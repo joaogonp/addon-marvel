@@ -408,6 +408,15 @@ module.exports = [
     "id": "marvel_tt10648342"
   },
   {
+    "title": "Ironheart",
+    "type": "series",
+    "imdbId": "tt13623126",
+    "id": "marvel_tt13623126",
+    "releaseYear": "2025",
+    "poster": "https://image.tmdb.org/t/p/original/UbbIyltRQbbnVSnbVqTBjmkSRC.jpg",
+    "ratings": []
+  },
+  {
     "title": "Werewolf by Night",
     "type": "movie",
     "imdbId": "tt15318872",
@@ -496,15 +505,6 @@ module.exports = [
     "id": "marvel_tt20969586"
   },
   {
-      "title": "Ironheart",
-      "type": "series",
-      "imdbId": "tt13623126",
-      "id": "marvel_tt13623126",
-      "releaseYear": "2025",
-      "poster": "https://image.tmdb.org/t/p/original/UbbIyltRQbbnVSnbVqTBjmkSRC.jpg",
-      "ratings": []
-    },
-  {
     "title": "The Fantastic: Four First Steps",
     "type": "movie",
     "imdbId": "tt10676052",
@@ -544,54 +544,6 @@ module.exports = [
     "releaseYear": "2027",
     "poster": "https://image.tmdb.org/t/p/w500/f0YBuh4hyiAheXhh4JnJWoKi9g5.jpg",
     "id": "marvel_tt21361444"
-  },
-  {
-    "title": "Spider-Man: Beyond the Spider-Verse",
-    "type": "animation",
-    "imdbId": "tt16360004",
-    "id": "marvel_tt16360004",
-    "releaseYear": "2027",
-    "poster": "https://image.tmdb.org/t/p/w500/rZ4arzyaDyI8l9Y7VIPPsDGARwh.jpg"
-  },
-  {
-    "title": "Untitled The Punisher Special",
-    "type": "movie",
-    "imdbId": "tmdb_1439930",
-    "id": "marvel_tmdb_1439930",
-    "releaseYear": "TBD",
-    "poster": "https://raw.githubusercontent.com/joaogonp/addon-marvel/refs/heads/main/assets/comingsoon.png"
-  },
-  {
-    "title": "Black Panther 3",
-    "type": "movie",
-    "imdbId": "tmdb_1386618",
-    "id": "marvel_tmdb_1386618",
-    "releaseYear": "TBD",
-    "poster": "https://raw.githubusercontent.com/joaogonp/addon-marvel/refs/heads/main/assets/comingsoon.png"
-  },
-  {
-    "title": "Untitled X-Men Movie",
-    "type": "movie",
-    "imdbId": "tt29347085",
-    "id": "marvel_tt29347085",
-    "releaseYear": "TBD",
-    "poster": "https://raw.githubusercontent.com/joaogonp/addon-marvel/refs/heads/main/assets/comingsoon.png"
-  },
-  {
-    "title": "Thor 5",
-    "type": "movie",
-    "imdbId": "tmdb_1196551",
-    "id": "marvel_tmdb_1196551",
-    "releaseYear": "TBD",
-    "poster": "https://raw.githubusercontent.com/joaogonp/addon-marvel/refs/heads/main/assets/comingsoon.png"
-  },
-  {
-    "title": "Doctor Strange 3",
-    "type": "movie",
-    "imdbId": "tmdb_1072946",
-    "id": "marvel_tmdb_1072946",
-    "releaseYear": "TBD",
-    "poster": "https://raw.githubusercontent.com/joaogonp/addon-marvel/refs/heads/main/assets/comingsoon.png"
   },
   {
     "title": "Armor Wars",
