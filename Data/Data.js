@@ -114854,5 +114854,501 @@ module.exports = [
     "id": "marvel_tt1155562",
     "releaseYear": "1913",
     "poster": null
+  },
+  {
+    "title": "Twisted Minds",
+    "type": "movie",
+    "imdbId": "tmdb_1414889",
+    "id": "marvel_tmdb_1414889",
+    "releaseYear": "2026",
+    "poster": "https://image.tmdb.org/t/p/w500/1sjBRcV2XdLNmTC3KW4QkU5OOHJ.jpg"
+  },
+  {
+    "title": "Street Fighter",
+    "type": "movie",
+    "imdbId": "tt27419420",
+    "id": "marvel_tt27419420",
+    "releaseYear": "2026",
+    "poster": "https://image.tmdb.org/t/p/w500/ipUFUXRzjinG9qUwReDhcqUxp2W.jpg"
+  },
+  {
+    "title": "Untitled My Best Friend's Wedding Sequel",
+    "type": "movie",
+    "imdbId": "tmdb_1522083",
+    "id": "marvel_tmdb_1522083",
+    "releaseYear": "TBD",
+    "poster": null
+  },
+  {
+    "title": "Peter Rabbit 3",
+    "type": "animation",
+    "imdbId": "tmdb_1291438",
+    "id": "marvel_tmdb_1291438",
+    "releaseYear": "TBD",
+    "poster": "https://image.tmdb.org/t/p/w500/h1M2q9J9HnWifAEawTV75KEJiDd.jpg"
+  },
+  {
+    "title": "Untitled Night at the Museum Reimagining",
+    "type": "movie",
+    "imdbId": "tmdb_1511021",
+    "id": "marvel_tmdb_1511021",
+    "releaseYear": "TBD",
+    "poster": null
+  },
+  {
+    "title": "Fantastic Voyage",
+    "type": "movie",
+    "imdbId": "tmdb_1270306",
+    "id": "marvel_tmdb_1270306",
+    "releaseYear": "TBD",
+    "poster": null
+  },
+  {
+    "title": "Oh, What a Knight!",
+    "type": "movie",
+    "imdbId": "tt0408051",
+    "id": "marvel_tt0408051",
+    "releaseYear": "1910",
+    "poster": null
+  },
+  {
+    "title": "The Mountain Road",
+    "type": "movie",
+    "imdbId": "tt0054095",
+    "id": "marvel_tt0054095",
+    "releaseYear": "1960",
+    "poster": "https://image.tmdb.org/t/p/w500/fZ9MUjmH2FfD0Gm9UhMvyXFlJ7G.jpg"
+  },
+  {
+    "title": "Pork Chop Phooey",
+    "type": "animation",
+    "imdbId": "tt0152039",
+    "id": "marvel_tt0152039",
+    "releaseYear": "1965",
+    "poster": "https://image.tmdb.org/t/p/w500/zXGxvcixEcX7yEXhC2NM5TEVgbm.jpg"
+  },
+  {
+    "title": "Somebody Killed Her Husband",
+    "type": "movie",
+    "imdbId": "tt0078294",
+    "id": "marvel_tt0078294",
+    "releaseYear": "1978",
+    "poster": "https://image.tmdb.org/t/p/w500/1MaxW1Cv1XwZ1mVw6KFsxHe4ynz.jpg"
+  },
+  {
+    "title": "Little Women",
+    "type": "movie",
+    "imdbId": "tt0110367",
+    "id": "marvel_tt0110367",
+    "releaseYear": "1994",
+    "poster": "https://image.tmdb.org/t/p/w500/1ZzH1XMcKAe5NdrKL5MfcqZHHsZ.jpg"
+  },
+  {
+    "title": "The Making of American Hustle",
+    "type": "movie",
+    "imdbId": "tmdb_1512064",
+    "id": "marvel_tmdb_1512064",
+    "releaseYear": "2014",
+    "poster": "https://image.tmdb.org/t/p/w500/mXDDUET3mee7BaEGN9ucrcJGDqI.jpg"
+  },
+  {
+    "title": "Untitled Garfield Sequel",
+    "type": "animation",
+    "imdbId": "tt37538642",
+    "id": "marvel_tt37538642",
+    "releaseYear": "TBD",
+    "poster": null
+  },
+  {
+    "title": "The Social Network Part II",
+    "type": "movie",
+    "imdbId": "tt37510326",
+    "id": "marvel_tt37510326",
+    "releaseYear": "TBD",
+    "poster": null
+  },
+  {
+    "title": "Harold & Kumar Go to White Castle",
+    "type": "movie",
+    "imdbId": "tt0366551",
+    "id": "marvel_tt0366551",
+    "releaseYear": "2004",
+    "poster": "https://image.tmdb.org/t/p/w500/5vO7R4xYlDipTp8gzfRbWegO8eb.jpg"
+  },
+  {
+    "title": "Amityville",
+    "type": "movie",
+    "imdbId": "tt37593265",
+    "id": "marvel_tt37593265",
+    "releaseYear": "TBD",
+    "poster": null
+  },
+  {
+    "title": "101 Dalmatians II: Patch's London Adventure",
+    "type": "animation",
+    "imdbId": "tt0324941",
+    "id": "marvel_tt0324941",
+    "releaseYear": "2003",
+    "poster": "https://image.tmdb.org/t/p/w500/rFTt7pNSCJKLZ2RZldJuq6ON6Ti.jpg"
+  },
+  {
+    "title": "Diary of a Wimpy Kid: The Getaway",
+    "type": "animation",
+    "imdbId": "tmdb_1519780",
+    "id": "marvel_tmdb_1519780",
+    "releaseYear": "2026",
+    "poster": "https://image.tmdb.org/t/p/w500/3HQHK0JwcR71vC792JQfQnvPlUH.jpg"
+  },
+  {
+    "title": "Ed Terrestrial",
+    "type": "movie",
+    "imdbId": "tt4304858",
+    "id": "marvel_tt4304858",
+    "releaseYear": "TBD",
+    "poster": null
+  },
+  {
+    "title": "Untitled National Treasure 3",
+    "type": "movie",
+    "imdbId": "tmdb_1510695",
+    "id": "marvel_tmdb_1510695",
+    "releaseYear": "TBD",
+    "poster": null
+  },
+  {
+    "title": "The Horse in Motion",
+    "type": "movie",
+    "imdbId": "tt2221420",
+    "id": "marvel_tt2221420",
+    "releaseYear": "1878",
+    "poster": null
+  },
+  {
+    "title": "Baisers envolés",
+    "type": "movie",
+    "imdbId": "tt31249531",
+    "id": "marvel_tt31249531",
+    "releaseYear": "1894",
+    "poster": null
+  },
+  {
+    "title": "Clin d'éventail",
+    "type": "movie",
+    "imdbId": "tt31249543",
+    "id": "marvel_tt31249543",
+    "releaseYear": "1894",
+    "poster": null
+  },
+  {
+    "title": "A Football Match at Newcastle-on-Tyne",
+    "type": "movie",
+    "imdbId": "tt2241171",
+    "id": "marvel_tt2241171",
+    "releaseYear": "1896",
+    "poster": null
+  },
+  {
+    "title": "A Funny Mahometan",
+    "type": "movie",
+    "imdbId": "tt0223775",
+    "id": "marvel_tt0223775",
+    "releaseYear": "1897",
+    "poster": null
+  },
+  {
+    "title": "Dancing in a Harem",
+    "type": "movie",
+    "imdbId": "tt0127498",
+    "id": "marvel_tt0127498",
+    "releaseYear": "1897",
+    "poster": null
+  },
+  {
+    "title": "The Haunted Castle",
+    "type": "movie",
+    "imdbId": "tt1213033",
+    "id": "marvel_tt1213033",
+    "releaseYear": "1897",
+    "poster": "https://image.tmdb.org/t/p/w500/6nHr8cXcmaGMEfxzg6rcDsKTobU.jpg"
+  },
+  {
+    "title": "New Pillow Fight",
+    "type": "movie",
+    "imdbId": "tt0212904",
+    "id": "marvel_tt0212904",
+    "releaseYear": "1897",
+    "poster": null
+  },
+  {
+    "title": "First Film of Blackpool",
+    "type": "movie",
+    "imdbId": "tmdb_1516061",
+    "id": "marvel_tmdb_1516061",
+    "releaseYear": "1898",
+    "poster": null
+  },
+  {
+    "title": "Opening of the Auckland Industrial and Mining Exhibition",
+    "type": "movie",
+    "imdbId": "tmdb_1513388",
+    "id": "marvel_tmdb_1513388",
+    "releaseYear": "1898",
+    "poster": null
+  },
+  {
+    "title": "De Amsterdamse Beurs omstreeks",
+    "type": "movie",
+    "imdbId": "tmdb_1509341",
+    "id": "marvel_tmdb_1509341",
+    "releaseYear": "1900",
+    "poster": null
+  },
+  {
+    "title": "Oscar II jagar hare",
+    "type": "movie",
+    "imdbId": "tmdb_1506631",
+    "id": "marvel_tmdb_1506631",
+    "releaseYear": "1903",
+    "poster": null
+  },
+  {
+    "title": "Group of dancers",
+    "type": "movie",
+    "imdbId": "tmdb_1509450",
+    "id": "marvel_tmdb_1509450",
+    "releaseYear": "1905",
+    "poster": "https://image.tmdb.org/t/p/w500/eL8L8xtZYqe5JdIktoDTYhey07Q.jpg"
+  },
+  {
+    "title": "Nordiska spelen 1905",
+    "type": "movie",
+    "imdbId": "tmdb_1506634",
+    "id": "marvel_tmdb_1506634",
+    "releaseYear": "1905",
+    "poster": null
+  },
+  {
+    "title": "Carnaval de Nice 1905",
+    "type": "movie",
+    "imdbId": "tmdb_1502802",
+    "id": "marvel_tmdb_1502802",
+    "releaseYear": "1905",
+    "poster": null
+  },
+  {
+    "title": "A Trip Through Switzerland Engadine Valley",
+    "type": "movie",
+    "imdbId": "tmdb_1027927",
+    "id": "marvel_tmdb_1027927",
+    "releaseYear": "1905",
+    "poster": null
+  },
+  {
+    "title": "Barnens dag 1905",
+    "type": "movie",
+    "imdbId": "tmdb_1506638",
+    "id": "marvel_tmdb_1506638",
+    "releaseYear": "1905",
+    "poster": null
+  },
+  {
+    "title": "Oscar II i Marstrand",
+    "type": "movie",
+    "imdbId": "tmdb_1506635",
+    "id": "marvel_tmdb_1506635",
+    "releaseYear": "1907",
+    "poster": null
+  },
+  {
+    "title": "Krigsbilder från Bohuslän",
+    "type": "movie",
+    "imdbId": "tmdb_1513799",
+    "id": "marvel_tmdb_1513799",
+    "releaseYear": "1907",
+    "poster": null
+  },
+  {
+    "title": "Dans ur 'Surcouf'",
+    "type": "movie",
+    "imdbId": "tmdb_1513824",
+    "id": "marvel_tmdb_1513824",
+    "releaseYear": "1908",
+    "poster": null
+  },
+  {
+    "title": "Barcarola",
+    "type": "movie",
+    "imdbId": "tmdb_1513260",
+    "id": "marvel_tmdb_1513260",
+    "releaseYear": "1908",
+    "poster": null
+  },
+  {
+    "title": "En färd på Kinda Kanal",
+    "type": "movie",
+    "imdbId": "tmdb_1513827",
+    "id": "marvel_tmdb_1513827",
+    "releaseYear": "1908",
+    "poster": null
+  },
+  {
+    "title": "Ten Nights in a Bar-Room",
+    "type": "movie",
+    "imdbId": "tt0001057",
+    "id": "marvel_tt0001057",
+    "releaseYear": "1909",
+    "poster": null
+  },
+  {
+    "title": "Il Trovatore",
+    "type": "movie",
+    "imdbId": "tt1065518",
+    "id": "marvel_tt1065518",
+    "releaseYear": "1910",
+    "poster": "https://image.tmdb.org/t/p/w500/wdzW8Y5uEnWzxi2MdZQZ3DI9haT.jpg"
+  },
+  {
+    "title": "Spårvagnsresa Majorna-Kviberg",
+    "type": "movie",
+    "imdbId": "tmdb_1509249",
+    "id": "marvel_tmdb_1509249",
+    "releaseYear": "1910",
+    "poster": null
+  },
+  {
+    "title": "The Duchess of Langeais",
+    "type": "movie",
+    "imdbId": "tt0756208",
+    "id": "marvel_tt0756208",
+    "releaseYear": "1910",
+    "poster": null
+  },
+  {
+    "title": "Gänsehäufl",
+    "type": "movie",
+    "imdbId": "tmdb_1509967",
+    "id": "marvel_tmdb_1509967",
+    "releaseYear": "1911",
+    "poster": null
+  },
+  {
+    "title": "One Hundred Years Ago",
+    "type": "movie",
+    "imdbId": "tt0344145",
+    "id": "marvel_tt0344145",
+    "releaseYear": "1911",
+    "poster": null
+  },
+  {
+    "title": "A Ticket in Tatts",
+    "type": "movie",
+    "imdbId": "tt0348206",
+    "id": "marvel_tt0348206",
+    "releaseYear": "1911",
+    "poster": null
+  },
+  {
+    "title": "The Battle of Trafalgar",
+    "type": "movie",
+    "imdbId": "tt0001498",
+    "id": "marvel_tt0001498",
+    "releaseYear": "1911",
+    "poster": null
+  },
+  {
+    "title": "The Colleen Bawn",
+    "type": "movie",
+    "imdbId": "tt0346779",
+    "id": "marvel_tt0346779",
+    "releaseYear": "1911",
+    "poster": null
+  },
+  {
+    "title": "Love and Friendship",
+    "type": "movie",
+    "imdbId": "tmdb_889947",
+    "id": "marvel_tmdb_889947",
+    "releaseYear": "1912",
+    "poster": "https://image.tmdb.org/t/p/w500/uMUYOYXLpYBIUXoyYVm8HM93JLh.jpg"
+  },
+  {
+    "title": "Hands Across the Sea",
+    "type": "movie",
+    "imdbId": "tt0347141",
+    "id": "marvel_tt0347141",
+    "releaseYear": "1912",
+    "poster": null
+  },
+  {
+    "title": "A Daughter of Australia",
+    "type": "movie",
+    "imdbId": "tt0321933",
+    "id": "marvel_tt0321933",
+    "releaseYear": "1912",
+    "poster": null
+  },
+  {
+    "title": "Vintersport i Malmö",
+    "type": "movie",
+    "imdbId": "tmdb_1509403",
+    "id": "marvel_tmdb_1509403",
+    "releaseYear": "1912",
+    "poster": null
+  },
+  {
+    "title": "Conn, the Shaughraun",
+    "type": "movie",
+    "imdbId": "tt0346791",
+    "id": "marvel_tt0346791",
+    "releaseYear": "1912",
+    "poster": null
+  },
+  {
+    "title": "The Wreck of the Dunbar or The Yeoman's Wedding",
+    "type": "movie",
+    "imdbId": "tt0348431",
+    "id": "marvel_tt0348431",
+    "releaseYear": "1912",
+    "poster": null
+  },
+  {
+    "title": "Glasgow and the Clyde Coast",
+    "type": "movie",
+    "imdbId": "tmdb_1510908",
+    "id": "marvel_tmdb_1510908",
+    "releaseYear": "1912",
+    "poster": "https://image.tmdb.org/t/p/w500/kpHQsu3baD18hKroCTIid9sOJNn.jpg"
+  },
+  {
+    "title": "The Ticket of Leave Man",
+    "type": "movie",
+    "imdbId": "tt0348207",
+    "id": "marvel_tt0348207",
+    "releaseYear": "1912",
+    "poster": null
+  },
+  {
+    "title": "Eine Fliegenjagd oder die Rache der Frau Schultze",
+    "type": "movie",
+    "imdbId": "tmdb_1518544",
+    "id": "marvel_tmdb_1518544",
+    "releaseYear": "1913",
+    "poster": null
+  },
+  {
+    "title": "A Race for Life",
+    "type": "movie",
+    "imdbId": "tt1318962",
+    "id": "marvel_tt1318962",
+    "releaseYear": "1913",
+    "poster": null
+  },
+  {
+    "title": "A Reluctant Cinderella",
+    "type": "movie",
+    "imdbId": "tt0495438",
+    "id": "marvel_tt0495438",
+    "releaseYear": "1913",
+    "poster": null
   }
 ];
