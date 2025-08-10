@@ -287,7 +287,7 @@ function getAllCatalogs() {
         {
             type: "Marvel",
             id: "marvel-mcu",
-            name: "MCU",
+            name: "MCU Chronologically Order",
         },
         {
             type: "Marvel",
