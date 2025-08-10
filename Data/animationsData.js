@@ -565,7 +565,7 @@ module.exports = [
     "imdbId": "tt13968252",
     "id": "marlve_tt13968252",
     "releaseYear": "2025",
-    "poster": "https://image.tmdb.org/t/p/original/b16lExo3HVcw2AWStyaFvAy5HFX.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/bG23nZW96LxmWkJjsagRZI9hF6t.jpg"
   },
   {
     "title": "Marvel Zombies",
