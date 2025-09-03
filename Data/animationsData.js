@@ -573,7 +573,7 @@ module.exports = [
     "imdbId": "tt16027014",
     "id": "marvel_tt16027014",
     "releaseYear": "2025",
-    "poster": "https://image.tmdb.org/t/p/original/jmGjVKBNxaQD2l0e4Jz5RbguRre.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/ifJayoMnxGF6Kgfn3xXfNcjtCrM.jpg"
   },
   {
     "title": "Spider-Man: Beyond the Spider-Verse",
