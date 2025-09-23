@@ -13,7 +13,7 @@ In **Stremio**:
 1. Go to *Addons* → *Community Addons* → Search for Marvel
 
 Or install directly via:  
-🔗 [beta.stremio-addons.net/addons/marvel-cinematic-universe](https://beta.stremio-addons.net/addons/marvel-cinematic-universe)  
+🔗 [Addon Community Catalog - Marvel (https://stremio-addons.net/addons/marvel)  
 
 ---
 
