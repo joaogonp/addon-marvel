@@ -521,6 +521,14 @@ module.exports = [
     "id": "marvel_tt21066182"
   },
   {
+    "title": "VisionQuest",
+    "type": "series",
+    "imdbId": "tt23112594",
+    "id": "marvel_tt23112594",
+    "releaseYear": "2026",
+    "poster": "https://image.tmdb.org/t/p/original/6j60tGRAjBmWRPTOEwhW6oRbPMP.jpg"
+  },
+  {
     "title": "Spider-Man: Brand New Day",
     "type": "movie",
     "imdbId": "tt22084616",
