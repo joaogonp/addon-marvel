@@ -316,7 +316,7 @@ module.exports = [
     "type": "series",
     "imdbId": "tt21066182",
     "id": "marvel_tt21066182",
-    "releaseYear": "2025",
+    "releaseYear": "2026",
     "poster": "https://image.tmdb.org/t/p/original/kboHD8dkHvkAuszYxq89BYJhq9t.jpg"
   },
   {
