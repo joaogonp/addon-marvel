@@ -516,8 +516,8 @@ module.exports = [
     "title": "Wonder Man",
     "type": "series",
     "imdbId": "tt21066182",
-    "releaseYear": "2025",
-    "poster": "https://image.tmdb.org/t/p/original/8uQZNewJkIsa5Yx1cWFgqBOTkQD.jpg",
+    "releaseYear": "2026",
+    "poster": "https://image.tmdb.org/t/p/original/kboHD8dkHvkAuszYxq89BYJhq9t.jpg",
     "id": "marvel_tt21066182"
   },
   {
