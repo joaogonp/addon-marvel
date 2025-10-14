@@ -317,14 +317,14 @@ module.exports = [
     "imdbId": "tt21066182",
     "id": "marvel_tt21066182",
     "releaseYear": "2025",
-    "poster": "https://image.tmdb.org/t/p/original/8uQZNewJkIsa5Yx1cWFgqBOTkQD.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/kboHD8dkHvkAuszYxq89BYJhq9t.jpg"
   },
   {
-    "title": "Untitled Vision Series",
+    "title": "VisionQuest",
     "type": "series",
     "imdbId": "tt23112594",
     "id": "marvel_tt23112594",
-    "releaseYear": "TBD",
-    "poster": "https://raw.githubusercontent.com/joaogonp/addon-marvel/refs/heads/main/assets/comingsoon.png"
+    "releaseYear": "2026",
+    "poster": "https://image.tmdb.org/t/p/original/6j60tGRAjBmWRPTOEwhW6oRbPMP.jpg"
   },
 ];
