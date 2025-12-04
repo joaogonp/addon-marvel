@@ -944,46 +944,6 @@ module.exports = [
     "poster": "https://image.tmdb.org/t/p/w500/rZ4arzyaDyI8l9Y7VIPPsDGARwh.jpg"
   },
   {
-    "title": "Untitled The Punisher Special",
-    "type": "movie",
-    "imdbId": "tmdb_1439930",
-    "id": "marvel_tmdb_1439930",
-    "releaseYear": "TBD",
-    "poster": "https://raw.githubusercontent.com/joaogonp/addon-marvel/refs/heads/main/assets/comingsoon.png"
-  },
-  {
-    "title": "Black Panther 3",
-    "type": "movie",
-    "imdbId": "tmdb_1386618",
-    "id": "marvel_tmdb_1386618",
-    "releaseYear": "TBD",
-    "poster": "https://raw.githubusercontent.com/joaogonp/addon-marvel/refs/heads/main/assets/comingsoon.png"
-  },
-  {
-    "title": "Untitled X-Men Movie",
-    "type": "movie",
-    "imdbId": "tt29347085",
-    "id": "marvel_tt29347085",
-    "releaseYear": "TBD",
-    "poster": "https://raw.githubusercontent.com/joaogonp/addon-marvel/refs/heads/main/assets/comingsoon.png"
-  },
-  {
-    "title": "Thor 5",
-    "type": "movie",
-    "imdbId": "tmdb_1196551",
-    "id": "marvel_tmdb_1196551",
-    "releaseYear": "TBD",
-    "poster": "https://raw.githubusercontent.com/joaogonp/addon-marvel/refs/heads/main/assets/comingsoon.png"
-  },
-  {
-    "title": "Doctor Strange 3",
-    "type": "movie",
-    "imdbId": "tmdb_1072946",
-    "id": "marvel_tmdb_1072946",
-    "releaseYear": "TBD",
-    "poster": "https://raw.githubusercontent.com/joaogonp/addon-marvel/refs/heads/main/assets/comingsoon.png"
-  },
-  {
     "title": "Armor Wars",
     "type": "movie",
     "imdbId": "tt13623128",
