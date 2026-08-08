@@ -1,0 +1,16 @@
+{
+  "name": "marvel-addon-build-tools",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Ferramentas locais (Node.js) para gerar Data/metadataCache.json. O addon em si (main.js) corre no Deno Deploy, não usa este package.json.",
+  "scripts": {
+    "build-metadata": "node scripts/buildMetadata.js",
+    "build-metadata:refresh": "node scripts/buildMetadata.js --refresh"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "p-limit": "^3.1.0"
+  }
+}

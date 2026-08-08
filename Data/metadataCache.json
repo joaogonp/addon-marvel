@@ -1,0 +1,3698 @@
+{
+  "tt0458339": {
+    "id": "tt0458339",
+    "type": "movie",
+    "name": "Captain America: The First Avenger",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/vSNxAJTlD0r02V9sPYpOjqDZXUK.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2011",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt3475734": {
+    "id": "tt3475734",
+    "type": "series",
+    "name": "Marvel's Agent Carter",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/hZlr8Ynm8HqJB2gpvtAAgccbzSl.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2015",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt4154664": {
+    "id": "tt4154664",
+    "type": "movie",
+    "name": "Captain Marvel",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2019",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0371746": {
+    "id": "tt0371746",
+    "type": "movie",
+    "name": "Iron Man",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/78lPtwv72eTNqFW9COBYI0dWDJa.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2008",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1228705": {
+    "id": "tt1228705",
+    "type": "movie",
+    "name": "Iron Man 2",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/6WBeq4fCfn7AN0o21W9qNcRF2l9.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2010",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0800080": {
+    "id": "tt0800080",
+    "type": "movie",
+    "name": "The Incredible Hulk",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/gKzYx79y0AQTL4UAk1cBQJ3nvrm.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2008",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0800369": {
+    "id": "tt0800369",
+    "type": "movie",
+    "name": "Thor",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/prSfAi1xGrhLQNxVSUFh61xQ4Qy.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2011",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0848228": {
+    "id": "tt0848228",
+    "type": "movie",
+    "name": "The Avengers",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2012",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1981115": {
+    "id": "tt1981115",
+    "type": "movie",
+    "name": "Thor: The Dark World",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/wD6g4EcmR6R3VNbuBmNOVq2qWrM.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2013",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1300854": {
+    "id": "tt1300854",
+    "type": "movie",
+    "name": "Iron Man 3",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/qhPtAc1TKbMPqNvcdXSOn9Bn7hZ.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2013",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt2364582": {
+    "id": "tt2364582",
+    "type": "series",
+    "name": "Marvel's Agents of S.H.I.E.L.D.",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/gHUCCMy1vvj58tzE3dZqeC9SXus.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2013",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1843866": {
+    "id": "tt1843866",
+    "type": "movie",
+    "name": "Captain America: The Winter Soldier",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/tVFRpFw3xTedgPGqxW0AOI8Qhh0.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2014",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt2015381": {
+    "id": "tt2015381",
+    "type": "movie",
+    "name": "Guardians of the Galaxy",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/jPrJPZKJVhvyJ4DmUTrDgmFN0yG.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2014",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt3896198": {
+    "id": "tt3896198",
+    "type": "movie",
+    "name": "Guardians of the Galaxy Vol. 2",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/y4MBh0EjBlMuOzv9axM4qJlmhzz.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2017",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt3322312": {
+    "id": "tt3322312",
+    "type": "series",
+    "name": "Daredevil",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/QWbPaDxiB6LW2LjASknzYBvjMj.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2015",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt2357547": {
+    "id": "tt2357547",
+    "type": "series",
+    "name": "Jessica Jones",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/7QUDTLPdR976ziMgvciqEvZChu7.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2015",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt2395427": {
+    "id": "tt2395427",
+    "type": "movie",
+    "name": "Avengers: Age of Ultron",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/4ssDuvEDkSArWEdyBl2X5EHvYKU.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2015",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0478970": {
+    "id": "tt0478970",
+    "type": "movie",
+    "name": "Ant-Man",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/rQRnQfUl3kfp78nCWq8Ks04vnq1.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2015",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt3322314": {
+    "id": "tt3322314",
+    "type": "series",
+    "name": "Luke Cage",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/6R62oGGufhsf6DiMknCi047N0b7.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2016",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt5614844": {
+    "id": "tt5614844",
+    "type": "series",
+    "name": "Cloak & Dagger",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/pYnRJuBPEqZO1o4fcxBTgmKNHfy.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2018",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt3322310": {
+    "id": "tt3322310",
+    "type": "series",
+    "name": "Iron Fist",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/4l6KD9HhtD6nCDEfg10Lp6C6zah.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2017",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt4230076": {
+    "id": "tt4230076",
+    "type": "series",
+    "name": "The Defenders",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/eOW7GzbWl6sgQEProXqpYPSRHo.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2017",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt3498820": {
+    "id": "tt3498820",
+    "type": "movie",
+    "name": "Captain America: Civil War",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/rAGiXaUfPzY7CDEyNKUofk3Kw2e.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2016",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt3480822": {
+    "id": "tt3480822",
+    "type": "movie",
+    "name": "Black Widow",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/kwB7d51AIcyzPOBOHLCEZJkmPhQ.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2021",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1825683": {
+    "id": "tt1825683",
+    "type": "movie",
+    "name": "Black Panther",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2018",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt4154858": {
+    "id": "tt4154858",
+    "type": "series",
+    "name": "Inhumans",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/zKfGip55oJ9tdzhyd9ayGyFFhuo.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2017",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt2250912": {
+    "id": "tt2250912",
+    "type": "movie",
+    "name": "Spider-Man: Homecoming",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2017",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt5675620": {
+    "id": "tt5675620",
+    "type": "series",
+    "name": "The Punisher",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/9tepVli4YijTCHyiATRvoR4c64X.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2017",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1236246": {
+    "id": "tt1236246",
+    "type": "series",
+    "name": "Runaways",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/zceMrfO17AQkeWJZNra4O90s1vE.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2017",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1211837": {
+    "id": "tt1211837",
+    "type": "movie",
+    "name": "Doctor Strange",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/uGBVj3bEbCoZbDjjl9wTxcygko1.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2016",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt3501632": {
+    "id": "tt3501632",
+    "type": "movie",
+    "name": "Thor: Ragnarok",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/8hnNdUFlUkjPWxKDyiE4Kn8h7Q5.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2017",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt5095030": {
+    "id": "tt5095030",
+    "type": "movie",
+    "name": "Ant-Man and the Wasp",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/cFQEO687n1K6umXbInzocxcnAQz.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2018",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt4154756": {
+    "id": "tt4154756",
+    "type": "movie",
+    "name": "Avengers: Infinity War",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2018",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt4154796": {
+    "id": "tt4154796",
+    "type": "movie",
+    "name": "Avengers: Endgame",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2019",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt9032400": {
+    "id": "tt9032400",
+    "type": "movie",
+    "name": "Eternals",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/lFByFSLV5WDJEv3KabbdAF959F2.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2021",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt9140554": {
+    "id": "tt9140554",
+    "type": "series",
+    "name": "Loki",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/kEl2t3OhXc3Zb9FBh1AuYzRTgZp.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2021",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt10168312": {
+    "id": "tt10168312",
+    "type": "series",
+    "name": "What If...?",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/lztz5XBMG1x6Y5ubz7CxfPFsAcW.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2021",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt9140560": {
+    "id": "tt9140560",
+    "type": "series",
+    "name": "WandaVision",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/frobUz2X5Pc8OiVZU8Oo5K3NKMM.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2021",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt9376612": {
+    "id": "tt9376612",
+    "type": "movie",
+    "name": "Shang-Chi and the Legend of the Ten Rings",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/d08HqqeBQSwN8i8MEvpsZ8Cb438.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2021",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt9208876": {
+    "id": "tt9208876",
+    "type": "series",
+    "name": "The Falcon and the Winter Soldier",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/6kbAMLteGO8yyewYau6bJ683sw7.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2021",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt10266874": {
+    "id": "tt10266874",
+    "type": "series",
+    "name": "Helstrom",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/5QmcKsepYpO9XYsWNLwsiULoaAu.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2020",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt6320628": {
+    "id": "tt6320628",
+    "type": "movie",
+    "name": "Spider-Man: Far From Home",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/2KLkGP0qWZlNGOad2O6P069hlw0.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2019",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt10872600": {
+    "id": "tt10872600",
+    "type": "movie",
+    "name": "Spider-Man: No Way Home",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2021",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt9419884": {
+    "id": "tt9419884",
+    "type": "movie",
+    "name": "Doctor Strange in the Multiverse of Madness",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/ddJcSKbcp4rKZTmuyWaMhuwcfMz.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2022",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt10160804": {
+    "id": "tt10160804",
+    "type": "series",
+    "name": "Hawkeye",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/ct5pNE5dDHryHLDnxyZPYcqO1sz.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2021",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt10234724": {
+    "id": "tt10234724",
+    "type": "series",
+    "name": "Moon Knight",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/YksR65as1ppF2N48TJAh2PLamX.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2022",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt9114286": {
+    "id": "tt9114286",
+    "type": "movie",
+    "name": "Black Panther: Wakanda Forever",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/sv1xJUazXeYqALzczSZ3O6nkH75.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2022",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt13966962": {
+    "id": "tt13966962",
+    "type": "series",
+    "name": "Echo",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/vFyJH630cF68LohVYjQW49074Sy.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2024",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt10857160": {
+    "id": "tt10857160",
+    "type": "series",
+    "name": "She-Hulk: Attorney at Law",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/5xz2orV8f0usyrfGNshcoXHmiaV.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2022",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt10857164": {
+    "id": "tt10857164",
+    "type": "series",
+    "name": "Ms. Marvel",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/3HWWh92kZbD7odwJX7nKmXNZsYo.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2022",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt10648342": {
+    "id": "tt10648342",
+    "type": "movie",
+    "name": "Thor: Love and Thunder",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2022",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt13623126": {
+    "id": "tt13623126",
+    "type": "series",
+    "name": "Ironheart",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/UbbIyltRQbbnVSnbVqTBjmkSRC.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2025",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt15318872": {
+    "id": "tt15318872",
+    "type": "movie",
+    "name": "Werewolf by Night",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/mvIvNKRIJPPS7WSFarFhOAGIVnU.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2022",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt13623136": {
+    "id": "tt13623136",
+    "type": "movie",
+    "name": "The Guardians of the Galaxy Holiday Special",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/8dqXyslZ2hv49Oiob9UjlGSHSTR.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2022",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt10954600": {
+    "id": "tt10954600",
+    "type": "movie",
+    "name": "Ant-Man and the Wasp: Quantumania",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/qnqGbB22YJ7dSs4o6M7exTpNxPz.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2023",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt6791350": {
+    "id": "tt6791350",
+    "type": "movie",
+    "name": "Guardians of the Galaxy Vol. 3",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2023",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt13157618": {
+    "id": "tt13157618",
+    "type": "series",
+    "name": "Secret Invasion",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/f5ZMzzCvt2IzVDxr54gHPv9jlC9.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2023",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt10676048": {
+    "id": "tt10676048",
+    "type": "movie",
+    "name": "The Marvels",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/9GBhzXMFjgcZ3FdR9w3bUMMTps5.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2023",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt6263850": {
+    "id": "tt6263850",
+    "type": "movie",
+    "name": "Deadpool & Wolverine",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2024",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt15571732": {
+    "id": "tt15571732",
+    "type": "series",
+    "name": "Agatha All Along",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/gOcqzHwkApTWD9i5ChDK5wO5pM5.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2024",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt18923754": {
+    "id": "tt18923754",
+    "type": "series",
+    "name": "Daredevil: Born Again",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/9lLuhV703HGCbnz6FxnqCwIwzAZ.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2025",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt14513804": {
+    "id": "tt14513804",
+    "type": "movie",
+    "name": "Captain America: Brave New World",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/pzIddUEMWhWzfvLI3TwxUG2wGoi.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2025",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt20969586": {
+    "id": "tt20969586",
+    "type": "movie",
+    "name": "Thunderbolts*",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/wSYLO9m7nPXcxcY5xtZfH6Eewmp.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2025",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt10676052": {
+    "id": "tt10676052",
+    "type": "movie",
+    "name": "The Fantastic: Four First Steps",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/x26MtUlwtWD26d0G0FXcppxCJio.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2025",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt21066182": {
+    "id": "tt21066182",
+    "type": "series",
+    "name": "Wonder Man",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/kboHD8dkHvkAuszYxq89BYJhq9t.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2026",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt23112594": {
+    "id": "tt23112594",
+    "type": "series",
+    "name": "VisionQuest",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/6j60tGRAjBmWRPTOEwhW6oRbPMP.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2026",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt22084616": {
+    "id": "tt22084616",
+    "type": "movie",
+    "name": "Spider-Man: Brand New Day",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/9JCQtDCSpPR2ld55yNlEg1VwcQo.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2026",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt21357150": {
+    "id": "tt21357150",
+    "type": "movie",
+    "name": "Avengers: Doomsday",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/6eB2oh1SplddsZYCdayrIdrIGLd.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2026",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt21361444": {
+    "id": "tt21361444",
+    "type": "movie",
+    "name": "Avengers: Secret Wars",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/f0YBuh4hyiAheXhh4JnJWoKi9g5.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2027",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt13623128": {
+    "id": "tt13623128",
+    "type": "movie",
+    "name": "Armor Wars",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/vDbzi8eM710THVCwjfqVU8a5E3g.jpg",
+    "description": "No description available.",
+    "releaseInfo": "TBD",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1270798": {
+    "id": "tt1270798",
+    "type": "movie",
+    "name": "X-Men: First Class",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/hNEokmUke0dazoBhttFN0o3L7Xv.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2011",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1877832": {
+    "id": "tt1877832",
+    "type": "movie",
+    "name": "X-Men: Days of Future Past",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/tYfijzolzgoMOtegh1Y7j2Enorg.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2014",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0458525": {
+    "id": "tt0458525",
+    "type": "movie",
+    "name": "X-Men Origins: Wolverine",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/yj8LbTju1p7CUJg7US2unSBk33s.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2009",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt3385516": {
+    "id": "tt3385516",
+    "type": "movie",
+    "name": "X-Men: Apocalypse",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/ikA8UhYdTGpqbatFa93nIf6noSr.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2016",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt6565702": {
+    "id": "tt6565702",
+    "type": "movie",
+    "name": "Dark Phoenix",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/cCTJPelKGLhALq3r51A9uMonxKj.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2019",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0120903": {
+    "id": "tt0120903",
+    "type": "movie",
+    "name": "X-Men",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/bRDAc4GogyS9ci3ow7UnInOcriN.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2000",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0290334": {
+    "id": "tt0290334",
+    "type": "movie",
+    "name": "X2: X-Men United",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/rtrd4qieMAhoUshu83Vi1GazM1O.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2003",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0376994": {
+    "id": "tt0376994",
+    "type": "movie",
+    "name": "X-Men: The Last Stand",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/sNSvwqiNXjEvDSeQFsJAGPEP7Gl.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2006",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1430132": {
+    "id": "tt1430132",
+    "type": "movie",
+    "name": "The Wolverine",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/8lzmovtARDXnE7kTDOum02i6fXv.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2013",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1431045": {
+    "id": "tt1431045",
+    "type": "movie",
+    "name": "Deadpool",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/3E53WEZJqP6aM84D8CckXx4pIHw.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2016",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt4682266": {
+    "id": "tt4682266",
+    "type": "movie",
+    "name": "The New Mutants",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/xiDGcXJTvu1lazFRYip6g1eLt9c.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2020",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt5463162": {
+    "id": "tt5463162",
+    "type": "movie",
+    "name": "Deadpool 2",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/to0spRl1CMDvyUbOnbb4fTk3VAd.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2018",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt3315342": {
+    "id": "tt3315342",
+    "type": "movie",
+    "name": "Logan",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/fnbjcRDYn6YviCcePDnGdyAkYsB.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2017",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0036697": {
+    "id": "tt0036697",
+    "type": "movie",
+    "name": "Captian America",
+    "logo": null,
+    "poster": "https://web.archive.org/web/20170212221101/http://media-cache-ec0.pinimg.com/736x/ca/b9/d4/cab9d4002b3be2dbef67a89b3ad39783.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1944",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0076190": {
+    "id": "tt0076190",
+    "type": "movie",
+    "name": "The Incredible Hulk",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/xICqSe6WSu3SDN0lfloExd9X9AQ.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1977",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0077469": {
+    "id": "tt0077469",
+    "type": "movie",
+    "name": "Dr. Strange",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/hEyHVgBE28Jl13h2Qpbr3LH77sP.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1978",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0078937": {
+    "id": "tt0078937",
+    "type": "movie",
+    "name": "Captain America",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/algGoBR8Smev6JDQJLJbwKnYxqi.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1979",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0078938": {
+    "id": "tt0078938",
+    "type": "movie",
+    "name": "Captain America II: Death Too Soon",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/pocmh0P8Ddf5w33pP3Vuqm0JRP9.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1979",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0089893": {
+    "id": "tt0089893",
+    "type": "movie",
+    "name": "Red Sonja",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/qYJFrmSjy0HpzmvnIuGpuFUzXbs.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1985",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0091225": {
+    "id": "tt0091225",
+    "type": "movie",
+    "name": "Howard the Duck",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/eU0dWo8PJgsSAZFbcyHiUpuLSyW.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1986",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0098512": {
+    "id": "tt0098512",
+    "type": "movie",
+    "name": "The Incredible Hulk Returns",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/rDAWdpW0uzUj9c4YPeuanPGWHBq.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1988",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0095368": {
+    "id": "tt0095368",
+    "type": "movie",
+    "name": "The Trial of the Incredible Hulk",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/30byddPAlNalaVed3o59IVjhzJg.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1989",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0098141": {
+    "id": "tt0098141",
+    "type": "movie",
+    "name": "The Punisher",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/p7CNykYyLG1mA1OazOtUsLxeWxD.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1989",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0103923": {
+    "id": "tt0103923",
+    "type": "movie",
+    "name": "Captain America",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/lUsDBhzogxYOU5XshARgnnZY4Xd.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1990",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0136198": {
+    "id": "tt0136198",
+    "type": "movie",
+    "name": "Firearm",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/lAREEaTmpetCDjvgmy6UnWqCPBq.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1993",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0116401": {
+    "id": "tt0116401",
+    "type": "movie",
+    "name": "Generation X",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/oaM0RTIkhw0lCK9JowsIvdsJ1Pn.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1996",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0119654": {
+    "id": "tt0119654",
+    "type": "movie",
+    "name": "Men in Black",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/uLOmOF5IzWoyrgIF5MfUnh5pa1X.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1997",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0119781": {
+    "id": "tt0119781",
+    "type": "movie",
+    "name": "Nick Fury: Agent of S.H.I.E.L.D",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/4T0YjvnBaMASZkkRKxMIe6IoWO0.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1998",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0120611": {
+    "id": "tt0120611",
+    "type": "movie",
+    "name": "Blade",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/oWT70TvbsmQaqyphCZpsnQR7R32.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1998",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0187738": {
+    "id": "tt0187738",
+    "type": "movie",
+    "name": "Blade II",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/azzTa03g0Fb8HC7O3521qq0oc8Q.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2002",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0145487": {
+    "id": "tt0145487",
+    "type": "movie",
+    "name": "Spider-Man",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/gh4cZbhZxyTbgxQPxD0dOudNPTn.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2002",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0120912": {
+    "id": "tt0120912",
+    "type": "movie",
+    "name": "Men in Black II'",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/jwsjSForCGo7tnvwCfB5EnWYbKC.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2002",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0287978": {
+    "id": "tt0287978",
+    "type": "movie",
+    "name": "Daredevil",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/oCDBwSkntYamuw8VJIxMRCtDBmi.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2003",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0286716": {
+    "id": "tt0286716",
+    "type": "movie",
+    "name": "Hulk",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/qnngKqAcqfH2pBxDoKu5lxzSbTo.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2003",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0330793": {
+    "id": "tt0330793",
+    "type": "movie",
+    "name": "The Punisher",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/7rmA1HwYp2GKM85BL0cVwCaosGr.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2004",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0316654": {
+    "id": "tt0316654",
+    "type": "movie",
+    "name": "Spider-Man 2",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/aGuvNAaaZuWXYQQ6N2v7DeuP6mB.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2004",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0359013": {
+    "id": "tt0359013",
+    "type": "movie",
+    "name": "Blade: Trinity",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/r6ycjrStmmAqiY1oDjAli9NArCa.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2004",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0357277": {
+    "id": "tt0357277",
+    "type": "movie",
+    "name": "Elektra",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/delKBZg2QeVH2FMdU7YOuZSIG4Q.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2005",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0290747": {
+    "id": "tt0290747",
+    "type": "movie",
+    "name": "Man-Thing",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/jcCNfw58NlLYOVYLtrhKxN4rH44.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2005",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0120667": {
+    "id": "tt0120667",
+    "type": "movie",
+    "name": "Fantastic Four",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/yoao85kVKNJ0dN967Gnn3nvkFJG.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2005",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0259324": {
+    "id": "tt0259324",
+    "type": "movie",
+    "name": "Ghost Rider",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/d9Oan9XJJ6gRJa64Ifsgp1sXbC4.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2007",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0413300": {
+    "id": "tt0413300",
+    "type": "movie",
+    "name": "Spider-Man 3",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/qFmwhVUoUSXjkKRmca5yGDEXBIj.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2007",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0486576": {
+    "id": "tt0486576",
+    "type": "movie",
+    "name": "Fantastic Four: Rise of the Silver Surfer",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/f3ldtPF7SESMcyAIyIJHBLlBBkr.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2007",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0450314": {
+    "id": "tt0450314",
+    "type": "movie",
+    "name": "Punisher: War Zone",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/oOvKJgYUIpfswGHAdW6159bPbvM.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2008",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1250777": {
+    "id": "tt1250777",
+    "type": "movie",
+    "name": "Kick-Ass",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/8citjdBmjddZjlPsAHEyCKwGVvD.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2010",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1071875": {
+    "id": "tt1071875",
+    "type": "movie",
+    "name": "Ghost Rider: Spirit of Vengeance",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/fUJOWsjjE8u1r4YOLYe1RLYy7bm.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2011",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt2011118": {
+    "id": "tt2011118",
+    "type": "movie",
+    "name": "Marvel One-Shot: The Consultant",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/xqNLXUUvBnfVk6m3QFGGU0Grgs7.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2011",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt2011109": {
+    "id": "tt2011109",
+    "type": "movie",
+    "name": "Marvel One-Shot: A Funny Thing Happened on the Way to Thor's Hammer",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/njrOqsmFH4pxBrhcoslqLfw2OGk.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2011",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1409024": {
+    "id": "tt1409024",
+    "type": "movie",
+    "name": "Men in Black 3",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/90DdoEStzeObs96fsYf4GG544iN.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2012",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0948470": {
+    "id": "tt0948470",
+    "type": "movie",
+    "name": "The Amazing Spider-Man",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/jexoNYnPd6vVrmygwF6QZmWPFdu.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2012",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt2247732": {
+    "id": "tt2247732",
+    "type": "movie",
+    "name": "Marvel One-Shot: Item 47",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/hnSxG8clwLuAXEkp9emc8HCUcHD.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2012",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1650554": {
+    "id": "tt1650554",
+    "type": "movie",
+    "name": "Kick-Ass 2",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/19hM2kJQhGV4ccZ8Tde2TkQG4ab.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2013",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt3067038": {
+    "id": "tt3067038",
+    "type": "movie",
+    "name": "Marvel One-Shot: Agent Carter",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/4vFKKWPvCVDJTOWiwReBfpAMScP.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2013",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt3438640": {
+    "id": "tt3438640",
+    "type": "movie",
+    "name": "Marvel One-Shot: All Hail the King",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/ozXvopXv1TiOTls8zb09dBmu9dt.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2014",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt3591568": {
+    "id": "tt3591568",
+    "type": "movie",
+    "name": "Marvel Studios: Assembling a Universe",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/41Ke02UzYoPsiTc3YbomPGiQKMl.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2014",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1872181": {
+    "id": "tt1872181",
+    "type": "movie",
+    "name": "The Amazing Spider-Man 2",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/dGjoPttcbKR5VWg1jQuNFB247KL.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2014",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt4128102": {
+    "id": "tt4128102",
+    "type": "movie",
+    "name": "Marvel 75 Years: From Pulp to Pop!",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/qNC8co8LuGBv22Fu9SC71ppAwoA.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2014",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt2802144": {
+    "id": "tt2802144",
+    "type": "movie",
+    "name": "Kingsman: The Secret Service",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/r6q9wZK5a2K51KFj4LWVID6Ja1r.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2015",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1502712": {
+    "id": "tt1502712",
+    "type": "movie",
+    "name": "Fantastic Four",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/4QIPHyUjmNKOdNn9W8MfsPrp7xr.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2015",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt5281414": {
+    "id": "tt5281414",
+    "type": "movie",
+    "name": "Captain America: 75 Heroic Years",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/mTs7YKbpkOAjBmurCqVcrcXO6aZ.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2016",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt6016776": {
+    "id": "tt6016776",
+    "type": "movie",
+    "name": "Marvel One-Shot: Team Thor",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/jVSmX89BvsQV2z3wh2IVYVNVw1a.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2016",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt6599818": {
+    "id": "tt6599818",
+    "type": "movie",
+    "name": "Marvel One-Shot: Team Thor: Part 2",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/9Vt1OLu3BrKy1IQFK3QyzpR1LVm.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2017",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt4649466": {
+    "id": "tt4649466",
+    "type": "movie",
+    "name": "Kingsman: The Golden Circle",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/wrXdz7eFZ4l7Eu5bpI3AxkYKcMY.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2017",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt8023090": {
+    "id": "tt8023090",
+    "type": "movie",
+    "name": "Marvel One-Shot: Team Darryl",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/axlLFvTfV4W8zbWby7H4vf1vMPq.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2018",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1270797": {
+    "id": "tt1270797",
+    "type": "movie",
+    "name": "Venom",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/2uNW4WbgBXL25BAbXGLnLqX71Sw.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2018",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt2283336": {
+    "id": "tt2283336",
+    "type": "movie",
+    "name": "Men in Black: International",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/jJtp21JteJbpqHSGU7XaBEJkMoE.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2019",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt11107678": {
+    "id": "tt11107678",
+    "type": "movie",
+    "name": "Marvel One-Shot: Peter's To-Do List",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/ohnN1gVREFJXJJv35BaBHladKoA.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2019",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt11295300": {
+    "id": "tt11295300",
+    "type": "movie",
+    "name": "Expanding the Universe",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/4AicdMecgp5t5v8wlvl3YfOPhXq.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2019",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt7097896": {
+    "id": "tt7097896",
+    "type": "movie",
+    "name": "Venom: Let There Be Carnage",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/pzKsRuKLFmYrW5Q0q8E8G78Tcgo.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2021",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt6856242": {
+    "id": "tt6856242",
+    "type": "movie",
+    "name": "The King's Man",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/6IGX4sXjbssePGCQGv71fMANHRV.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2021",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt5108870": {
+    "id": "tt5108870",
+    "type": "movie",
+    "name": "Morbius",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/6nhwr1LCozBiIN47b8oBEomOADm.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2022",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt15009428": {
+    "id": "tt15009428",
+    "type": "movie",
+    "name": "Argylle",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/siduVKgOnABO4WH4lOwPQwaGwJp.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2023",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt11057302": {
+    "id": "tt11057302",
+    "type": "movie",
+    "name": "Madame Web",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/rULWuutDcN5NvtiZi4FRPzRYWSh.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2024",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt16366836": {
+    "id": "tt16366836",
+    "type": "movie",
+    "name": "Venom: The Last Dance",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/vGXptEdgZIhPg3cGlc7e8sNPC2e.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2024",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt8790086": {
+    "id": "tt8790086",
+    "type": "movie",
+    "name": "Kraven the Hunter",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/1GvBhRxY6MELDfxFrete6BNhBB5.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2024",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt16360004": {
+    "id": "tt16360004",
+    "type": "animation",
+    "name": "Spider-Man: Beyond the Spider-Verse",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/rZ4arzyaDyI8l9Y7VIPPsDGARwh.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2027",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt27826524": {
+    "id": "tt27826524",
+    "type": "series",
+    "name": "Spidey Super Stories",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/cSHETWKC1JPQ3cNmpMCx9vMPoBs.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1974",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0076975": {
+    "id": "tt0076975",
+    "type": "series",
+    "name": "The Amazing Spider-Man",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/hJUka4mFGp9L3FNw9uJiUg6mkYG.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1977",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0077031": {
+    "id": "tt0077031",
+    "type": "series",
+    "name": "The Incredible Hulk",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/8q7uFuNuMWTWfcpnCpBuZa3KZXx.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1977",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0128886": {
+    "id": "tt0128886",
+    "type": "series",
+    "name": "Night Man",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/esqusThZ8KbEOT6NqIieocBk8gQ.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1977",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0283203": {
+    "id": "tt0283203",
+    "type": "series",
+    "name": "Mutant X",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/yiKg027jdpkSsguVBI9WqliNWez.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2001",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0823333": {
+    "id": "tt0823333",
+    "type": "series",
+    "name": "Blade: The Series",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/pHMXi30FTFNLGzI0164b5GPECkE.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2006",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt5296048": {
+    "id": "tt5296048",
+    "type": "series",
+    "name": "WHIH Newsfront",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/2RAbC1bwYvE3kYr6PdYFUo6vmO6.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2015",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1851040": {
+    "id": "tt1851040",
+    "type": "series",
+    "name": "Powers",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/7imMR8ySLCPG3LsNlGej8GGtXBg.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2015",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt6313900": {
+    "id": "tt6313900",
+    "type": "series",
+    "name": "Marvel's Agents of S.H.I.E.L.D.: Slingshot",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/bwJej7WdmGRMCMyuDlotwAqVX7S.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2016",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt5114356": {
+    "id": "tt5114356",
+    "type": "series",
+    "name": "Legion",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/4WLMWQgH3eXNP1aGrAuwlSiIx5j.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2017",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt4396630": {
+    "id": "tt4396630",
+    "type": "series",
+    "name": "The Gifted",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/w500/nshCqszjTNuqhrB53vrSqWO18sE.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2017",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt13650480": {
+    "id": "tt13650480",
+    "type": "series",
+    "name": "Marvel Studios: Legends",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/EpDuYIK81YtCUT3gH2JDpyj8Qk.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2021",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt14094206": {
+    "id": "tt14094206",
+    "type": "series",
+    "name": "Marvel Studios Assembled",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/50lfJlcUuR8Nit0YSudfK59EUM7.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2021",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt23779108": {
+    "id": "tt23779108",
+    "type": "series",
+    "name": "Marvel Lucha Libre Edition: El origen de la mascara",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/lrSxTzfVZMig68bbX85za2gpxGb.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2022",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0061301": {
+    "id": "tt0061301",
+    "type": "series",
+    "name": "Spider-Man",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/y85QOYMhcZsEfHbrntBv5SZXH1w.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1967",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0061250": {
+    "id": "tt0061250",
+    "type": "series",
+    "name": "Fantastic Four",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/8zwysNUXr5z3mDZSFEv1fZ8qo08.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1967",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0241100": {
+    "id": "tt0241100",
+    "type": "series",
+    "name": "Fantastic Four",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/8Sm8WQ9Gm7fyJBimix2a05Cj6ON.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1978",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0077091": {
+    "id": "tt0077091",
+    "type": "series",
+    "name": "The Thing",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/eDyeUNRBCIn2GeS4hIM0HT3xDBw.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1979",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0197911": {
+    "id": "tt0197911",
+    "type": "series",
+    "name": "Spider-Woman",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/cXiD1jVLjTyvO3w2jKq9QdlAYag.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1979",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0081938": {
+    "id": "tt0081938",
+    "type": "series",
+    "name": "Spider-Man",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/5xZac4wWUlXQmEBqIIKJ9rqXnUh.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1981",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0083481": {
+    "id": "tt0083481",
+    "type": "series",
+    "name": "Spider-Man and His Amazing Friends",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/4b8HFH1arZ4b05RHwxPc2JfueYv.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1981",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0083430": {
+    "id": "tt0083430",
+    "type": "series",
+    "name": "Incredible Hulk",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/eg1HgM1kF0SJbYsWVmpP2BjvPUU.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1982",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0103584": {
+    "id": "tt0103584",
+    "type": "series",
+    "name": "X-Men",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/2OFwsFhAobczgJWnVdwd9oZAF2N.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1992",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0115218": {
+    "id": "tt0115218",
+    "type": "series",
+    "name": "Iron Man",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/nTQWWH6CFtl37x1nPx8HRwbwvGn.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1994",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0187635": {
+    "id": "tt0187635",
+    "type": "series",
+    "name": "Fantastic Four",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/jy7fvS9ow4MadFZuhwadshj0yes.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1994",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0112175": {
+    "id": "tt0112175",
+    "type": "series",
+    "name": " Spider-Man",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/wXthtEN5kdWA1bHz03lkuCJS6hA.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1994",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0484812": {
+    "id": "tt0484812",
+    "type": "series",
+    "name": "UltraForce",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/i0fI892hW938Zk1RA1vpqVmI5fS.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1995",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0115215": {
+    "id": "tt0115215",
+    "type": "series",
+    "name": "The Incredible Hulk",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/wa60s9NSvrH87NFCArmobnIyNnh.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1996",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0127385": {
+    "id": "tt0127385",
+    "type": "series",
+    "name": "Men in Black",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/hmXG0SBVg0vjD4xp3jWQ0cZJIOr.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1997",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0203268": {
+    "id": "tt0203268",
+    "type": "series",
+    "name": "Silver Surfer",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/18rhdRDXAAHUTsbWtIQn2ZkjRL9.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1998",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0207120": {
+    "id": "tt0207120",
+    "type": "series",
+    "name": "Spider-Man Unlimited",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/hNdf1WmFil9IV7rabBe6PnAmYnI.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1999",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0203247": {
+    "id": "tt0203247",
+    "type": "series",
+    "name": "Avengers: United They Stand",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/p2SrnKTQjLRXBCcTZtYkTZCwLpp.jpg",
+    "description": "No description available.",
+    "releaseInfo": "1999",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0247827": {
+    "id": "tt0247827",
+    "type": "series",
+    "name": "X-Men: Evolution",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/At5aZIKkN8zHTAXOnQR9D3b7usW.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2000",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0290983": {
+    "id": "tt0290983",
+    "type": "series",
+    "name": "Spider-Man: The New Animated Series",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/8jLRJnMcSwIZOm1lKBU4pV6zM2M.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2003",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0830298": {
+    "id": "tt0830298",
+    "type": "series",
+    "name": "Fantastic Four: World's Greatest Heroes",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/tADUrw8v8YsFPVTikxughgP2wrL.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2006",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0491703": {
+    "id": "tt0491703",
+    "type": "movie",
+    "name": "Ultimate Avengers",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/zyMZ2boSccbaUjOkl6AdzLb6KKd.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2006",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt2949494": {
+    "id": "tt2949494",
+    "type": "movie",
+    "name": "X-Men: Darktide",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/2233WXs0oggdnb8IGOpBgmBQnBq.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2006",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0803093": {
+    "id": "tt0803093",
+    "type": "movie",
+    "name": "Ultimate Avengers 2",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/2bfVNvLKWaxFh1LiOKlvxgiHOXn.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2006",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0903135": {
+    "id": "tt0903135",
+    "type": "movie",
+    "name": "The Invincible Iron Man",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/eebNTSRa5Hh5skPKGdGJIJpo9Ls.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2007",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0910865": {
+    "id": "tt0910865",
+    "type": "movie",
+    "name": "Doctor Strange: The Sorcerer Supreme",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/oczXYdStbFituTIDharMhcXDAkg.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2007",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0976192": {
+    "id": "tt0976192",
+    "type": "series",
+    "name": "Spectacular Spider-Man",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/gZW6uJR2f6pLmjRWABfEY4Q7VuQ.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2008",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0772145": {
+    "id": "tt0772145",
+    "type": "series",
+    "name": "Wolverine and the X-Men",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/oSeJ2nESB77iC6SLo4qcqoadjdt.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2008",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt0837143": {
+    "id": "tt0837143",
+    "type": "series",
+    "name": "Iron Man: Armored Adventures",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/kIJGgBwh37V2nfgnJFaN7zDIjdv.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2008",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1259998": {
+    "id": "tt1259998",
+    "type": "movie",
+    "name": "Next Avengers: Heroes of Tomorrow",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/qp66vgUHDRaeFVvNIazrxQBI33h.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2008",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1388589": {
+    "id": "tt1388589",
+    "type": "series",
+    "name": "Super Hero Squad Show",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/3CdaaPZdU1Xv2c6hDaSVWhsXtuO.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2009",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1325753": {
+    "id": "tt1325753",
+    "type": "movie",
+    "name": "Hulk Vs.",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/gQw25SDF8vQYC7JRD3xW0V6YCjR.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2009",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1626038": {
+    "id": "tt1626038",
+    "type": "series",
+    "name": "The Avengers: Earth's Mightiest Heroes",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/nH1ROb4ujGRuDItJyn5UrYY5uOB.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2010",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1483025": {
+    "id": "tt1483025",
+    "type": "movie",
+    "name": "Planet Hulk",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/5wCzY3sAs6zHIzzHIcTKN2g0pu8.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2010",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1667903": {
+    "id": "tt1667903",
+    "type": "movie",
+    "name": "Thor: Tales of Asgard",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/oh8jjEBbL0BEGT3Fy2DKhbE2D58.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2011",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt1722512": {
+    "id": "tt1722512",
+    "type": "series",
+    "name": "Ultimate Spide-Man",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/p276PkRJ5Wexq91DA5RkbxTYMDn.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2012",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt2455546": {
+    "id": "tt2455546",
+    "type": "series",
+    "name": "The Avengers: Assemble",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/aVYPq7FSvsdNQOXVIFnndXJPCXn.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2012",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt2455514": {
+    "id": "tt2455514",
+    "type": "series",
+    "name": "Hulk and the Agents of S.M.A.S.H.",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/xxJbuRwU3ssxxrxrI38URtLkf6L.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2013",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt2654124": {
+    "id": "tt2654124",
+    "type": "movie",
+    "name": "Iron Man: Rise of Technovore",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/eHDez1uN5X2ZAq4niX7HvhyZIIO.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2013",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt3221698": {
+    "id": "tt3221698",
+    "type": "movie",
+    "name": "Iron Man and Hulk: Heroes United",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/e7F2ZNA7wMneoSKGonLKjDmjFEd.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2013",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt3644256": {
+    "id": "tt3644256",
+    "type": "series",
+    "name": "Marvel Disk Wars: The Avengers",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/6wQAZaWSvBJOIIt68cqmC0KJjeE.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2014",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt2245084": {
+    "id": "tt2245084",
+    "type": "movie",
+    "name": "Big Hero 6",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/2mxS4wUimwlLmI1xp6QW6NSU361.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2014",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt3482378": {
+    "id": "tt3482378",
+    "type": "movie",
+    "name": "Avengers Confidential: Black Widow & Punisher",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/wJcyYVRPZDOZOD2w0r2R6wuZqqN.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2014",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt3911200": {
+    "id": "tt3911200",
+    "type": "movie",
+    "name": "Iron Man & Captain America: Heroes United",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/AcFFHZGkpLUs31bKf42z8UVLimS.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2014",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt4176370": {
+    "id": "tt4176370",
+    "type": "series",
+    "name": "Guardians of the Galaxy",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/naeUEBhotiD5S9lobgV7dsuuGEk.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2015",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt5272052": {
+    "id": "tt5272052",
+    "type": "movie",
+    "name": "Super Hero Adventures: Frost Fight!",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/h7pgMFwnx2dhSZypbBYdoVCV1eT.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2015",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt6173902": {
+    "id": "tt6173902",
+    "type": "movie",
+    "name": "Hulk: Where Monsters Dwell",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/luT68rZr9wtrvn22VnRl82dkWTY.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2016",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt5989606": {
+    "id": "tt5989606",
+    "type": "movie",
+    "name": "Red Sonja: Queen of Plagues",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/rOwoxKn4aW5LDhfuI0TfpGpucbO.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2016",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt6591446": {
+    "id": "tt6591446",
+    "type": "series",
+    "name": "Future Avengers",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/g8cNLdlLvwhACezUBTg5XbZHR4Y.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2017",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt6135682": {
+    "id": "tt6135682",
+    "type": "series",
+    "name": "Spider-Man",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/dKdcyyHUR5WTMnrbPdYN5y9xPVp.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2017",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt5515212": {
+    "id": "tt5515212",
+    "type": "series",
+    "name": "Big Hero 6: The Series",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/ldG4xXImCPyv5U5gbRmlB8On842.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2017",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt7726152": {
+    "id": "tt7726152",
+    "type": "series",
+    "name": " Super Hero Adventures",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/9D5tShfIdGPo7sUB4vbe7qZ1DSx.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2017",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt4633694": {
+    "id": "tt4633694",
+    "type": "movie",
+    "name": "Spider-Man: Into the Spider-Verse",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2018",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt13783758": {
+    "id": "tt13783758",
+    "type": "series",
+    "name": "LEGO Avengers: Climate Conundrum",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/yeCEBB9eLeJ4nmj00ePD7eqeWYx.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2020",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt12583300": {
+    "id": "tt12583300",
+    "type": "series",
+    "name": "Battleworld",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/7YSgKDJvpzWUHjdToca9GWoiHFd.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2020",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt9811118": {
+    "id": "tt9811118",
+    "type": "series",
+    "name": "M.O.D.O.K.",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/2kXRzRjQZs9kAIm3K9MkQgsZR9C.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2021",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt14272628": {
+    "id": "tt14272628",
+    "type": "series",
+    "name": "Super Crooks",
+    "logo": null,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/d/d6/Super_Crooks_anime_poster.webp",
+    "description": "No description available.",
+    "releaseInfo": "2021",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt9811316": {
+    "id": "tt9811316",
+    "type": "series",
+    "name": "Hit-Monkey",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/1aK7hApRSDUv8xxDQXyQil7qBjN.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2021",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt21072140": {
+    "id": "tt21072140",
+    "type": "movie",
+    "name": "LEGO Avengers: Loki in Training",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/eyBifMbovoQbyuNXHOFYo7tsInp.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2021",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt13622958": {
+    "id": "tt13622958",
+    "type": "series",
+    "name": "BayMax!",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/muzgYvvFniQnwiTdAvfMCEkHsT4.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2022",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt13623148": {
+    "id": "tt13623148",
+    "type": "series",
+    "name": "I Am Groot",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/lNKkHTsjeVddRIq1XZ7kmtwtaZG.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2022",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt16531868": {
+    "id": "tt16531868",
+    "type": "movie",
+    "name": "LEGO Avengers: Time Twisted",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/7nA9AjJ8iZvbBPsFPC2FNoFj568.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2022",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt8041658": {
+    "id": "tt8041658",
+    "type": "series",
+    "name": "Moon Girl and Devil Dinosaur",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/1oFkjiF9fT2asKWjRiJtlbhu3hn.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2023",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt9362722": {
+    "id": "tt9362722",
+    "type": "movie",
+    "name": "Spider-Man: Across the Spider-Verse",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2023",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt28477867": {
+    "id": "tt28477867",
+    "type": "movie",
+    "name": "LEGO Avengers: Code Red",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/rDzig50dj7VpLwJ7SThbamETK1G.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2023",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt33653255": {
+    "id": "tt33653255",
+    "type": "movie",
+    "name": "LEGO Avengers: Mission Demolition",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/goFO9r09JXotKRcawP46jhPX2H0.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2024",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt10862280": {
+    "id": "tt10862280",
+    "type": "series",
+    "name": "Spidey and His Amazing Friends",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/dA4S18rnLx4sWW8agmLLKUvRM7n.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2021",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt16026746": {
+    "id": "tt16026746",
+    "type": "series",
+    "name": "X-Men '97",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/9Ycz7yYRf9V4jk3YXwcZhFtbNcF.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2024",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt16027074": {
+    "id": "tt16027074",
+    "type": "series",
+    "name": "Your Friendly Neighborhood Spider-Man",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/kjcsNeqF52YUQ2rUBGLMHwLkxvR.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2025",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt13968252": {
+    "id": "tt13968252",
+    "type": "series",
+    "name": "Eyes of Wakanda",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/bG23nZW96LxmWkJjsagRZI9hF6t.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2025",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  },
+  "tt16027014": {
+    "id": "tt16027014",
+    "type": "series",
+    "name": "Marvel Zombies",
+    "logo": null,
+    "poster": "https://image.tmdb.org/t/p/original/ifJayoMnxGF6Kgfn3xXfNcjtCrM.jpg",
+    "description": "No description available.",
+    "releaseInfo": "2025",
+    "imdbRating": "N/A",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tmdbId": null,
+    "updatedAt": "2026-08-08"
+  }
+}
