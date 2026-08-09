@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Marvel — Configure Addon</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = { darkMode: 'class', theme: { extend: {} } }
+    </script>
+
+    <style>
+        :root {
+            --ink: #0a0a0d;
+            --panel: #17171d;
+            --panel-2: #1d1d24;
+            --line: #000000;
+            --red: #ed1d24;
+            --red-dark: #a51217;
+            --gold: #f4b400;
+            --paper: #ede6d6;
+            --muted: #9a9aa4;
+            --muted-2: #55555f;
+        }
+
+        * { box-sizing: border-box; }
+
+        [v-cloak] { display: none; }
+
+        html, body { background: var(--ink); }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            color: var(--paper);
+            min-height: 100vh;
+            background-image:
+                radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1.4px);
+            background-size: 16px 16px;
+            background-position: -8px -8px;
+        }
+
+        .display {
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+
+        .mono { font-family: 'JetBrains Mono', monospace; }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.001ms !important;
+                transition-duration: 0.001ms !important;
+            }
+        }
+
+        /* ---------- Hero ---------- */
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--red);
+            color: #fff;
+            border: 2px solid var(--line);
+            padding: 4px 12px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            transform: rotate(-2deg);
+            box-shadow: 3px 3px 0 var(--line);
+        }
+
+        .hero-title {
+            font-size: clamp(2.4rem, 8vw, 3.6rem);
+            line-height: 0.95;
+            -webkit-text-stroke: 1px rgba(0,0,0,0.35);
+        }
+
+        .hero-title .accent { color: var(--red); }
+
+        /* ---------- Comic panel primitive ---------- */
+        .panel {
+            position: relative;
+            background: var(--panel);
+            border: 2px solid var(--line);
+        }
+
+        .panel::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: var(--red);
+            border: 2px solid var(--line);
+            transform: translate(6px, 6px);
+            z-index: -1;
+        }
+
+        /* ---------- Toolbar buttons ---------- */
+        .tool-btn {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            background: var(--panel-2);
+            color: var(--paper);
+            border: 2px solid var(--line);
+            padding: 8px 14px;
+            cursor: pointer;
+            transition: transform 0.12s ease, background 0.12s ease;
+        }
+        .tool-btn:hover { background: #26262f; transform: translateY(-2px); }
+        .tool-btn:active { transform: translateY(0); }
+
+        /* ---------- Catalog grid ---------- */
+        .catalog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(126px, 1fr));
+            gap: 22px 18px;
+        }
+
+        .catalog-item {
+            position: relative;
+            aspect-ratio: 1 / 1;
+            background: var(--panel-2);
+            border: 2px solid var(--line);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 14px 10px;
+            text-align: center;
+            cursor: pointer;
+            opacity: 0;
+            transform: translateY(14px);
+            animation: card-in 0.45s ease forwards;
+            transition: transform 0.15s ease;
+        }
+
+        .catalog-item::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: var(--red-dark);
+            border: 2px solid var(--line);
+            transform: translate(6px, 6px);
+            z-index: -1;
+            transition: transform 0.15s ease, background 0.15s ease;
+        }
+
+        .catalog-item:hover { transform: translate(-2px, -2px); }
+        .catalog-item:hover::before { transform: translate(8px, 8px); }
+
+        .catalog-item.selected {
+            background: #241a10;
+            border-color: var(--gold);
+            transform: translate(-3px, -3px);
+        }
+        .catalog-item.selected::before {
+            background: var(--gold);
+            border-color: var(--line);
+            transform: translate(9px, 9px);
+        }
+
+        @keyframes card-in {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .catalog-item .item-icon {
+            font-size: 1.75rem;
+            color: var(--paper);
+        }
+        .catalog-item.selected .item-icon { color: var(--gold); }
+
+        .catalog-item .xmen-icon {
+            width: 44px;
+            filter: brightness(0) invert(1);
+        }
+
+        .catalog-item .item-name {
+            font-family: 'Anton', sans-serif;
+            font-size: 0.82rem;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            line-height: 1.15;
+        }
+
+        .stamp {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 26px;
+            height: 26px;
+            background: var(--gold);
+            border: 2px solid var(--line);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            font-size: 0.7rem;
+            transform: scale(0) rotate(-15deg);
+            animation: stamp-in 0.28s cubic-bezier(.34,1.56,.64,1) forwards;
+        }
+        @keyframes stamp-in { to { transform: scale(1) rotate(-15deg); } }
+
+        /* ---------- Selected readout ---------- */
+        .issue-readout {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.78rem;
+            letter-spacing: 0.05em;
+            background: #000;
+            border: 2px solid var(--line);
+            color: var(--paper);
+            padding: 10px 14px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .issue-readout .count { color: var(--gold); font-weight: 600; }
+
+        /* ---------- Inputs ---------- */
+        .comic-input {
+            background: #000;
+            border: 2px solid var(--line);
+            color: var(--paper);
+            padding: 12px 14px;
+            width: 100%;
+            font-family: 'Inter', sans-serif;
+            transition: border-color 0.15s ease, box-shadow 0.15s ease;
+        }
+        .comic-input::placeholder { color: var(--muted-2); }
+        .comic-input:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 3px 3px 0 var(--line);
+        }
+
+        /* ---------- Install button ---------- */
+        .install-btn {
+            position: relative;
+            font-family: 'Anton', sans-serif;
+            font-size: 1.05rem;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            background: var(--red);
+            color: #fff;
+            border: 2px solid var(--line);
+            padding: 15px 24px;
+            width: 100%;
+            cursor: pointer;
+            transition: transform 0.12s ease, background 0.12s ease;
+        }
+        .install-btn::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: var(--line);
+            transform: translate(6px, 6px);
+            z-index: -1;
+        }
+        .install-btn:hover:not(:disabled) { transform: translate(-3px, -3px); background: #ff383e; }
+        .install-btn:hover:not(:disabled)::before { transform: translate(9px, 9px); }
+        .install-btn:active:not(:disabled) { transform: translate(0, 0); }
+        .install-btn:active:not(:disabled)::before { transform: translate(3px, 3px); }
+        .install-btn:disabled {
+            background: #3a3a42;
+            color: var(--muted);
+            cursor: not-allowed;
+        }
+        .install-btn:disabled::before { background: #1a1a20; }
+
+        .install-btn.shake { animation: shake 0.4s ease; }
+        @keyframes shake {
+            0%, 100% { transform: translate(0, 0); }
+            20% { transform: translate(-6px, 0); }
+            40% { transform: translate(5px, 0); }
+            60% { transform: translate(-4px, 0); }
+            80% { transform: translate(3px, 0); }
+        }
+
+        .warning-banner {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem;
+            letter-spacing: 0.03em;
+            color: var(--gold);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 10px;
+        }
+
+        /* ---------- Modal ---------- */
+        .modal-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.75);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 50;
+            padding: 20px;
+        }
+        .modal-panel {
+            background: var(--panel);
+            border: 2px solid var(--line);
+            box-shadow: 8px 8px 0 var(--red);
+            width: 100%;
+            max-width: 440px;
+            padding: 26px;
+        }
+
+        .secondary-btn {
+            background: var(--panel-2);
+            border: 2px solid var(--line);
+            color: var(--paper);
+            padding: 13px 16px;
+            width: 100%;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background 0.12s ease, transform 0.12s ease;
+        }
+        .secondary-btn:hover { background: #26262f; transform: translateY(-2px); }
+
+        .url-box {
+            background: #000;
+            border: 2px solid var(--line);
+            padding: 12px 14px;
+            font-size: 0.72rem;
+            word-break: break-all;
+            color: var(--muted);
+        }
+
+        .fade-enter-active, .fade-leave-active { transition: opacity 0.2s ease; }
+        .fade-enter, .fade-leave-to { opacity: 0; }
+
+        .pop-enter-active { transition: opacity 0.2s ease, transform 0.2s cubic-bezier(.34,1.56,.64,1); }
+        .pop-leave-active { transition: opacity 0.15s ease; }
+        .pop-enter { opacity: 0; transform: scale(0.92) translateY(10px); }
+        .pop-leave-to { opacity: 0; }
+
+        a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-visible {
+            outline: 3px solid var(--gold);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app" v-cloak class="py-10 px-4 md:py-16">
+        <div class="max-w-xl mx-auto">
+
+            <!-- Hero -->
+            <div class="text-center mb-10">
+                <img src="https://raw.githubusercontent.com/joaogonp/addon-marvel/main/public/assets/icon.png" alt="Marvel Addon logo" class="w-14 h-14 mx-auto mb-5 border-2" style="border-color: var(--line);">
+                <span class="hero-eyebrow mb-4"><i class="fas fa-bolt"></i> Stremio Addon</span>
+                <h1 class="display hero-title mt-4 mb-3">Build your <span class="accent">Marvel</span> run</h1>
+                <p class="text-sm" style="color: var(--muted);">Pick which catalogs show up in Stremio, add an RatingPosterDB key if you've got one, and ship your install link.</p>
+            </div>
+
+            <!-- Main panel -->
+            <div class="panel">
+                <div class="p-6 md:p-7">
+
+                    <!-- Toolbar -->
+                    <div class="flex justify-between items-center mb-6 gap-3">
+                        <button @click="selectAll" class="tool-btn"><i class="fas fa-square-check mr-1"></i>Select all</button>
+                        <button @click="deselectAll" class="tool-btn"><i class="fas fa-square mr-1"></i>Clear</button>
+                    </div>
+
+                    <!-- Loading -->
+                    <div v-if="loading" class="catalog-grid mb-2">
+                        <div v-for="n in 6" :key="'sk'+n" class="catalog-item" style="animation-delay: 0; opacity:0.5;">
+                            <i class="fas fa-circle-notch fa-spin item-icon" style="color: var(--muted-2);"></i>
+                        </div>
+                    </div>
+
+                    <!-- Error -->
+                    <div v-else-if="error" class="panel text-center py-8 px-4" style="background: var(--panel-2);">
+                        <i class="fas fa-triangle-exclamation text-2xl mb-3" style="color: var(--red);"></i>
+                        <p class="font-semibold mb-1">Couldn't load catalogs</p>
+                        <p class="text-xs mb-4" style="color: var(--muted);">The addon server didn't respond. Check the connection and try again.</p>
+                        <button @click="fetchCatalogs" class="tool-btn"><i class="fas fa-rotate-right mr-1"></i>Retry</button>
+                    </div>
+
+                    <!-- Catalog grid -->
+                    <div v-else class="catalog-grid mb-6">
+                        <div
+                            v-for="(catalog, idx) in catalogs"
+                            :key="catalog.id"
+                            @click="toggleCatalog(catalog)"
+                            :class="['catalog-item', {selected: selectedCatalogs.includes(catalog.id)}]"
+                            :style="{ animationDelay: (idx * 0.05) + 's' }"
+                            role="checkbox"
+                            :aria-checked="selectedCatalogs.includes(catalog.id)"
+                            tabindex="0"
+                            @keydown.enter="toggleCatalog(catalog)"
+                            @keydown.space.prevent="toggleCatalog(catalog)"
+                        >
+                            <transition name="pop">
+                                <div v-if="selectedCatalogs.includes(catalog.id)" class="stamp"><i class="fas fa-check"></i></div>
+                            </transition>
+
+                            <template v-if="iconFor(catalog.id) === 'xmen-logo'">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/X-Men_logo.svg/320px-X-Men_logo.svg.png" alt="" class="xmen-icon">
+                            </template>
+                            <template v-else>
+                                <i :class="['fas', 'fa-' + iconFor(catalog.id), 'item-icon']"></i>
+                            </template>
+
+                            <span class="item-name">{{ catalog.name }}</span>
+                        </div>
+                    </div>
+
+                    <!-- Selected readout -->
+                    <div v-if="!loading && !error" class="issue-readout mb-6">
+                        <span><i class="fas fa-layer-group mr-2"></i>Catalogs selected</span>
+                        <span class="count">{{ selectedCatalogs.length }} / {{ catalogs.length }}</span>
+                    </div>
+
+                    <!-- RPDB key -->
+                    <div class="mb-7" style="margin-top: 24px;">
+                        <label for="rpdb-key" class="block text-xs font-semibold uppercase tracking-wide mb-2" style="color: var(--muted);">RatingPosterDB key <span class="font-normal normal-case" style="color: var(--muted-2);">(optional)</span></label>
+                        <input
+                            type="text"
+                            id="rpdb-key"
+                            v-model="rpdbKey"
+                            class="comic-input"
+                            placeholder="Paste your RPDB key to swap in rated posters"
+                        >
+                        <a href="https://ratingposterdb.com" target="_blank" class="text-xs inline-flex items-center gap-1 mt-2 hover:underline" style="color: var(--gold);">
+                            <i class="fas fa-circle-info"></i>What's RatingPosterDB?
+                        </a>
+                    </div>
+
+                    <!-- Install -->
+                    <button
+                        @click="generateLink"
+                        :class="['install-btn', { shake: shakeButton }]"
+                        :disabled="selectedCatalogs.length === 0"
+                    >
+                        <i class="fas fa-plus mr-2"></i>Install addon
+                    </button>
+                    <p v-if="showEmptyWarning" class="warning-banner"><i class="fas fa-triangle-exclamation"></i>Pick at least one catalog to continue.</p>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="text-center mt-10 pt-6 text-sm" style="border-top: 2px solid #26262f; color: var(--muted-2);">
+                <p class="mb-4">Marvel Addon for Stremio &copy; {{ currentYear }}</p>
+                <div class="flex justify-center items-center gap-6">
+                    <a href="https://github.com/joaogonp/addon-marvel" target="_blank" class="hover:text-white transition" aria-label="GitHub Repository">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://www.buymeacoffee.com/joaogonp" target="_blank" class="hover:text-white transition" aria-label="Buy Me a Coffee">
+                        <i class="fas fa-mug-hot text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Install modal -->
+        <transition name="fade">
+            <div v-if="showInstallPanel" class="modal-backdrop" @click.self="showInstallPanel = false">
+                <transition name="pop" appear>
+                    <div v-if="showInstallPanel" class="modal-panel">
+                        <div class="flex justify-between items-center mb-5 pb-4" style="border-bottom: 2px solid #26262f;">
+                            <h3 class="display text-lg">Your run is ready</h3>
+                            <button @click="showInstallPanel = false" class="tool-btn px-3 py-2" aria-label="Close">
+                                <i class="fas fa-xmark"></i>
+                            </button>
+                        </div>
+
+                        <p class="mb-5 text-sm" style="color: var(--muted);">Your personalized Marvel addon link is set with {{ selectedCatalogs.length }} {{ selectedCatalogs.length === 1 ? 'catalog' : 'catalogs' }}.</p>
+
+                        <div class="flex flex-col gap-3 mb-5">
+                            <a :href="stremioUrl" class="install-btn text-center inline-block">
+                                <i class="fas fa-circle-play mr-2"></i>Open in Stremio
+                            </a>
+                            <button @click="copyToClipboard" class="secondary-btn">
+                                <i class="fas" :class="copied ? 'fa-check' : 'fa-copy'"></i>
+                                <span class="ml-2">{{ copied ? 'Copied' : 'Copy link' }}</span>
+                            </button>
+                        </div>
+
+                        <div class="url-box mono">{{ installUrl }}</div>
+                    </div>
+                </transition>
+            </div>
+        </transition>
+    </div>
+
+    <script>
+        // Ícone e ordem de exibição por catálogo — mantido no cliente para
+        // não depender de o backend devolver esses campos.
+        const CATALOG_META = {
+            'marvel-mcu':     { icon: 'shield-halved' },
+            'release-order':  { icon: 'calendar-days' },
+            'xmen':           { icon: 'xmen-logo' },
+            'movies':         { icon: 'film' },
+            'series':         { icon: 'tv' },
+            'animations':     { icon: 'palette' },
+        };
+
+        new Vue({
+            el: '#app',
+            data: {
+                catalogs: [],
+                selectedCatalogs: [],
+                showInstallPanel: false,
+                installUrl: '',
+                stremioUrl: '',
+                copied: false,
+                loading: true,
+                error: false,
+                rpdbKey: '',
+                shakeButton: false,
+                showEmptyWarning: false,
+                currentYear: new Date().getFullYear(),
+            },
+            mounted() {
+                this.fetchCatalogs();
+            },
+            methods: {
+                iconFor(id) {
+                    return (CATALOG_META[id] && CATALOG_META[id].icon) || 'shield-alt';
+                },
+                fetchCatalogs() {
+                    this.loading = true;
+                    this.error = false;
+                    fetch('/api/catalogs')
+                        .then(response => {
+                            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                            return response.json();
+                        })
+                        .then(data => {
+                            this.catalogs = data;
+                            this.applyPredefinedSelectionsOrSelectAll();
+                            this.loading = false;
+                        })
+                        .catch(error => {
+                            console.error('Error fetching catalogs:', error);
+                            this.error = true;
+                            this.loading = false;
+                        });
+                },
+                applyPredefinedSelectionsOrSelectAll() {
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const predefinedIdsParam = urlParams.get('predefined');
+
+                    if (predefinedIdsParam) {
+                        const predefinedIds = predefinedIdsParam.split(',');
+                        this.selectedCatalogs = predefinedIds.filter(id => this.catalogs.some(catalog => catalog.id === id));
+                        if (this.selectedCatalogs.length === 0) this.selectAll();
+                    } else {
+                        this.selectAll();
+                    }
+                },
+                selectAll() {
+                    if (this.catalogs && this.catalogs.length > 0) {
+                        this.selectedCatalogs = this.catalogs.map(c => c.id);
+                    }
+                    this.showEmptyWarning = false;
+                },
+                deselectAll() {
+                    this.selectedCatalogs = [];
+                    this.showInstallPanel = false;
+                },
+                toggleCatalog(catalog) {
+                    const index = this.selectedCatalogs.indexOf(catalog.id);
+                    if (index === -1) {
+                        this.selectedCatalogs.push(catalog.id);
+                        this.showEmptyWarning = false;
+                    } else {
+                        this.selectedCatalogs.splice(index, 1);
+                    }
+                    this.showInstallPanel = false;
+                },
+                generateLink() {
+                    if (this.selectedCatalogs.length === 0) {
+                        this.showEmptyWarning = true;
+                        this.shakeButton = true;
+                        setTimeout(() => { this.shakeButton = false; }, 400);
+                        return;
+                    }
+
+                    const host = window.location.host;
+                    const protocol = window.location.protocol;
+
+                    const allCatalogIds = this.catalogs.map(c => c.id);
+                    const sortedSelected = [...this.selectedCatalogs].sort();
+                    const sortedAll = [...allCatalogIds].sort();
+                    const allSelected = sortedSelected.length === sortedAll.length && sortedSelected.every((val, index) => val === sortedAll[index]);
+
+                    if (allSelected) {
+                        if (this.rpdbKey) {
+                            this.installUrl = `${protocol}//${host}/rpdb/${encodeURIComponent(this.rpdbKey)}/manifest.json`;
+                            this.stremioUrl = `stremio://${host}/rpdb/${encodeURIComponent(this.rpdbKey)}/manifest.json`;
+                        } else {
+                            this.installUrl = `${protocol}//${host}/manifest.json`;
+                            this.stremioUrl = `stremio://${host}/manifest.json`;
+                        }
+                    } else {
+                        const catalogParam = this.selectedCatalogs.join(',');
+                        if (this.rpdbKey) {
+                            const configParts = [catalogParam, this.rpdbKey].join(':');
+                            this.installUrl = `${protocol}//${host}/catalog/${encodeURIComponent(configParts)}/manifest.json`;
+                            this.stremioUrl = `stremio://${host}/catalog/${encodeURIComponent(configParts)}/manifest.json`;
+                        } else {
+                            this.installUrl = `${protocol}//${host}/catalog/${encodeURIComponent(catalogParam)}/manifest.json`;
+                            this.stremioUrl = `stremio://${host}/catalog/${encodeURIComponent(catalogParam)}/manifest.json`;
+                        }
+                    }
+
+                    this.showInstallPanel = true;
+                },
+                copyToClipboard() {
+                    navigator.clipboard.writeText(this.installUrl).then(() => {
+                        this.copied = true;
+                        setTimeout(() => { this.copied = false; }, 2000);
+                    }).catch(err => {
+                        console.error('Failed to copy URL: ', err);
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+</html>
