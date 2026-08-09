@@ -245,7 +245,7 @@ function buildManifest({ id, description, catalogs }) {
         name: "Marvel",
         description,
         version: "2.0.0",
-        logo: "https://raw.githubusercontent.com/joaogonp/addon-marvel/main/assets/icon.png",
+        logo: "https://raw.githubusercontent.com/joaogonp/addon-marvel/main/public/assets/icon.png",
         background: "https://raw.githubusercontent.com/joaogonp/addon-marvel/main/assets/background.jpg",
         catalogs,
         resources: ["catalog"],
