@@ -505,20 +505,28 @@ export default [
     "id": "marvel_tt20969586"
   },
   {
-    "title": "The Fantastic: Four First Steps",
-    "type": "movie",
-    "imdbId": "tt10676052",
-    "releaseYear": "2025",
-    "poster": "https://image.tmdb.org/t/p/original/x26MtUlwtWD26d0G0FXcppxCJio.jpg",
-    "id": "marvel_tt10676052"
-  },
-  {
     "title": "Wonder Man",
     "type": "series",
     "imdbId": "tt21066182",
     "releaseYear": "2026",
     "poster": "https://image.tmdb.org/t/p/original/kboHD8dkHvkAuszYxq89BYJhq9t.jpg",
     "id": "marvel_tt21066182"
+  },
+  {
+    "title": "The Punisher: One Last Kill",
+    "type": "series",
+    "imdbId": "tt36042156",
+    "id": "marvel_tt36042156",
+    "releaseYear": "2026",
+    "poster": "https://image.tmdb.org/t/p/original/qQclTgLMDvGBuUBFGHRipxkEwWR.jpg"
+  },
+  {
+    "title": "Spider-Man: Brand New Day",
+    "type": "movie",
+    "imdbId": "tt22084616",
+    "id": "marvel_tt22084616",
+    "releaseYear": "2026",
+    "poster": "https://image.tmdb.org/t/p/original/iPOn6DinuVyLY17YM9mKuPofV08.jpg"
   },
   {
     "title": "VisionQuest",
@@ -529,36 +537,19 @@ export default [
     "poster": "https://image.tmdb.org/t/p/original/6j60tGRAjBmWRPTOEwhW6oRbPMP.jpg"
   },
   {
-    "title": "Spider-Man: Brand New Day",
+    "title": "The Fantastic: Four First Steps",
     "type": "movie",
-    "imdbId": "tt22084616",
-    "id": "marvel_tt22084616",
-    "releaseYear": "2026",
-    "poster": "https://image.tmdb.org/t/p/w500/9JCQtDCSpPR2ld55yNlEg1VwcQo.jpg",
-    "ratings": []
+    "imdbId": "tt10676052",
+    "releaseYear": "2025",
+    "poster": "https://image.tmdb.org/t/p/original/x26MtUlwtWD26d0G0FXcppxCJio.jpg",
+    "id": "marvel_tt10676052"
   },
   {
     "title": "Avengers: Doomsday",
     "type": "movie",
     "imdbId": "tt21357150",
     "releaseYear": "2026",
-    "poster": "https://image.tmdb.org/t/p/w500/6eB2oh1SplddsZYCdayrIdrIGLd.jpg",
+    "poster": "https://image.tmdb.org/t/p/original/bh2OuKvq19jBHsloUVCfPSZZw81.jpg",
     "id": "marvel_tt21357150"
-  },
-  {
-    "title": "Avengers: Secret Wars",
-    "type": "movie",
-    "imdbId": "tt21361444",
-    "releaseYear": "2027",
-    "poster": "https://image.tmdb.org/t/p/w500/f0YBuh4hyiAheXhh4JnJWoKi9g5.jpg",
-    "id": "marvel_tt21361444"
-  },
-  {
-    "title": "Armor Wars",
-    "type": "movie",
-    "imdbId": "tt13623128",
-    "id": "marvel_tt13623128",
-    "releaseYear": "TBD",
-    "poster": "https://image.tmdb.org/t/p/w500/vDbzi8eM710THVCwjfqVU8a5E3g.jpg"
   }
 ];

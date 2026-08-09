@@ -118,5 +118,5 @@ export default [
       "id": "marvel_tt6263850",
       "releaseYear": "2024",
       "poster": "https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg"
-    },
+    }
   ];

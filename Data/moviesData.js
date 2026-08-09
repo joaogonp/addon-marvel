@@ -912,20 +912,28 @@ export default [
     "poster": "https://image.tmdb.org/t/p/w500/x26MtUlwtWD26d0G0FXcppxCJio.jpg"
   },
   {
-    "title": "Avengers: Doomsday",
-    "type": "movie",
-    "imdbId": "tt21357150",
-    "id": "marvel_tt21357150",
-    "releaseYear": "2026",
-    "poster": "https://image.tmdb.org/t/p/w500/6eB2oh1SplddsZYCdayrIdrIGLd.jpg"
-  },
-  {
     "title": "Spider-Man: Brand New Day",
     "type": "movie",
     "imdbId": "tt22084616",
     "id": "marvel_tt22084616",
     "releaseYear": "2026",
-    "poster": "https://image.tmdb.org/t/p/w500/9JCQtDCSpPR2ld55yNlEg1VwcQo.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/iPOn6DinuVyLY17YM9mKuPofV08.jpg"
+  },
+  {
+    "title": "Avengers: Doomsday",
+    "type": "movie",
+    "imdbId": "tt21357150",
+    "id": "marvel_tt21357150",
+    "releaseYear": "2026",
+    "poster": "https://image.tmdb.org/t/p/original/bh2OuKvq19jBHsloUVCfPSZZw81.jpg"
+  },
+  {
+    "title": "Spider-Man: Brand New Day",
+    "type": "animation",
+    "imdbId": "tt16360004",
+    "id": "marvel_tt16360004",
+    "releaseYear": "2027",
+    "poster": "https://image.tmdb.org/t/p/w500/rZ4arzyaDyI8l9Y7VIPPsDGARwh.jpg"
   },
   {
     "title": "Avengers: Secret Wars",
@@ -936,12 +944,12 @@ export default [
     "poster": "https://image.tmdb.org/t/p/w500/f0YBuh4hyiAheXhh4JnJWoKi9g5.jpg"
   },
   {
-    "title": "Spider-Man: Beyond the Spider-Verse",
-    "type": "animation",
-    "imdbId": "tt16360004",
-    "id": "marvel_tt16360004",
-    "releaseYear": "2027",
-    "poster": "https://image.tmdb.org/t/p/w500/rZ4arzyaDyI8l9Y7VIPPsDGARwh.jpg"
+    "title": "Black Panther 3",
+    "type": "movie",
+    "imdbId": "tt37884905",
+    "id": "marvel_tt37884905",
+    "releaseYear": "2028",
+    "poster": "https://image.tmdb.org/t/p/original/5b8t06v1cTd9H5IgWs6gj6987JM.jpg"
   },
   {
     "title": "Armor Wars",
