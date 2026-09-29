@@ -80,14 +80,6 @@ export default [
     "id": "marvel_tt1300854"
   },
   {
-    "title": "Marvel's Agents of S.H.I.E.L.D.",
-    "type": "series",
-    "imdbId": "tt2364582",
-    "id": "marvel_tt2364582",
-    "releaseYear": "2013",
-    "poster": "https://image.tmdb.org/t/p/w500/gHUCCMy1vvj58tzE3dZqeC9SXus.jpg"
-  },
-  {
     "title": "Captain America: The Winter Soldier",
     "type": "movie",
     "imdbId": "tt1843866",
@@ -152,14 +144,6 @@ export default [
     "poster": "https://image.tmdb.org/t/p/w500/6R62oGGufhsf6DiMknCi047N0b7.jpg"
   },
   {
-    "title": "Cloak & Dagger",
-    "type": "series",
-    "imdbId": "tt5614844",
-    "id": "marvel_tt5614844",
-    "releaseYear": "2018",
-    "poster": "https://image.tmdb.org/t/p/w500/pYnRJuBPEqZO1o4fcxBTgmKNHfy.jpg"
-  },
-  {
     "title": "Iron Fist",
     "type": "series",
     "imdbId": "tt3322310",
@@ -200,14 +184,6 @@ export default [
     "id": "marvel_tt1825683"
   },
   {
-    "title": "Inhumans",
-    "type": "series",
-    "imdbId": "tt4154858",
-    "id": "marvel_tt4154858",
-    "releaseYear": "2017",
-    "poster": "https://image.tmdb.org/t/p/w500/zKfGip55oJ9tdzhyd9ayGyFFhuo.jpg"
-  },
-  {
     "title": "Spider-Man: Homecoming",
     "type": "movie",
     "imdbId": "tt2250912",
@@ -222,14 +198,6 @@ export default [
     "id": "marvel_tt5675620",
     "releaseYear": "2017",
     "poster": "https://image.tmdb.org/t/p/original/9tepVli4YijTCHyiATRvoR4c64X.jpg"
-  },
-  {
-    "title": "Runaways",
-    "type": "series",
-    "imdbId": "tt1236246",
-    "id": "marvel_tt1236246",
-    "releaseYear": "2017",
-    "poster": "https://image.tmdb.org/t/p/w500/zceMrfO17AQkeWJZNra4O90s1vE.jpg"
   },
   {
     "title": "Doctor Strange",
@@ -272,14 +240,6 @@ export default [
     "id": "marvel_tt4154796"
   },
   {
-    "title": "Eternals",
-    "type": "movie",
-    "imdbId": "tt9032400",
-    "releaseYear": "2021",
-    "poster": "https://image.tmdb.org/t/p/w500/lFByFSLV5WDJEv3KabbdAF959F2.jpg",
-    "id": "marvel_tt9032400"
-  },
-  {
     "title": "Loki",
     "type": "series",
     "imdbId": "tt9140554",
@@ -320,20 +280,20 @@ export default [
     "id": "marvel_tt9208876"
   },
   {
-    "title": "Helstrom",
-    "type": "series",
-    "imdbId": "tt10266874",
-    "id": "marvel_tt10266874",
-    "releaseYear": "2020",
-    "poster": "https://image.tmdb.org/t/p/w500/5QmcKsepYpO9XYsWNLwsiULoaAu.jpg"
-  },
-  {
     "title": "Spider-Man: Far From Home",
     "type": "movie",
     "imdbId": "tt6320628",
     "releaseYear": "2019",
     "poster": "https://image.tmdb.org/t/p/original/2KLkGP0qWZlNGOad2O6P069hlw0.jpg",
     "id": "marvel_tt6320628"
+  },
+  {
+    "title": "Eternals",
+    "type": "movie",
+    "imdbId": "tt9032400",
+    "releaseYear": "2021",
+    "poster": "https://image.tmdb.org/t/p/w500/lFByFSLV5WDJEv3KabbdAF959F2.jpg",
+    "id": "marvel_tt9032400"
   },
   {
     "title": "Spider-Man: No Way Home",
@@ -505,6 +465,14 @@ export default [
     "id": "marvel_tt20969586"
   },
   {
+    "title": "The Fantastic Four: First Steps",
+    "type": "movie",
+    "imdbId": "tt10676052",
+    "releaseYear": "2025",
+    "poster": "https://image.tmdb.org/t/p/original/x26MtUlwtWD26d0G0FXcppxCJio.jpg",
+    "id": "marvel_tt10676052"
+  },
+  {
     "title": "Wonder Man",
     "type": "series",
     "imdbId": "tt21066182",
@@ -512,6 +480,49 @@ export default [
     "poster": "https://image.tmdb.org/t/p/original/kboHD8dkHvkAuszYxq89BYJhq9t.jpg",
     "id": "marvel_tt21066182"
   },
+  // Legacy Marvel TV (ABC/Hulu/Freeform/Fear) - not part of the
+  // Disney+ official timeline; kept after the main saga on purpose.
+  {
+    "title": "Marvel's Agents of S.H.I.E.L.D.",
+    "type": "series",
+    "imdbId": "tt2364582",
+    "id": "marvel_tt2364582",
+    "releaseYear": "2013",
+    "poster": "https://image.tmdb.org/t/p/w500/gHUCCMy1vvj58tzE3dZqeC9SXus.jpg"
+  },
+  {
+    "title": "Inhumans",
+    "type": "series",
+    "imdbId": "tt4154858",
+    "id": "marvel_tt4154858",
+    "releaseYear": "2017",
+    "poster": "https://image.tmdb.org/t/p/w500/zKfGip55oJ9tdzhyd9ayGyFFhuo.jpg"
+  },
+  {
+    "title": "Runaways",
+    "type": "series",
+    "imdbId": "tt1236246",
+    "id": "marvel_tt1236246",
+    "releaseYear": "2017",
+    "poster": "https://image.tmdb.org/t/p/w500/zceMrfO17AQkeWJZNra4O90s1vE.jpg"
+  },
+  {
+    "title": "Cloak & Dagger",
+    "type": "series",
+    "imdbId": "tt5614844",
+    "id": "marvel_tt5614844",
+    "releaseYear": "2018",
+    "poster": "https://image.tmdb.org/t/p/w500/pYnRJuBPEqZO1o4fcxBTgmKNHfy.jpg"
+  },
+  {
+    "title": "Helstrom",
+    "type": "series",
+    "imdbId": "tt10266874",
+    "id": "marvel_tt10266874",
+    "releaseYear": "2020",
+    "poster": "https://image.tmdb.org/t/p/w500/5QmcKsepYpO9XYsWNLwsiULoaAu.jpg"
+  },
+  // Unreleased / speculative future entries.
   {
     "title": "The Punisher: One Last Kill",
     "type": "series",
@@ -535,14 +546,6 @@ export default [
     "id": "marvel_tt23112594",
     "releaseYear": "2026",
     "poster": "https://image.tmdb.org/t/p/original/6j60tGRAjBmWRPTOEwhW6oRbPMP.jpg"
-  },
-  {
-    "title": "The Fantastic: Four First Steps",
-    "type": "movie",
-    "imdbId": "tt10676052",
-    "releaseYear": "2025",
-    "poster": "https://image.tmdb.org/t/p/original/x26MtUlwtWD26d0G0FXcppxCJio.jpg",
-    "id": "marvel_tt10676052"
   },
   {
     "title": "Avengers: Doomsday",

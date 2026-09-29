@@ -505,7 +505,7 @@ export default [
     "ratings": []
   },
   {
-    "title": "The Fantastic: Four First Steps",
+    "title": "The Fantastic Four: First Steps",
     "type": "movie",
     "imdbId": "tt10676052",
     "releaseYear": "2025",
